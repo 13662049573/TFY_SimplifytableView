@@ -22,12 +22,9 @@
 		36268436229E6515006938A0 /* ModeldetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268435229E6515006938A0 /* ModeldetailController.m */; };
 		36268439229E6B7A006938A0 /* ModeldetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268438229E6B7A006938A0 /* ModeldetailTableViewCell.m */; };
 		36268448229E7665006938A0 /* NSObject+Associated.m in Sources */ = {isa = PBXBuildFile; fileRef = 3626843B229E7665006938A0 /* NSObject+Associated.m */; };
-		36268449229E7665006938A0 /* TFY_SectionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3626843F229E7665006938A0 /* TFY_SectionData.m */; };
 		3626844A229E7665006938A0 /* TFY_BaseTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268440229E7665006938A0 /* TFY_BaseTableViewDataSource.m */; };
 		3626844B229E7665006938A0 /* UITableView+TFY_TableViewMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268441229E7665006938A0 /* UITableView+TFY_TableViewMaker.m */; };
 		3626844C229E7665006938A0 /* UITableViewCell+TFY_TableViewMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268442229E7665006938A0 /* UITableViewCell+TFY_TableViewMaker.m */; };
-		3626844D229E7665006938A0 /* TFY_CellData.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268443229E7665006938A0 /* TFY_CellData.m */; };
-		3626844E229E7665006938A0 /* TFY_TableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268447229E7665006938A0 /* TFY_TableData.m */; };
 		C4836CBC0C3B81944CA91290 /* libPods-TFY_SimplifytableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1921EE7BC7D1786041EBF486 /* libPods-TFY_SimplifytableView.a */; };
 /* End PBXBuildFile section */
 
@@ -80,20 +77,14 @@
 		36268435229E6515006938A0 /* ModeldetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModeldetailController.m; sourceTree = "<group>"; };
 		36268437229E6B7A006938A0 /* ModeldetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModeldetailTableViewCell.h; sourceTree = "<group>"; };
 		36268438229E6B7A006938A0 /* ModeldetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModeldetailTableViewCell.m; sourceTree = "<group>"; };
-		3626843A229E7665006938A0 /* TFY_SectionData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_SectionData.h; sourceTree = "<group>"; };
 		3626843B229E7665006938A0 /* NSObject+Associated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Associated.m"; sourceTree = "<group>"; };
 		3626843C229E7665006938A0 /* UITableView+TFY_TableViewMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+TFY_TableViewMaker.h"; sourceTree = "<group>"; };
-		3626843D229E7665006938A0 /* TFY_TableData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_TableData.h; sourceTree = "<group>"; };
 		3626843E229E7665006938A0 /* TFY_BaseTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_BaseTableViewDataSource.h; sourceTree = "<group>"; };
-		3626843F229E7665006938A0 /* TFY_SectionData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_SectionData.m; sourceTree = "<group>"; };
 		36268440229E7665006938A0 /* TFY_BaseTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_BaseTableViewDataSource.m; sourceTree = "<group>"; };
 		36268441229E7665006938A0 /* UITableView+TFY_TableViewMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+TFY_TableViewMaker.m"; sourceTree = "<group>"; };
 		36268442229E7665006938A0 /* UITableViewCell+TFY_TableViewMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+TFY_TableViewMaker.m"; sourceTree = "<group>"; };
-		36268443229E7665006938A0 /* TFY_CellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_CellData.m; sourceTree = "<group>"; };
-		36268444229E7665006938A0 /* TFY_CellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_CellData.h; sourceTree = "<group>"; };
 		36268445229E7665006938A0 /* UITableViewCell+TFY_TableViewMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+TFY_TableViewMaker.h"; sourceTree = "<group>"; };
 		36268446229E7665006938A0 /* NSObject+Associated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Associated.h"; sourceTree = "<group>"; };
-		36268447229E7665006938A0 /* TFY_TableData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_TableData.m; sourceTree = "<group>"; };
 		673D758AA2272999644EF694 /* Pods-TFY_SimplifytableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFY_SimplifytableView.debug.xcconfig"; path = "Target Support Files/Pods-TFY_SimplifytableView/Pods-TFY_SimplifytableView.debug.xcconfig"; sourceTree = "<group>"; };
 		8BBCAAC1A1EB9904AFA636CD /* Pods-TFY_SimplifytableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFY_SimplifytableView.release.xcconfig"; path = "Target Support Files/Pods-TFY_SimplifytableView/Pods-TFY_SimplifytableView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,12 +178,6 @@
 				3626843B229E7665006938A0 /* NSObject+Associated.m */,
 				3626843E229E7665006938A0 /* TFY_BaseTableViewDataSource.h */,
 				36268440229E7665006938A0 /* TFY_BaseTableViewDataSource.m */,
-				36268444229E7665006938A0 /* TFY_CellData.h */,
-				36268443229E7665006938A0 /* TFY_CellData.m */,
-				3626843A229E7665006938A0 /* TFY_SectionData.h */,
-				3626843F229E7665006938A0 /* TFY_SectionData.m */,
-				3626843D229E7665006938A0 /* TFY_TableData.h */,
-				36268447229E7665006938A0 /* TFY_TableData.m */,
 				3626843C229E7665006938A0 /* UITableView+TFY_TableViewMaker.h */,
 				36268441229E7665006938A0 /* UITableView+TFY_TableViewMaker.m */,
 				36268445229E7665006938A0 /* UITableViewCell+TFY_TableViewMaker.h */,
@@ -473,11 +458,8 @@
 				36268448229E7665006938A0 /* NSObject+Associated.m in Sources */,
 				36268428229E46A4006938A0 /* ViewModel.m in Sources */,
 				3626844A229E7665006938A0 /* TFY_BaseTableViewDataSource.m in Sources */,
-				3626844D229E7665006938A0 /* TFY_CellData.m in Sources */,
 				36268436229E6515006938A0 /* ModeldetailController.m in Sources */,
 				362683CE229E0E57006938A0 /* main.m in Sources */,
-				36268449229E7665006938A0 /* TFY_SectionData.m in Sources */,
-				3626844E229E7665006938A0 /* TFY_TableData.m in Sources */,
 				362683F8229E0F36006938A0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

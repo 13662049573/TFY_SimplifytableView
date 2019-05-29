@@ -40,9 +40,6 @@ sectionMaker.tfy_addCellMaker(^(TFY_CellMaker *cellMaker) { \
 _maker_ \
 })
 
-#import "TFY_CellData.h"
-#import "TFY_SectionData.h"
-#import "TFY_TableData.h"
 #import "TFY_BaseTableViewDataSource.h"
 #import "UITableView+TFY_TableViewMaker.h"
 

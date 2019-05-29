@@ -10,7 +10,7 @@
 #import <objc/runtime.h>
 
 #import "TFY_BaseTableViewDataSource.h"
-#import "TFY_TableData.h"
+
 
 void HDExchangeImplementations(Class class, SEL newSelector, SEL oldSelector) {
     Method oldMethod = class_getInstanceMethod(class, newSelector);
