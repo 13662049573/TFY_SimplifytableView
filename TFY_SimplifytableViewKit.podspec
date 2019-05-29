@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/13662049573/TFY_SimplifytableView.git", :tag => spec.version }
 
 
-  spec.source_files  = "TFY_SimplifytableView/TFY_SimplifytableView/TFY_SimplifytableViewKit/TFY_TableViewHeader.h", "TFY_SimplifytableView/TFY_SimplifytableView/TFY_SimplifytableViewKit/**/*.{h,m}"
+  spec.source_files  = "TFY_SimplifytableView/TFY_SimplifytableViewKit/TFY_TableViewHeader.h", "TFY_SimplifytableView/TFY_SimplifytableViewKit/**/*.{h,m}"
 
   spec.frameworks    = "Foundation","UIKit"
 
