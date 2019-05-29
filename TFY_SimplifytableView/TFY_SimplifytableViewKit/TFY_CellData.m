@@ -7,7 +7,6 @@
 //
 
 #import "TFY_CellData.h"
-#import "TFY_AutoLayout.h"
 #import "UITableViewCell+TFY_TableViewMaker.h"
 #import "UITableView+TFY_TableViewMaker.h"
 
