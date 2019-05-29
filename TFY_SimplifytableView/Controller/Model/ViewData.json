@@ -1,0 +1,1308 @@
+{
+    "data" : [
+        {
+            "nick_name" : "读书名言名",
+            "prod_list" : [
+                {
+                    "title" : "只要愿意学习，就一定能够学会。——列宁",
+                    "model_detail" : [
+                        {
+                            "text_key" : "一般是2~7天到货哦~",
+                            "value" : "我的订单 > 待收货 > 点击相应订单（如下图所示）",
+                            "img" : "activity1",
+                            "type_name" : "若是新疆、西藏、内蒙古等偏远地区，到货时间为3~15天哦。您可以在订单详情页面查看物流信息哦。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "读过一本好书，像交了一个益友。——臧克家",
+                    "model_detail" : [
+                        {
+                            "text_key" : "我们的商品属于赠品，若有质量问题可以免费换货哦，是不可以无理由退货的呢。",
+                            "value" : "具体的保修政策以商品的保修卡为准呢。",
+                            "img" : "activity2",
+                            "type_name" : "若您的商品在收到货后的15日之内出现质量问题，我们免费帮您换货或修理哦，来回邮费由乐销销负责。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "书籍使人们成为宇宙的主人。——巴甫连柯",
+                    "model_detail" : [
+                        {
+                            "text_key" : "哈哈，这个当然是可以的啦~",
+                            "value" : "修改地址是个麻烦事呢，会让我们感到压力山大哦，还请您在下单时确认好收货地址呢。若货已发出，能否修改地址还视快递公司而定呢。",
+                            "img" : "activity3",
+                            "type_name" : "如需修改地址，请联系掌柜哦。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "读一本好书，就是和许多高尚的人谈话。——歌德",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：进入商品详情页，找到该掌柜的名称",
+                            "value" : "",
+                            "img" : "activity4",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "也可以进入【我的订单 > 订单详情页】，找到掌柜名称",
+                            "value" : "",
+                            "img" : "banner1",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：返回到首页，点击【消息】按钮",
+                            "value" : "",
+                            "img" : "banner2",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：点击【搜索】按钮，进入搜索页",
+                            "value" : "",
+                            "img" : "banner3",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第四步：输入掌柜昵称进行搜索，选择相应掌柜即可聊天啦~",
+                            "value" : "",
+                            "img" : "banner4",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "书籍是人类知识的总统。——莎士比亚",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                }
+            ],
+            "user_avatar" : "avatar_01"
+        },
+        {
+            "nick_name" : "名言警句",
+            "prod_list" : [
+                {
+                    "title" : "最灵繁的人也看不见自己的背脊。——非洲",
+                    "model_detail" : [
+                        {
+                            "text_key" : "一般是2~7天到货哦~",
+                            "value" : "我的订单 > 待收货 > 点击相应订单（如下图所示）",
+                            "img" : "activity1",
+                            "type_name" : "若是新疆、西藏、内蒙古等偏远地区，到货时间为3~15天哦。您可以在订单详情页面查看物流信息哦。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "最困难的事情就是认识自己。——希腊",
+                    "model_detail" : [
+                        {
+                            "text_key" : "我们的商品属于赠品，若有质量问题可以免费换货哦，是不可以无理由退货的呢。",
+                            "value" : "具体的保修政策以商品的保修卡为准呢。",
+                            "img" : "activity2",
+                            "type_name" : "若您的商品在收到货后的15日之内出现质量问题，我们免费帮您换货或修理哦，来回邮费由乐销销负责。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "有勇气承担命运这才是英雄好汉。——黑塞",
+                    "model_detail" : [
+                        {
+                            "text_key" : "哈哈，这个当然是可以的啦~",
+                            "value" : "修改地址是个麻烦事呢，会让我们感到压力山大哦，还请您在下单时确认好收货地址呢。若货已发出，能否修改地址还视快递公司而定呢。",
+                            "img" : "activity3",
+                            "type_name" : "如需修改地址，请联系掌柜哦。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "与肝胆人共事，无字句处读书。——周恩来",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：进入商品详情页，找到该掌柜的名称",
+                            "value" : "",
+                            "img" : "activity4",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "也可以进入【我的订单 > 订单详情页】，找到掌柜名称",
+                            "value" : "",
+                            "img" : "banner1",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：返回到首页，点击【消息】按钮",
+                            "value" : "",
+                            "img" : "banner2",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：点击【搜索】按钮，进入搜索页",
+                            "value" : "",
+                            "img" : "banner3",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第四步：输入掌柜昵称进行搜索，选择相应掌柜即可聊天啦~",
+                            "value" : "",
+                            "img" : "banner4",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "阅读使人充实，会谈使人敏捷，写作使人精确。——培根",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "最大的骄傲于最大的自卑都表示心灵的最软弱无力。——斯宾诺莎",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "自知之明是最难得的知识。——西班牙",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "勇气通往天堂，怯懦通往地狱。——塞内加",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "有时候读书是一种巧妙地避开思考的方法。——赫尔普斯",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                }
+            ],
+            "user_avatar" : "avatar_02"
+        },
+        {
+            "nick_name" : "爱情名言名句",
+            "prod_list" : [
+                {
+                    "title" : "真实爱情的途径并不平坦。 —— 莎士比亚",
+                    "model_detail" : [
+                        {
+                            "text_key" : "一般是2~7天到货哦~",
+                            "value" : "我的订单 > 待收货 > 点击相应订单（如下图所示）",
+                            "img" : "activity1",
+                            "type_name" : "若是新疆、西藏、内蒙古等偏远地区，到货时间为3~15天哦。您可以在订单详情页面查看物流信息哦。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "爱情使人心的憧憬升华到至善之境。——但丁",
+                    "model_detail" : [
+                        {
+                            "text_key" : "我们的商品属于赠品，若有质量问题可以免费换货哦，是不可以无理由退货的呢。",
+                            "value" : "具体的保修政策以商品的保修卡为准呢。",
+                            "img" : "activity2",
+                            "type_name" : "若您的商品在收到货后的15日之内出现质量问题，我们免费帮您换货或修理哦，来回邮费由乐销销负责。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "谁口口声声说“我不爱”，谁就在爱。——奥维德",
+                    "model_detail" : [
+                        {
+                            "text_key" : "哈哈，这个当然是可以的啦~",
+                            "value" : "修改地址是个麻烦事呢，会让我们感到压力山大哦，还请您在下单时确认好收货地址呢。若货已发出，能否修改地址还视快递公司而定呢。",
+                            "img" : "activity3",
+                            "type_name" : "如需修改地址，请联系掌柜哦。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "爱情中的欢乐和痛苦是交替出现的。——乔·拜伦",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：进入商品详情页，找到该掌柜的名称",
+                            "value" : "",
+                            "img" : "activity4",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "也可以进入【我的订单 > 订单详情页】，找到掌柜名称",
+                            "value" : "",
+                            "img" : "banner1",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：返回到首页，点击【消息】按钮",
+                            "value" : "",
+                            "img" : "banner2",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：点击【搜索】按钮，进入搜索页",
+                            "value" : "",
+                            "img" : "banner3",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第四步：输入掌柜昵称进行搜索，选择相应掌柜即可聊天啦~",
+                            "value" : "",
+                            "img" : "banner4",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "谁按规定去爱，谁就得不到爱。——蒙田",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "忠诚的爱情充溢在我的心里，我无法估计自己享有的财富。——莎士比亚",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "没有爱情的人生是什么？是没有黎明的长夜。——彭斯",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "当贫穷从门外进来，爱情便从窗口溜走。——托·富勒",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "长相知，才能不相疑；不相疑，才能长相知。──曹禺",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "性爱按其本性来说就是排他的。──恩格斯",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "生命是花，爱是蜜。——法国",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "爱情和智慧，二者不可兼得。——培根",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "爱情的萌芽是智慧的结束。——布霍特",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "美能激发人的感情，爱情净化人的心灵。——约·德莱基",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "生命诚可贵，爱情价更高，若为自由故，二者皆可抛。——裴多菲",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "爱比杀人重罪更难隐藏；爱情的黑夜有中午的阳光。——莎士比亚",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "何为爱情？一个身子两颗心；何为友谊？两个身子一颗心。——约瑟夫·鲁",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                }
+            ],
+            "user_avatar" : "avatar_03"
+        },
+        {
+            "nick_name" : "伤感名言名句",
+            "prod_list" : [
+                {
+                    "title" : "明明靠得是种成年么近，心，去打离得是种成年么来起\n也许，我们终究不是一个能风界为的人",
+                    "model_detail" : [
+                        {
+                            "text_key" : "一般是2~7天到货哦~",
+                            "value" : "我的订单 > 待收货 > 点击相应订单（如下图所示）",
+                            "img" : "activity1",
+                            "type_name" : "若是新疆、西藏、内蒙古等偏远地区，到货时间为3~15天哦。您可以在订单详情页面查看物流信息哦。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "相思易成书，悲情多佳句\n我心照依旧，花开也生之情 ----泼墨画鈊《我的极品恋人》",
+                    "model_detail" : [
+                        {
+                            "text_key" : "我们的商品属于赠品，若有质量问题可以免费换货哦，是不可以无理由退货的呢。",
+                            "value" : "具体的保修政策以商品的保修卡为准呢。",
+                            "img" : "activity2",
+                            "type_name" : "若您的商品在收到货后的15日之内出现质量问题，我们免费帮您换货或修理哦，来回邮费由乐销销负责。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "喜欢一个人是宿命，即使注定是一大别生劫难，也在劫难逃",
+                    "model_detail" : [
+                        {
+                            "text_key" : "哈哈，这个当然是可以的啦~",
+                            "value" : "修改地址是个麻烦事呢，会让我们感到压力山大哦，还请您在下单时确认好收货地址呢。若货已发出，能否修改地址还视快递公司而定呢。",
+                            "img" : "activity3",
+                            "type_name" : "如需修改地址，请联系掌柜哦。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "思念盈中战任凄美，落笔欢喜伤悲，写成诗独自回味。花开留我沉醉，不种就想这香恋谁。",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：进入商品详情页，找到该掌柜的名称",
+                            "value" : "",
+                            "img" : "activity4",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "也可以进入【我的订单 > 订单详情页】，找到掌柜名称",
+                            "value" : "",
+                            "img" : "banner1",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：返回到首页，点击【消息】按钮",
+                            "value" : "",
+                            "img" : "banner2",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：点击【搜索】按钮，进入搜索页",
+                            "value" : "",
+                            "img" : "banner3",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第四步：输入掌柜昵称进行搜索，选择相应掌柜即可聊天啦~",
+                            "value" : "",
+                            "img" : "banner4",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "你的没去泪，可不可以当作是你对我的在乎",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "我和么她每不过殊途，同归于你的陌之如为向。",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "怕的不是你向作之不是我的，怕的是你已经成为十都人的。",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "对的，我上向去和家，即使赴汤蹈火\n错的，我上向并道弃，即使心如刀割",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "我赠你玫瑰，你置之不理，你送我罂粟，我甘之若饮",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                }
+            ],
+            "user_avatar" : "avatar_04"
+        },
+        {
+            "nick_name" : "开心励志名言",
+            "prod_list" : [
+                {
+                    "title" : "养心会使身体得到调整，运动能使精神得到休息，养生要有豁达乐观的心态，健身需要坚韧不拔的意志！",
+                    "model_detail" : [
+                        {
+                            "text_key" : "一般是2~7天到货哦~",
+                            "value" : "我的订单 > 待收货 > 点击相应订单（如下图所示）",
+                            "img" : "activity1",
+                            "type_name" : "若是新疆、西藏、内蒙古等偏远地区，到货时间为3~15天哦。您可以在订单详情页面查看物流信息哦。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "所谓快乐，是指身体的无痛苦和灵魂的无纷扰。",
+                    "model_detail" : [
+                        {
+                            "text_key" : "一般是2~7天到货哦~",
+                            "value" : "我的订单 > 待收货 > 点击相应订单（如下图所示）",
+                            "img" : "activity1",
+                            "type_name" : "若是新疆、西藏、内蒙古等偏远地区，到货时间为3~15天哦。您可以在订单详情页面查看物流信息哦。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "世界上没有比快乐更能使人美丽的化妆品。",
+                    "model_detail" : [
+                        {
+                            "text_key" : "一般是2~7天到货哦~",
+                            "value" : "我的订单 > 待收货 > 点击相应订单（如下图所示）",
+                            "img" : "activity1",
+                            "type_name" : "若是新疆、西藏、内蒙古等偏远地区，到货时间为3~15天哦。您可以在订单详情页面查看物流信息哦。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "快乐之道尽可能地使自己的兴趣宽广，并对引起兴趣的人和事，不做敌对的反应，而做友善的反应。",
+                    "model_detail" : [
+                        {
+                            "text_key" : "我们的商品属于赠品，若有质量问题可以免费换货哦，是不可以无理由退货的呢。",
+                            "value" : "具体的保修政策以商品的保修卡为准呢。",
+                            "img" : "activity2",
+                            "type_name" : "若您的商品在收到货后的15日之内出现质量问题，我们免费帮您换货或修理哦，来回邮费由乐销销负责。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "安人的历程，是由开心而交心，藉交心而共同关心，然后产生同心的一连串心与心的变化。",
+                    "model_detail" : [
+                        {
+                            "text_key" : "哈哈，这个当然是可以的啦~",
+                            "value" : "修改地址是个麻烦事呢，会让我们感到压力山大哦，还请您在下单时确认好收货地址呢。若货已发出，能否修改地址还视快递公司而定呢。",
+                            "img" : "activity3",
+                            "type_name" : "如需修改地址，请联系掌柜哦。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "真正的笑，就是对生活乐观，对工作快乐，对事业兴奋。",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：进入商品详情页，找到该掌柜的名称",
+                            "value" : "",
+                            "img" : "activity4",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "也可以进入【我的订单 > 订单详情页】，找到掌柜名称",
+                            "value" : "",
+                            "img" : "banner1",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：返回到首页，点击【消息】按钮",
+                            "value" : "",
+                            "img" : "banner2",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：点击【搜索】按钮，进入搜索页",
+                            "value" : "",
+                            "img" : "banner3",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第四步：输入掌柜昵称进行搜索，选择相应掌柜即可聊天啦~",
+                            "value" : "",
+                            "img" : "banner4",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "所谓内心的快乐，是一个人过着健全的、正常的、和谐的生活所感到的快乐。",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                }
+            ],
+            "user_avatar" : "avatar_05"
+        },
+        {
+            "nick_name" : "道歉的名言警句",
+            "prod_list" : [
+                {
+                    "title" : "良心是由人的知识和全部生活方式来决定的。 —— 马克思",
+                    "model_detail" : [
+                        {
+                            "text_key" : "一般是2~7天到货哦~",
+                            "value" : "我的订单 > 待收货 > 点击相应订单（如下图所示）",
+                            "img" : "activity1",
+                            "type_name" : "若是新疆、西藏、内蒙古等偏远地区，到货时间为3~15天哦。您可以在订单详情页面查看物流信息哦。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "我们应该注意自己不用言语去伤害别的同志，但是，当别人用语言来伤害自己的 \n时候，也应该受得起。 —— 刘少奇",
+                    "model_detail" : [
+                        {
+                            "text_key" : "我们的商品属于赠品，若有质量问题可以免费换货哦，是不可以无理由退货的呢。",
+                            "value" : "具体的保修政策以商品的保修卡为准呢。",
+                            "img" : "activity2",
+                            "type_name" : "若您的商品在收到货后的15日之内出现质量问题，我们免费帮您换货或修理哦，来回邮费由乐销销负责。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "付款成功后可以修改收货地址吗？不论你是一个男子还是一个女人，待人温和宽大才配得上人的名称。一个人的真 \n正的英勇果断，决不等于用拳头制止别人发言。 —— 萨迪",
+                    "model_detail" : [
+                        {
+                            "text_key" : "哈哈，这个当然是可以的啦~",
+                            "value" : "修改地址是个麻烦事呢，会让我们感到压力山大哦，还请您在下单时确认好收货地址呢。若货已发出，能否修改地址还视快递公司而定呢。",
+                            "img" : "activity3",
+                            "type_name" : "如需修改地址，请联系掌柜哦。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "脾气暴躁是人类较为卑劣的天性之一，人要是发脾气就等于在人类进步的阶梯上 \n倒退了一步。 —— 达尔文",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：进入商品详情页，找到该掌柜的名称",
+                            "value" : "",
+                            "img" : "activity4",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "也可以进入【我的订单 > 订单详情页】，找到掌柜名称",
+                            "value" : "",
+                            "img" : "banner1",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：返回到首页，点击【消息】按钮",
+                            "value" : "",
+                            "img" : "banner2",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：点击【搜索】按钮，进入搜索页",
+                            "value" : "",
+                            "img" : "banner3",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第四步：输入掌柜昵称进行搜索，选择相应掌柜即可聊天啦~",
+                            "value" : "",
+                            "img" : "banner4",
+                            "type_name" : ""
+                        }
+                    ]
+                }
+            ],
+            "user_avatar" : "avatar_06"
+        },
+        {
+            "nick_name" : "表白名言名句",
+            "prod_list" : [
+                {
+                    "title" : "我的感情像一杯酒。第一个人碰洒了，还剩一半。我把杯子扶起来，兑满，留给第二个人。他又碰洒了。我还是扶起，兑满，留给第三个人。 感情是越来越淡，但是他们每个人，都获得的是我完整的，全部的，一杯酒。 幸还是不幸：她还是在相信感情，和爱。 ----七堇年。",
+                    "model_detail" : [
+                        {
+                            "text_key" : "一般是2~7天到货哦~",
+                            "value" : "我的订单 > 待收货 > 点击相应订单（如下图所示）",
+                            "img" : "activity1",
+                            "type_name" : "若是新疆、西藏、内蒙古等偏远地区，到货时间为3~15天哦。您可以在订单详情页面查看物流信息哦。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "我们是相互交错的经纬，被岁月织成锦缎，与虚无的结局丝丝入扣。只能冷暖自知，再自知，再自知，自知到灵魂的深处去孑然独立，在这漫长的路途中一直跑下去，跑向无谓的投奔。 ----七堇年",
+                    "model_detail" : [
+                        {
+                            "text_key" : "我们的商品属于赠品，若有质量问题可以免费换货哦，是不可以无理由退货的呢。",
+                            "value" : "具体的保修政策以商品的保修卡为准呢。",
+                            "img" : "activity2",
+                            "type_name" : "若您的商品在收到货后的15日之内出现质量问题，我们免费帮您换货或修理哦，来回邮费由乐销销负责。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "爱的起源有两种：要么我愿意，要么试试看。爱的结束有两种：要么没办法，要么不合适。排列组合下来，最解脱的是：试试看结果不合适。最难过的是：我愿意然而没办法。 ----张嘉佳",
+                    "model_detail" : [
+                        {
+                            "text_key" : "哈哈，这个当然是可以的啦~",
+                            "value" : "修改地址是个麻烦事呢，会让我们感到压力山大哦，还请您在下单时确认好收货地址呢。若货已发出，能否修改地址还视快递公司而定呢。",
+                            "img" : "activity3",
+                            "type_name" : "如需修改地址，请联系掌柜哦。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "你为别人拼过命吗？就像走完一条漫长的隧道。我有一杯酒，敬给这一场大梦，相见时不远万里，分别时各奔东西。然而梦里有人说，声音轻柔而坚定，她说，让我留在你身边。 ----张嘉佳",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：进入商品详情页，找到该掌柜的名称",
+                            "value" : "",
+                            "img" : "activity4",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "也可以进入【我的订单 > 订单详情页】，找到掌柜名称",
+                            "value" : "",
+                            "img" : "banner1",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：返回到首页，点击【消息】按钮",
+                            "value" : "",
+                            "img" : "banner2",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：点击【搜索】按钮，进入搜索页",
+                            "value" : "",
+                            "img" : "banner3",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第四步：输入掌柜昵称进行搜索，选择相应掌柜即可聊天啦~",
+                            "value" : "",
+                            "img" : "banner4",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "我再也不想对别人提起自己的过往，那些挣扎在梦魇中的寂寞，荒芜，还是交给时间，慢慢淡漠。 ----几米",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                }
+            ],
+            "user_avatar" : "avatar_07"
+        },
+        {
+            "nick_name" : "悲伤名言名句",
+            "prod_list" : [
+                {
+                    "title" : "如果爱不曾来过，如果梦不曾碎过，如果心不曾疼过，那么我，是否还是你认识的我？",
+                    "model_detail" : [
+                        {
+                            "text_key" : "一般是2~7天到货哦~",
+                            "value" : "我的订单 > 待收货 > 点击相应订单（如下图所示）",
+                            "img" : "activity1",
+                            "type_name" : "若是新疆、西藏、内蒙古等偏远地区，到货时间为3~15天哦。您可以在订单详情页面查看物流信息哦。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "有些事情还没讲完那就算了吧。每个人都是一个国王，在自己的世界里纵横跋扈，你不要听我的，但你也不要让我听你的。",
+                    "model_detail" : [
+                        {
+                            "text_key" : "我们的商品属于赠品，若有质量问题可以免费换货哦，是不可以无理由退货的呢。",
+                            "value" : "具体的保修政策以商品的保修卡为准呢。",
+                            "img" : "activity2",
+                            "type_name" : "若您的商品在收到货后的15日之内出现质量问题，我们免费帮您换货或修理哦，来回邮费由乐销销负责。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "时间产生的不是变化，而是更长久的牵挂与思念。",
+                    "model_detail" : [
+                        {
+                            "text_key" : "哈哈，这个当然是可以的啦~",
+                            "value" : "修改地址是个麻烦事呢，会让我们感到压力山大哦，还请您在下单时确认好收货地址呢。若货已发出，能否修改地址还视快递公司而定呢。",
+                            "img" : "activity3",
+                            "type_name" : "如需修改地址，请联系掌柜哦。"
+                        }
+                    ]
+                },
+                {
+                    "title" : "一个人如果不能学会遗忘，那将是很痛苦的事，别再自寻烦恼，快把痛苦的事给忘了吧！",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：进入商品详情页，找到该掌柜的名称",
+                            "value" : "",
+                            "img" : "activity4",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "也可以进入【我的订单 > 订单详情页】，找到掌柜名称",
+                            "value" : "",
+                            "img" : "banner1",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：返回到首页，点击【消息】按钮",
+                            "value" : "",
+                            "img" : "banner2",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：点击【搜索】按钮，进入搜索页",
+                            "value" : "",
+                            "img" : "banner3",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第四步：输入掌柜昵称进行搜索，选择相应掌柜即可聊天啦~",
+                            "value" : "",
+                            "img" : "banner4",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "我就像现在一样看着你微笑，沉默，得意，失落，于是我跟着你开心也跟着你难过，只是我一直站在现在而你却永远停留过去。",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "孤单不是与生俱来，而是由你爱上一个人的那一刻开始。",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "风吹起如花般破碎的流年，而你的笑容摇晃摇晃，成为我命途中最美的点缀，看天，看雪，看季节深深的暗影。",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                },
+                {
+                    "title" : "凡世的喧嚣和明亮，世俗的快乐和幸福，如同清亮的溪涧，在风里，在我眼前，汨汨而过，温暖如同泉水一样涌出来，我没有奢望，我只要你快乐，不要哀伤。",
+                    "model_detail" : [
+                        {
+                            "text_key" : "第一步：在【首页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner5",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第二步：进入【个人中心页】点击您的头像",
+                            "value" : "",
+                            "img" : "banner6",
+                            "type_name" : ""
+                        },
+                        {
+                            "text_key" : "第三步：选择拍照或相册即可修改图像啦",
+                            "value" : "",
+                            "img" : "",
+                            "type_name" : ""
+                        }
+                    ]
+                }
+            ],
+            "user_avatar" : "avatar_08"
+        }
+    ]
+}

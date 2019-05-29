@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		362683C8229E0E57006938A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 362683C7229E0E57006938A0 /* Assets.xcassets */; };
+		362683CB229E0E57006938A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 362683C9229E0E57006938A0 /* LaunchScreen.storyboard */; };
+		362683CE229E0E57006938A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 362683CD229E0E57006938A0 /* main.m */; };
+		362683D8229E0E57006938A0 /* TFY_SimplifytableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 362683D7229E0E57006938A0 /* TFY_SimplifytableViewTests.m */; };
+		362683E3229E0E57006938A0 /* TFY_SimplifytableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 362683E2229E0E57006938A0 /* TFY_SimplifytableViewUITests.m */; };
+		362683F8229E0F36006938A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 362683F6229E0F36006938A0 /* AppDelegate.m */; };
+		36268425229E4637006938A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268422229E4637006938A0 /* ViewController.m */; };
+		36268428229E46A4006938A0 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268427229E46A4006938A0 /* ViewModel.m */; };
+		3626842B229E46BE006938A0 /* ViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3626842A229E46BE006938A0 /* ViewTableViewCell.m */; };
+		3626842E229E46D3006938A0 /* ViewHerderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3626842D229E46D3006938A0 /* ViewHerderView.m */; };
+		36268431229E46E3006938A0 /* ViewFooderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268430229E46E3006938A0 /* ViewFooderView.m */; };
+		36268433229E517F006938A0 /* ViewData.json in Resources */ = {isa = PBXBuildFile; fileRef = 36268432229E517F006938A0 /* ViewData.json */; };
+		36268436229E6515006938A0 /* ModeldetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268435229E6515006938A0 /* ModeldetailController.m */; };
+		36268439229E6B7A006938A0 /* ModeldetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268438229E6B7A006938A0 /* ModeldetailTableViewCell.m */; };
+		36268448229E7665006938A0 /* NSObject+Associated.m in Sources */ = {isa = PBXBuildFile; fileRef = 3626843B229E7665006938A0 /* NSObject+Associated.m */; };
+		36268449229E7665006938A0 /* TFY_SectionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3626843F229E7665006938A0 /* TFY_SectionData.m */; };
+		3626844A229E7665006938A0 /* TFY_BaseTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268440229E7665006938A0 /* TFY_BaseTableViewDataSource.m */; };
+		3626844B229E7665006938A0 /* UITableView+TFY_TableViewMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268441229E7665006938A0 /* UITableView+TFY_TableViewMaker.m */; };
+		3626844C229E7665006938A0 /* UITableViewCell+TFY_TableViewMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268442229E7665006938A0 /* UITableViewCell+TFY_TableViewMaker.m */; };
+		3626844D229E7665006938A0 /* TFY_CellData.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268443229E7665006938A0 /* TFY_CellData.m */; };
+		3626844E229E7665006938A0 /* TFY_TableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268447229E7665006938A0 /* TFY_TableData.m */; };
+		C4836CBC0C3B81944CA91290 /* libPods-TFY_SimplifytableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1921EE7BC7D1786041EBF486 /* libPods-TFY_SimplifytableView.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		362683D4229E0E57006938A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 362683B3229E0E55006938A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 362683BA229E0E55006938A0;
+			remoteInfo = TFY_SimplifytableView;
+		};
+		362683DF229E0E57006938A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 362683B3229E0E55006938A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 362683BA229E0E55006938A0;
+			remoteInfo = TFY_SimplifytableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1921EE7BC7D1786041EBF486 /* libPods-TFY_SimplifytableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TFY_SimplifytableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		362683BB229E0E55006938A0 /* TFY_SimplifytableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFY_SimplifytableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		362683C7229E0E57006938A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		362683CA229E0E57006938A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		362683CC229E0E57006938A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		362683CD229E0E57006938A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		362683D3229E0E57006938A0 /* TFY_SimplifytableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFY_SimplifytableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		362683D7229E0E57006938A0 /* TFY_SimplifytableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFY_SimplifytableViewTests.m; sourceTree = "<group>"; };
+		362683D9229E0E57006938A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		362683DE229E0E57006938A0 /* TFY_SimplifytableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFY_SimplifytableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		362683E2229E0E57006938A0 /* TFY_SimplifytableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFY_SimplifytableViewUITests.m; sourceTree = "<group>"; };
+		362683E4229E0E57006938A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		362683F5229E0F36006938A0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		362683F6229E0F36006938A0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		362683FB229E1229006938A0 /* TFY_TableViewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_TableViewHeader.h; sourceTree = "<group>"; };
+		3626841E229E45B9006938A0 /* TFY_TableViewPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_TableViewPrefixHeader.pch; sourceTree = "<group>"; };
+		36268422229E4637006938A0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		36268423229E4637006938A0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		36268426229E46A4006938A0 /* ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		36268427229E46A4006938A0 /* ViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		36268429229E46BE006938A0 /* ViewTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewTableViewCell.h; sourceTree = "<group>"; };
+		3626842A229E46BE006938A0 /* ViewTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewTableViewCell.m; sourceTree = "<group>"; };
+		3626842C229E46D3006938A0 /* ViewHerderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewHerderView.h; sourceTree = "<group>"; };
+		3626842D229E46D3006938A0 /* ViewHerderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewHerderView.m; sourceTree = "<group>"; };
+		3626842F229E46E3006938A0 /* ViewFooderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewFooderView.h; sourceTree = "<group>"; };
+		36268430229E46E3006938A0 /* ViewFooderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewFooderView.m; sourceTree = "<group>"; };
+		36268432229E517F006938A0 /* ViewData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ViewData.json; sourceTree = "<group>"; };
+		36268434229E6515006938A0 /* ModeldetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModeldetailController.h; sourceTree = "<group>"; };
+		36268435229E6515006938A0 /* ModeldetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModeldetailController.m; sourceTree = "<group>"; };
+		36268437229E6B7A006938A0 /* ModeldetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModeldetailTableViewCell.h; sourceTree = "<group>"; };
+		36268438229E6B7A006938A0 /* ModeldetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModeldetailTableViewCell.m; sourceTree = "<group>"; };
+		3626843A229E7665006938A0 /* TFY_SectionData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_SectionData.h; sourceTree = "<group>"; };
+		3626843B229E7665006938A0 /* NSObject+Associated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Associated.m"; sourceTree = "<group>"; };
+		3626843C229E7665006938A0 /* UITableView+TFY_TableViewMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+TFY_TableViewMaker.h"; sourceTree = "<group>"; };
+		3626843D229E7665006938A0 /* TFY_TableData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_TableData.h; sourceTree = "<group>"; };
+		3626843E229E7665006938A0 /* TFY_BaseTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_BaseTableViewDataSource.h; sourceTree = "<group>"; };
+		3626843F229E7665006938A0 /* TFY_SectionData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_SectionData.m; sourceTree = "<group>"; };
+		36268440229E7665006938A0 /* TFY_BaseTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_BaseTableViewDataSource.m; sourceTree = "<group>"; };
+		36268441229E7665006938A0 /* UITableView+TFY_TableViewMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+TFY_TableViewMaker.m"; sourceTree = "<group>"; };
+		36268442229E7665006938A0 /* UITableViewCell+TFY_TableViewMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+TFY_TableViewMaker.m"; sourceTree = "<group>"; };
+		36268443229E7665006938A0 /* TFY_CellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_CellData.m; sourceTree = "<group>"; };
+		36268444229E7665006938A0 /* TFY_CellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_CellData.h; sourceTree = "<group>"; };
+		36268445229E7665006938A0 /* UITableViewCell+TFY_TableViewMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+TFY_TableViewMaker.h"; sourceTree = "<group>"; };
+		36268446229E7665006938A0 /* NSObject+Associated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Associated.h"; sourceTree = "<group>"; };
+		36268447229E7665006938A0 /* TFY_TableData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_TableData.m; sourceTree = "<group>"; };
+		673D758AA2272999644EF694 /* Pods-TFY_SimplifytableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFY_SimplifytableView.debug.xcconfig"; path = "Target Support Files/Pods-TFY_SimplifytableView/Pods-TFY_SimplifytableView.debug.xcconfig"; sourceTree = "<group>"; };
+		8BBCAAC1A1EB9904AFA636CD /* Pods-TFY_SimplifytableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFY_SimplifytableView.release.xcconfig"; path = "Target Support Files/Pods-TFY_SimplifytableView/Pods-TFY_SimplifytableView.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		362683B8229E0E55006938A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4836CBC0C3B81944CA91290 /* libPods-TFY_SimplifytableView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362683D0229E0E57006938A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362683DB229E0E57006938A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		362683B2229E0E55006938A0 = {
+			isa = PBXGroup;
+			children = (
+				362683BD229E0E55006938A0 /* TFY_SimplifytableView */,
+				362683D6229E0E57006938A0 /* TFY_SimplifytableViewTests */,
+				362683E1229E0E57006938A0 /* TFY_SimplifytableViewUITests */,
+				362683BC229E0E55006938A0 /* Products */,
+				A76EF5B474BBAE5434E0B597 /* Pods */,
+				CE1A62B77401F6554CE94266 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		362683BC229E0E55006938A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				362683BB229E0E55006938A0 /* TFY_SimplifytableView.app */,
+				362683D3229E0E57006938A0 /* TFY_SimplifytableViewTests.xctest */,
+				362683DE229E0E57006938A0 /* TFY_SimplifytableViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		362683BD229E0E55006938A0 /* TFY_SimplifytableView */ = {
+			isa = PBXGroup;
+			children = (
+				3626841D229E459A006938A0 /* PCH */,
+				362683F4229E0F36006938A0 /* AppDelegate */,
+				362683F1229E0F36006938A0 /* Controller */,
+				362683F0229E0F36006938A0 /* TFY_SimplifytableViewKit */,
+				362683C7229E0E57006938A0 /* Assets.xcassets */,
+				362683C9229E0E57006938A0 /* LaunchScreen.storyboard */,
+				362683CC229E0E57006938A0 /* Info.plist */,
+				362683CD229E0E57006938A0 /* main.m */,
+			);
+			path = TFY_SimplifytableView;
+			sourceTree = "<group>";
+		};
+		362683D6229E0E57006938A0 /* TFY_SimplifytableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				362683D7229E0E57006938A0 /* TFY_SimplifytableViewTests.m */,
+				362683D9229E0E57006938A0 /* Info.plist */,
+			);
+			path = TFY_SimplifytableViewTests;
+			sourceTree = "<group>";
+		};
+		362683E1229E0E57006938A0 /* TFY_SimplifytableViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				362683E2229E0E57006938A0 /* TFY_SimplifytableViewUITests.m */,
+				362683E4229E0E57006938A0 /* Info.plist */,
+			);
+			path = TFY_SimplifytableViewUITests;
+			sourceTree = "<group>";
+		};
+		362683F0229E0F36006938A0 /* TFY_SimplifytableViewKit */ = {
+			isa = PBXGroup;
+			children = (
+				362683FB229E1229006938A0 /* TFY_TableViewHeader.h */,
+				36268446229E7665006938A0 /* NSObject+Associated.h */,
+				3626843B229E7665006938A0 /* NSObject+Associated.m */,
+				3626843E229E7665006938A0 /* TFY_BaseTableViewDataSource.h */,
+				36268440229E7665006938A0 /* TFY_BaseTableViewDataSource.m */,
+				36268444229E7665006938A0 /* TFY_CellData.h */,
+				36268443229E7665006938A0 /* TFY_CellData.m */,
+				3626843A229E7665006938A0 /* TFY_SectionData.h */,
+				3626843F229E7665006938A0 /* TFY_SectionData.m */,
+				3626843D229E7665006938A0 /* TFY_TableData.h */,
+				36268447229E7665006938A0 /* TFY_TableData.m */,
+				3626843C229E7665006938A0 /* UITableView+TFY_TableViewMaker.h */,
+				36268441229E7665006938A0 /* UITableView+TFY_TableViewMaker.m */,
+				36268445229E7665006938A0 /* UITableViewCell+TFY_TableViewMaker.h */,
+				36268442229E7665006938A0 /* UITableViewCell+TFY_TableViewMaker.m */,
+			);
+			path = TFY_SimplifytableViewKit;
+			sourceTree = "<group>";
+		};
+		362683F1229E0F36006938A0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				36268420229E4637006938A0 /* Cell */,
+				3626841F229E4637006938A0 /* Model */,
+				36268421229E4637006938A0 /* VC */,
+				36268424229E4637006938A0 /* View */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		362683F4229E0F36006938A0 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				362683F5229E0F36006938A0 /* AppDelegate.h */,
+				362683F6229E0F36006938A0 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		3626841D229E459A006938A0 /* PCH */ = {
+			isa = PBXGroup;
+			children = (
+				3626841E229E45B9006938A0 /* TFY_TableViewPrefixHeader.pch */,
+			);
+			path = PCH;
+			sourceTree = "<group>";
+		};
+		3626841F229E4637006938A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36268432229E517F006938A0 /* ViewData.json */,
+				36268426229E46A4006938A0 /* ViewModel.h */,
+				36268427229E46A4006938A0 /* ViewModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		36268420229E4637006938A0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				36268429229E46BE006938A0 /* ViewTableViewCell.h */,
+				3626842A229E46BE006938A0 /* ViewTableViewCell.m */,
+				36268437229E6B7A006938A0 /* ModeldetailTableViewCell.h */,
+				36268438229E6B7A006938A0 /* ModeldetailTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		36268421229E4637006938A0 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				36268423229E4637006938A0 /* ViewController.h */,
+				36268422229E4637006938A0 /* ViewController.m */,
+				36268434229E6515006938A0 /* ModeldetailController.h */,
+				36268435229E6515006938A0 /* ModeldetailController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		36268424229E4637006938A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3626842C229E46D3006938A0 /* ViewHerderView.h */,
+				3626842D229E46D3006938A0 /* ViewHerderView.m */,
+				3626842F229E46E3006938A0 /* ViewFooderView.h */,
+				36268430229E46E3006938A0 /* ViewFooderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A76EF5B474BBAE5434E0B597 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				673D758AA2272999644EF694 /* Pods-TFY_SimplifytableView.debug.xcconfig */,
+				8BBCAAC1A1EB9904AFA636CD /* Pods-TFY_SimplifytableView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE1A62B77401F6554CE94266 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1921EE7BC7D1786041EBF486 /* libPods-TFY_SimplifytableView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		362683BA229E0E55006938A0 /* TFY_SimplifytableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 362683E7229E0E57006938A0 /* Build configuration list for PBXNativeTarget "TFY_SimplifytableView" */;
+			buildPhases = (
+				EB6055CD10356B57B4A02A83 /* [CP] Check Pods Manifest.lock */,
+				362683B7229E0E55006938A0 /* Sources */,
+				362683B8229E0E55006938A0 /* Frameworks */,
+				362683B9229E0E55006938A0 /* Resources */,
+				202ADDA8CADBE493C727C54D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TFY_SimplifytableView;
+			productName = TFY_SimplifytableView;
+			productReference = 362683BB229E0E55006938A0 /* TFY_SimplifytableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		362683D2229E0E57006938A0 /* TFY_SimplifytableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 362683EA229E0E57006938A0 /* Build configuration list for PBXNativeTarget "TFY_SimplifytableViewTests" */;
+			buildPhases = (
+				362683CF229E0E57006938A0 /* Sources */,
+				362683D0229E0E57006938A0 /* Frameworks */,
+				362683D1229E0E57006938A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				362683D5229E0E57006938A0 /* PBXTargetDependency */,
+			);
+			name = TFY_SimplifytableViewTests;
+			productName = TFY_SimplifytableViewTests;
+			productReference = 362683D3229E0E57006938A0 /* TFY_SimplifytableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		362683DD229E0E57006938A0 /* TFY_SimplifytableViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 362683ED229E0E57006938A0 /* Build configuration list for PBXNativeTarget "TFY_SimplifytableViewUITests" */;
+			buildPhases = (
+				362683DA229E0E57006938A0 /* Sources */,
+				362683DB229E0E57006938A0 /* Frameworks */,
+				362683DC229E0E57006938A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				362683E0229E0E57006938A0 /* PBXTargetDependency */,
+			);
+			name = TFY_SimplifytableViewUITests;
+			productName = TFY_SimplifytableViewUITests;
+			productReference = 362683DE229E0E57006938A0 /* TFY_SimplifytableViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		362683B3229E0E55006938A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "恋机科技";
+				TargetAttributes = {
+					362683BA229E0E55006938A0 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					362683D2229E0E57006938A0 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 362683BA229E0E55006938A0;
+					};
+					362683DD229E0E57006938A0 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 362683BA229E0E55006938A0;
+					};
+				};
+			};
+			buildConfigurationList = 362683B6229E0E55006938A0 /* Build configuration list for PBXProject "TFY_SimplifytableView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 362683B2229E0E55006938A0;
+			productRefGroup = 362683BC229E0E55006938A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				362683BA229E0E55006938A0 /* TFY_SimplifytableView */,
+				362683D2229E0E57006938A0 /* TFY_SimplifytableViewTests */,
+				362683DD229E0E57006938A0 /* TFY_SimplifytableViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		362683B9229E0E55006938A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362683CB229E0E57006938A0 /* LaunchScreen.storyboard in Resources */,
+				362683C8229E0E57006938A0 /* Assets.xcassets in Resources */,
+				36268433229E517F006938A0 /* ViewData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362683D1229E0E57006938A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362683DC229E0E57006938A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		202ADDA8CADBE493C727C54D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TFY_SimplifytableView/Pods-TFY_SimplifytableView-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TFY_SimplifytableView/Pods-TFY_SimplifytableView-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TFY_SimplifytableView/Pods-TFY_SimplifytableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB6055CD10356B57B4A02A83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TFY_SimplifytableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		362683B7229E0E55006938A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36268439229E6B7A006938A0 /* ModeldetailTableViewCell.m in Sources */,
+				36268431229E46E3006938A0 /* ViewFooderView.m in Sources */,
+				3626844C229E7665006938A0 /* UITableViewCell+TFY_TableViewMaker.m in Sources */,
+				3626842E229E46D3006938A0 /* ViewHerderView.m in Sources */,
+				36268425229E4637006938A0 /* ViewController.m in Sources */,
+				3626842B229E46BE006938A0 /* ViewTableViewCell.m in Sources */,
+				3626844B229E7665006938A0 /* UITableView+TFY_TableViewMaker.m in Sources */,
+				36268448229E7665006938A0 /* NSObject+Associated.m in Sources */,
+				36268428229E46A4006938A0 /* ViewModel.m in Sources */,
+				3626844A229E7665006938A0 /* TFY_BaseTableViewDataSource.m in Sources */,
+				3626844D229E7665006938A0 /* TFY_CellData.m in Sources */,
+				36268436229E6515006938A0 /* ModeldetailController.m in Sources */,
+				362683CE229E0E57006938A0 /* main.m in Sources */,
+				36268449229E7665006938A0 /* TFY_SectionData.m in Sources */,
+				3626844E229E7665006938A0 /* TFY_TableData.m in Sources */,
+				362683F8229E0F36006938A0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362683CF229E0E57006938A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362683D8229E0E57006938A0 /* TFY_SimplifytableViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362683DA229E0E57006938A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362683E3229E0E57006938A0 /* TFY_SimplifytableViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		362683D5229E0E57006938A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 362683BA229E0E55006938A0 /* TFY_SimplifytableView */;
+			targetProxy = 362683D4229E0E57006938A0 /* PBXContainerItemProxy */;
+		};
+		362683E0229E0E57006938A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 362683BA229E0E55006938A0 /* TFY_SimplifytableView */;
+			targetProxy = 362683DF229E0E57006938A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		362683C9229E0E57006938A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				362683CA229E0E57006938A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		362683E5229E0E57006938A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		362683E6229E0E57006938A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		362683E8229E0E57006938A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 673D758AA2272999644EF694 /* Pods-TFY_SimplifytableView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SEXG86U92J;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TFY_SimplifytableView/PCH/TFY_TableViewPrefixHeader.pch;
+				INFOPLIST_FILE = TFY_SimplifytableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LianQianLianjiCompany.TFY-SimplifytableView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		362683E9229E0E57006938A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BBCAAC1A1EB9904AFA636CD /* Pods-TFY_SimplifytableView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SEXG86U92J;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TFY_SimplifytableView/PCH/TFY_TableViewPrefixHeader.pch;
+				INFOPLIST_FILE = TFY_SimplifytableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LianQianLianjiCompany.TFY-SimplifytableView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		362683EB229E0E57006938A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SEXG86U92J;
+				INFOPLIST_FILE = TFY_SimplifytableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LianQianLianjiCompany.TFY-SimplifytableViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFY_SimplifytableView.app/TFY_SimplifytableView";
+			};
+			name = Debug;
+		};
+		362683EC229E0E57006938A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SEXG86U92J;
+				INFOPLIST_FILE = TFY_SimplifytableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LianQianLianjiCompany.TFY-SimplifytableViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFY_SimplifytableView.app/TFY_SimplifytableView";
+			};
+			name = Release;
+		};
+		362683EE229E0E57006938A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SEXG86U92J;
+				INFOPLIST_FILE = TFY_SimplifytableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LianQianLianjiCompany.TFY-SimplifytableViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TFY_SimplifytableView;
+			};
+			name = Debug;
+		};
+		362683EF229E0E57006938A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SEXG86U92J;
+				INFOPLIST_FILE = TFY_SimplifytableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LianQianLianjiCompany.TFY-SimplifytableViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TFY_SimplifytableView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		362683B6229E0E55006938A0 /* Build configuration list for PBXProject "TFY_SimplifytableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				362683E5229E0E57006938A0 /* Debug */,
+				362683E6229E0E57006938A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		362683E7229E0E57006938A0 /* Build configuration list for PBXNativeTarget "TFY_SimplifytableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				362683E8229E0E57006938A0 /* Debug */,
+				362683E9229E0E57006938A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		362683EA229E0E57006938A0 /* Build configuration list for PBXNativeTarget "TFY_SimplifytableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				362683EB229E0E57006938A0 /* Debug */,
+				362683EC229E0E57006938A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		362683ED229E0E57006938A0 /* Build configuration list for PBXNativeTarget "TFY_SimplifytableViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				362683EE229E0E57006938A0 /* Debug */,
+				362683EF229E0E57006938A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 362683B3229E0E55006938A0 /* Project object */;
+}
