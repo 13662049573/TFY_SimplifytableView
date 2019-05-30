@@ -472,7 +472,7 @@
     };
 }
 
-- (TFY_TableViewMaker * (^)(CGFloat))tfy_height {
+- (TFY_TableViewMaker * (^)(CGFloat))tfy_heightMaker {
     return ^TFY_TableViewMaker *(CGFloat height) {
         self.tableData.rowHeight = height;
         self.tableData.tableView.rowHeight = height;

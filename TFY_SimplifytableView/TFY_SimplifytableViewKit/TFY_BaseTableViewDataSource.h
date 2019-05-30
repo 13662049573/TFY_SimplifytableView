@@ -207,11 +207,11 @@ typedef void (^CellMakeBlock)(TFY_CellMaker * _Nonnull cellMaker);
  */
 @property(nonatomic, copy) GetDataBlock getDataBlock;
 /**
- *
+ *  制作一个cell
  */
 - (void)doCellMakerBlock;
 /**
- *
+ *  制作一个cell 的回调
  */
 - (void)doAddCellMakerBlock:(CellMakeBlock)cellMakerBlock;
 
@@ -219,136 +219,136 @@ typedef void (^CellMakeBlock)(TFY_CellMaker * _Nonnull cellMaker);
 
 @interface TFY_SectionMaker : NSObject
 /**
- *
+ *  组数初始化
  */
 - (instancetype)initWithTableView:(UITableView *)tableView;
 /**
- *
+ *  数据
  */
 - (TFY_SectionMaker * (^)(GetDataBlock))tfy_dataArr;
 /**
- *
+ *   返回第几组
  */
 - (NSUInteger)section;
 /**
- *
+ *  头部参数字符串
  */
 - (TFY_SectionMaker * (^)(NSString *))tfy_headerTitle;
 /**
- *
+ *  尾部参数字符串
  */
 - (TFY_SectionMaker * (^)(NSString *))tfy_footerTitle;
 /**
- *
+ *   头部View
  */
 - (TFY_SectionMaker * (^)(UIView * (^)(void)))tfy_headerView;
 /**
- *
+ *  尾部VIIEW
  */
 - (TFY_SectionMaker * (^)(UIView * (^)(void)))tfy_footerView;
 /**
- *
+ *  行高
  */
 - (TFY_SectionMaker * (^)(CGFloat)) tfy_rowHeight;
 /**
- *
+ *   头部高度
  */
 - (TFY_SectionMaker * (^)(CGFloat)) tfy_headerHeight;
 /**
- *
+ *  尾部高度
  */
 - (TFY_SectionMaker * (^)(CGFloat)) tfy_footerHeight;
 /**
- *
+ *   组行数
  */
 - (TFY_SectionMaker * (^)(NSInteger))tfy_rowCount;
 /**
- *
+ *  cellx模型 回调
  */
 - (TFY_SectionMaker * (^)(CellMakeBlock))tfy_cellMaker;
 /**
- *
+ *  添加一个组数据方法
  */
 - (TFY_SectionMaker * (^)(CellMakeBlock))tfy_addCellMaker;
 /**
- *
+ *   cell 模型的回调
  */
 - (TFY_SectionMaker *)tfy_cellMaker:(CellMakeBlock)cellMakerBlock;
 /**
- *
+ *  cell 添加的回调
  */
 - (TFY_SectionMaker *)tfy_addCellMaker:(CellMakeBlock)cellMakerBlock;
 /**
- *
+ *   组数据block
  */
 @property(nonatomic, strong) TFY_SectionData * sectionData;
 
 @end
 
 /**
- *
+ *  初始cell方法
  */
 typedef void (^CellWillDisplayBlock)(UITableView *tableView,UITableViewCell *willDisplayCell,NSIndexPath *indexPath);
 /**
- *
+ *  编辑cell方法
  */
 typedef void (^CommitEditingBlock)(UITableView * tableView,UITableViewCellEditingStyle editingStyle,NSIndexPath * indexPath);
 /**
- *
+ *  头部滚蛋cell
  */
 typedef void (^ScrollViewDidScrollBlock)(UIScrollView *scrollView);
 /**
- *
+ *  SectionMaker 回调block
  */
 typedef void (^SectionMakeBlock)(TFY_SectionMaker * sectionMaker);
 /**
- *
+ *   行数回调block
  */
 typedef NSUInteger (^SectionCountBlock)(UITableView *tableView);
 
 @interface TFY_TableData : NSObject
 /**
- *
+ *  tableview 初始化
  */
--(instancetype) initWithTableView:(UITableView *)tableView;
+-(instancetype)initWithTableView:(UITableView *)tableView;
 /**
- *
+ *   制作cell 回调 block
  */
 - (void)doAddSectionMaker:(SectionMakeBlock)sectionMakerBlock;
 /**
- *
+ *  制作cell block
  */
 - (void)doSectionMakeBlock;
 /**
- *
+ *   tableview
  */
 @property(nonatomic, weak) UITableView * tableView;
 /**
- *
+ *  组数组
  */
 @property(nonatomic, strong) NSMutableArray<TFY_SectionData *> * sectionDatas;
 /**
- *
+ *  组行数
  */
 @property (nonatomic, assign) NSUInteger sectionCount;
 /**
- *
+ *  数据
  */
 @property (nonatomic, strong) NSArray *dataArr;
 /**
- *
+ *  行高
  */
 @property (nonatomic, assign) CGFloat rowHeight;
 /**
- *
+ *  组回调
  */
 @property (nonatomic, copy)  SectionMakeBlock sectionMakeBlock;
 /**
- *
+ *  组回调
  */
 @property (nonatomic, copy)  SectionCountBlock sectionCountBlock;
 /**
- *
+ *  字典数据
  */
 @property(nonatomic, strong) NSMutableDictionary * otherDelegateBlocksDic;
 
@@ -356,63 +356,63 @@ typedef NSUInteger (^SectionCountBlock)(UITableView *tableView);
 
 @interface TFY_TableViewMaker : NSObject
 /**
- *
+ *  模型初始
  */
 @property (nonatomic, strong)TFY_TableData *tableData;
 /**
- *
+ *  初始方法
  */
 - (instancetype)initWithTableView:(UITableView *)tableView;
 /**
- *
+ *  模型初始方法
  */
 - (instancetype)initWithTableData:(TFY_TableData *)tableData;
 /**
- *
+ *   行高 回调
  */
-- (TFY_TableViewMaker * (^)(CGFloat))tfy_height;
+- (TFY_TableViewMaker * (^)(CGFloat))tfy_heightMaker;
 /**
- *
+ *  头部回调
  */
 - (TFY_TableViewMaker * (^)(UIView * (^)(void)))tfy_tableViewHeaderView;
 /**
- *
+ *  尾部回调
  */
 - (TFY_TableViewMaker * (^)(UIView * (^)(void)))tfy_tableViewFooterView;
 /**
- *
+ *  组行数回调
  */
 - (TFY_TableViewMaker * (^)(NSInteger))tfy_sectionCount;
 /**
- *
+ *  组行数回调
  */
 - (TFY_TableViewMaker * (^)(SectionCountBlock))tfy_sectionCountBk;
 /**
- *
+ *   组模型回调
  */
 - (TFY_TableViewMaker * (^)(SectionMakeBlock))tfy_sectionMaker;
 /**
- *
+ *   组是调用方法
  */
 - (TFY_TableViewMaker *) tfy_sectionMaker:(SectionMakeBlock)sectionMakeBlock;
 /**
- *
+ *  添加组
  */
 - (TFY_TableViewMaker * (^)(SectionMakeBlock))tfy_addSectionMaker;
 /**
- *
+ *  添加组回调
  */
 - (TFY_TableViewMaker *) tfy_addSectionMaker:(SectionMakeBlock)sectionMakeBlock;
 /**
- *
+ *  cell 删除回调
  */
 - (TFY_TableViewMaker * (^)(CellWillDisplayBlock))tfy_cellWillDisplay;
 /**
- *
+ *  cell 编辑回调
  */
 - (TFY_TableViewMaker * (^)(CommitEditingBlock))tfy_commitEditing;
 /**
- *
+ *   cell 滚动回调
  */
 - (TFY_TableViewMaker * (^)(ScrollViewDidScrollBlock))tfy_scrollViewDidScroll;
 
@@ -421,15 +421,17 @@ typedef NSUInteger (^SectionCountBlock)(UITableView *tableView);
 
 @protocol TFY_BaseTableViewDataSourceProtocol<UITableViewDataSource,UITableViewDelegate>
 /**
- *
+ *  协议方法初始
  */
 @property (nonatomic, strong)TFY_TableData *tableData;
 
 @end
-
+/**
+ *  实现方法
+ */
 @interface TFY_BaseTableViewDataSource : NSObject<TFY_BaseTableViewDataSourceProtocol>
 /**
- *
+ *  协议方法初始
  */
 @property (nonatomic, strong)TFY_TableData *tableData;
 @end

@@ -12,15 +12,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UITableViewCell (TFY_TableViewMaker)
 /**
- *
+ *  创建tableview
  */
 @property (nonatomic,weak) UITableView *tableView;
 /**
- *
+ *  行数
  */
 @property (nonatomic, strong) NSIndexPath *indexPath;
 /**
- *
+ *  动画
  */
 - (void)reloadRow:(UITableViewRowAnimation)animation;
 @end
