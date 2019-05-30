@@ -16,6 +16,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self=[super initWithFrame:frame]) {
+        self.backgroundColor = [UIColor tfy_colorWithHex:@"F6F7FD"];
         
         [self addSubview:self.title_label];
         self.title_label.tfy_LeftSpace(20).tfy_TopSpace(0).tfy_BottomSpace(0).tfy_RightSpace(20);
