@@ -22,11 +22,11 @@ Pod::Spec.new do |spec|
 
   spec.source_files  = "TFY_SimplifytableView/TFY_SimplifytableViewKit/TFY_TableViewHeader.h", "TFY_SimplifytableView/TFY_SimplifytableViewKit/**/*.{h,m}"
 
-  spec.frameworks    = "Foundation","UIKit"
+  # spec.frameworks    = "Foundation","UIKit"
 
-  spec.dependency       "TFY_AutoLayout"
+  spec.dependency    'TFY_AutoLayout'
 
-  spec.xcconfig      = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include" }
+  # spec.xcconfig      = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include" }
 
   spec.requires_arc  = true
 
