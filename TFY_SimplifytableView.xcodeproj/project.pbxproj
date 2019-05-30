@@ -613,6 +613,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 673D758AA2272999644EF694 /* Pods-TFY_SimplifytableView.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SEXG86U92J;
@@ -634,6 +635,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8BBCAAC1A1EB9904AFA636CD /* Pods-TFY_SimplifytableView.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SEXG86U92J;
