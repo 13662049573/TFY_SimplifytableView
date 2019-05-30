@@ -56,7 +56,7 @@
                 [sectionMaker.tfy_dataArr(TFY_DataArr(self.models.model_detail)) tfy_cellMaker:^(TFY_CellMaker * _Nonnull cellMaker) {
                    
                     cellMaker.tfy_cellClass(TFY_CellClass(ModeldetailTableViewCell))
-                    .tfy_adapter(^(__kindof ModeldetailTableViewCell *cell,Model_detail *data,NSIndexPath *indexPath){ \
+                    .tfy_adapter(^(__kindof ModeldetailTableViewCell *cell,Model_detail *data,NSIndexPath *indexPath){
                         
                         cell.models = data;
                     })
