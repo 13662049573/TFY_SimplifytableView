@@ -10,7 +10,10 @@
 #define TFY_TableViewPrefixHeader_pch
 
 #import "TFY_TableViewHeader.h"
-#import <TFY_LayoutModelTool.h>
+#import <TFY_AutoLayout.h>
+#import <TFY_Navigation.h>
+#import <TFY_CategoryHerder.h>
+#import <NSObject+TFY_Model.h>
 #import <ReactiveObjC.h>
 
 //屏幕高

@@ -2,6 +2,8 @@ platform :ios,'10.0'
 inhibit_all_warnings!
 target 'TFY_SimplifytableView' do
 pod 'ReactiveObjC'
-pod 'TFY_LayoutModelTool'
-
+pod 'TFY_AutoLayout'
+pod 'TFY_Category'
+pod 'TFY_Model'
+pod 'TFY_Navigation'
 end

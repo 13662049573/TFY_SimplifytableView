@@ -1,36 +1,32 @@
 PODS:
   - ReactiveObjC (3.1.1)
-  - TFY_LayoutModelTool (2.4.0):
-    - TFY_LayoutModelTool/TFY_AutoLayout (= 2.4.0)
-    - TFY_LayoutModelTool/TFY_Category (= 2.4.0)
-    - TFY_LayoutModelTool/TFY_CommonUtils (= 2.4.0)
-    - TFY_LayoutModelTool/TFY_Models (= 2.4.0)
-    - TFY_LayoutModelTool/TFY_Navigation (= 2.4.0)
-    - TFY_LayoutModelTool/TFY_PickerView (= 2.4.0)
-    - TFY_LayoutModelTool/TFY_ProgressHUD (= 2.4.0)
-    - TFY_LayoutModelTool/TFY_TabarController (= 2.4.0)
-  - TFY_LayoutModelTool/TFY_AutoLayout (2.4.0)
-  - TFY_LayoutModelTool/TFY_Category (2.4.0)
-  - TFY_LayoutModelTool/TFY_CommonUtils (2.4.0)
-  - TFY_LayoutModelTool/TFY_Models (2.4.0)
-  - TFY_LayoutModelTool/TFY_Navigation (2.4.0)
-  - TFY_LayoutModelTool/TFY_PickerView (2.4.0)
-  - TFY_LayoutModelTool/TFY_ProgressHUD (2.4.0)
-  - TFY_LayoutModelTool/TFY_TabarController (2.4.0)
+  - TFY_AutoLayout (2.3.5)
+  - TFY_Category (2.0.0)
+  - TFY_Model (2.0.0)
+  - TFY_Navigation (2.0.0)
 
 DEPENDENCIES:
   - ReactiveObjC
-  - TFY_LayoutModelTool
+  - TFY_AutoLayout
+  - TFY_Category
+  - TFY_Model
+  - TFY_Navigation
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - ReactiveObjC
-    - TFY_LayoutModelTool
+    - TFY_AutoLayout
+    - TFY_Category
+    - TFY_Model
+    - TFY_Navigation
 
 SPEC CHECKSUMS:
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  TFY_LayoutModelTool: 2904ae78f34b2109b0134f0d1d75685caa7fc0f2
+  TFY_AutoLayout: 97bc5d7cba5d1c8ed669f610a3c743916aed9864
+  TFY_Category: 1a85ab714d5c4a8fc6078f5a315c7cfc4a010e01
+  TFY_Model: e0fbe06ca7052d0aa2a8fa0bcd6a94c2aabe280a
+  TFY_Navigation: 1e19d14dc97f77c696887e3dda3b14c54e39419b
 
-PODFILE CHECKSUM: 50f8ba9463c28ee81f82df95e188edc90de334bd
+PODFILE CHECKSUM: 501820ad61fd7aea833f499d3cb9a84a21a4f999
 
 COCOAPODS: 1.7.0

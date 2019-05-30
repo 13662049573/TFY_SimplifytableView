@@ -1,1 +1,0 @@
-../../../TFY_LayoutModelTool/TFY_LayoutModelTool/TFY_LayoutModelTool/TFY_Category/UIImage+TFY_UserAvatar.h
