@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3620AD91229F663F00AB5C48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3620AD90229F663F00AB5C48 /* Foundation.framework */; };
+		3620AD93229F664D00AB5C48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3620AD92229F664D00AB5C48 /* UIKit.framework */; };
 		362683C8229E0E57006938A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 362683C7229E0E57006938A0 /* Assets.xcassets */; };
 		362683CB229E0E57006938A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 362683C9229E0E57006938A0 /* LaunchScreen.storyboard */; };
 		362683CE229E0E57006938A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 362683CD229E0E57006938A0 /* main.m */; };
@@ -47,6 +49,8 @@
 
 /* Begin PBXFileReference section */
 		1921EE7BC7D1786041EBF486 /* libPods-TFY_SimplifytableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TFY_SimplifytableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3620AD90229F663F00AB5C48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3620AD92229F664D00AB5C48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		362683BB229E0E55006938A0 /* TFY_SimplifytableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFY_SimplifytableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		362683C7229E0E57006938A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		362683CA229E0E57006938A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3620AD93229F664D00AB5C48 /* UIKit.framework in Frameworks */,
+				3620AD91229F663F00AB5C48 /* Foundation.framework in Frameworks */,
 				C4836CBC0C3B81944CA91290 /* libPods-TFY_SimplifytableView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +275,8 @@
 		CE1A62B77401F6554CE94266 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3620AD92229F664D00AB5C48 /* UIKit.framework */,
+				3620AD90229F663F00AB5C48 /* Foundation.framework */,
 				1921EE7BC7D1786041EBF486 /* libPods-TFY_SimplifytableView.a */,
 			);
 			name = Frameworks;
