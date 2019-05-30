@@ -10,6 +10,7 @@
 #import <objc/runtime.h>
 #import "UITableViewCell+TFY_TableViewMaker.h"
 #import "UITableView+TFY_TableViewMaker.h"
+#import "TFY_AutoLayout.h"
 
 #define StringSelector(_SEL_) NSStringFromSelector(@selector(_SEL_))
 
