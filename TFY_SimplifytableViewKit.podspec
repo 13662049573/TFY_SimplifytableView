@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "TFY_SimplifytableViewKit"
 
-  spec.version      = "2.0.5"
+  spec.version      = "2.0.7"
 
   spec.summary      = "简化的TableView 一行代码完成所有布局。"
 
@@ -23,8 +23,6 @@ Pod::Spec.new do |spec|
   spec.source_files  = "TFY_SimplifytableView/TFY_SimplifytableViewKit/TFY_TableViewHeader.h", "TFY_SimplifytableView/TFY_SimplifytableViewKit/**/*.{h,m}"
 
   spec.frameworks    = "Foundation","UIKit"
-
-  spec.dependency     "TFY_AutoLayout"
 
   spec.xcconfig      = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include" }
 
