@@ -10,7 +10,6 @@
 #import <objc/runtime.h>
 #import "UITableViewCell+TFY_TableViewMaker.h"
 #import "UITableView+TFY_TableViewMaker.h"
-#import "TFY_AutoLayout.h"
 
 #define StringSelector(_SEL_) NSStringFromSelector(@selector(_SEL_))
 
@@ -51,16 +50,11 @@
 -(CGFloat)rowHeight{
     if (self.isAutoHeight) {
         
-        _rowHeight =  [UITableViewCell tfy_CellHeightForIndexPath:_indexPath tableView:self.tableView identifier:self.cellidentifier layoutBlock:^(UITableViewCell * _Nonnull cell) {
+        _rowHeight =  [UITableViewCell CellHeightForIndexPath:_indexPath tableView:self.tableView identifier:self.cellidentifier layoutBlock:^(UITableViewCell * _Nonnull cell) {
             if (self.adapter) {
                 self.adapter(cell,self.data,self.indexPath);
             }
         }];
-        //        _rowHeight = [self.tableView tfy_heightForCellWithIdentifier:self.cellidentifier cacheByIndexPath:_indexPath configuration:^(id cell) {
-        //            if (self.adapter) {
-        //                self.adapter(cell,self.data,self.indexPath);
-        //            }
-        //        }];
     }
     return _rowHeight+20;
 }

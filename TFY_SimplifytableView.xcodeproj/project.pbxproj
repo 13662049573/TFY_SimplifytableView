@@ -23,7 +23,6 @@
 		36268433229E517F006938A0 /* ViewData.json in Resources */ = {isa = PBXBuildFile; fileRef = 36268432229E517F006938A0 /* ViewData.json */; };
 		36268436229E6515006938A0 /* ModeldetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268435229E6515006938A0 /* ModeldetailController.m */; };
 		36268439229E6B7A006938A0 /* ModeldetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268438229E6B7A006938A0 /* ModeldetailTableViewCell.m */; };
-		36268448229E7665006938A0 /* NSObject+Associated.m in Sources */ = {isa = PBXBuildFile; fileRef = 3626843B229E7665006938A0 /* NSObject+Associated.m */; };
 		3626844A229E7665006938A0 /* TFY_BaseTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268440229E7665006938A0 /* TFY_BaseTableViewDataSource.m */; };
 		3626844B229E7665006938A0 /* UITableView+TFY_TableViewMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268441229E7665006938A0 /* UITableView+TFY_TableViewMaker.m */; };
 		3626844C229E7665006938A0 /* UITableViewCell+TFY_TableViewMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 36268442229E7665006938A0 /* UITableViewCell+TFY_TableViewMaker.m */; };
@@ -81,14 +80,12 @@
 		36268435229E6515006938A0 /* ModeldetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModeldetailController.m; sourceTree = "<group>"; };
 		36268437229E6B7A006938A0 /* ModeldetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModeldetailTableViewCell.h; sourceTree = "<group>"; };
 		36268438229E6B7A006938A0 /* ModeldetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModeldetailTableViewCell.m; sourceTree = "<group>"; };
-		3626843B229E7665006938A0 /* NSObject+Associated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Associated.m"; sourceTree = "<group>"; };
 		3626843C229E7665006938A0 /* UITableView+TFY_TableViewMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+TFY_TableViewMaker.h"; sourceTree = "<group>"; };
 		3626843E229E7665006938A0 /* TFY_BaseTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_BaseTableViewDataSource.h; sourceTree = "<group>"; };
 		36268440229E7665006938A0 /* TFY_BaseTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_BaseTableViewDataSource.m; sourceTree = "<group>"; };
 		36268441229E7665006938A0 /* UITableView+TFY_TableViewMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+TFY_TableViewMaker.m"; sourceTree = "<group>"; };
 		36268442229E7665006938A0 /* UITableViewCell+TFY_TableViewMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+TFY_TableViewMaker.m"; sourceTree = "<group>"; };
 		36268445229E7665006938A0 /* UITableViewCell+TFY_TableViewMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+TFY_TableViewMaker.h"; sourceTree = "<group>"; };
-		36268446229E7665006938A0 /* NSObject+Associated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Associated.h"; sourceTree = "<group>"; };
 		673D758AA2272999644EF694 /* Pods-TFY_SimplifytableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFY_SimplifytableView.debug.xcconfig"; path = "Target Support Files/Pods-TFY_SimplifytableView/Pods-TFY_SimplifytableView.debug.xcconfig"; sourceTree = "<group>"; };
 		8BBCAAC1A1EB9904AFA636CD /* Pods-TFY_SimplifytableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFY_SimplifytableView.release.xcconfig"; path = "Target Support Files/Pods-TFY_SimplifytableView/Pods-TFY_SimplifytableView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,8 +177,6 @@
 			isa = PBXGroup;
 			children = (
 				362683FB229E1229006938A0 /* TFY_TableViewHeader.h */,
-				36268446229E7665006938A0 /* NSObject+Associated.h */,
-				3626843B229E7665006938A0 /* NSObject+Associated.m */,
 				3626843E229E7665006938A0 /* TFY_BaseTableViewDataSource.h */,
 				36268440229E7665006938A0 /* TFY_BaseTableViewDataSource.m */,
 				3626843C229E7665006938A0 /* UITableView+TFY_TableViewMaker.h */,
@@ -445,7 +440,6 @@
 				36268425229E4637006938A0 /* ViewController.m in Sources */,
 				3626842B229E46BE006938A0 /* ViewTableViewCell.m in Sources */,
 				3626844B229E7665006938A0 /* UITableView+TFY_TableViewMaker.m in Sources */,
-				36268448229E7665006938A0 /* NSObject+Associated.m in Sources */,
 				36268428229E46A4006938A0 /* ViewModel.m in Sources */,
 				3626844A229E7665006938A0 /* TFY_BaseTableViewDataSource.m in Sources */,
 				36268436229E6515006938A0 /* ModeldetailController.m in Sources */,

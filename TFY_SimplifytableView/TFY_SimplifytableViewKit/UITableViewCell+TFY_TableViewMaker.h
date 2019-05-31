@@ -23,6 +23,10 @@ NS_ASSUME_NONNULL_BEGIN
  *  动画
  */
 - (void)reloadRow:(UITableViewRowAnimation)animation;
+/**
+ * 计算高度
+ */
++(CGFloat)CellHeightForIndexPath:(NSIndexPath *)indexPath tableView:(UITableView *)tableView identifier:(NSString *)identifier layoutBlock:(void (^)(UITableViewCell *cell))block;
 @end
 
 NS_ASSUME_NONNULL_END
