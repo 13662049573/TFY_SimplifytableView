@@ -113,7 +113,7 @@ typedef void (^CellEventBlock)(UITableView *tableView, NSIndexPath * _Nonnull in
  */
 - (TFY_CellMaker * (^)(id))tfy_data;
 /**
- *  cell 同tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 这个方法
+ *  cell 同tableView:__kindof UITableViewCell *cell, id data, NSIndexPath * _Nonnull indexPath 这个方法
  */
 - (TFY_CellMaker * (^)(CellAdapterBlock))tfy_adapter;
 /**
@@ -121,7 +121,7 @@ typedef void (^CellEventBlock)(UITableView *tableView, NSIndexPath * _Nonnull in
  */
 - (TFY_CellMaker * (^)(CellEventBlock))tfy_event;
 /**
- *  cell 同tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 这个方法
+ *  cell 同tableView:(UITableView *tableView, NSIndexPath * _Nonnull indexPath, id data); 这个方法
  */
 - (TFY_CellMaker * (^)(Class,CellAdapterBlock))tfy_cellClassAndAdapter;
 

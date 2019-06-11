@@ -312,7 +312,7 @@
 		0B249120080097A405A862B28B4F52DB /* UIBarButtonItem+RACCommandSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+RACCommandSupport.h"; path = "ReactiveObjC/UIBarButtonItem+RACCommandSupport.h"; sourceTree = "<group>"; };
 		0C2BEAA18E2A0333A0327C360E198BEA /* UIButton+RACCommandSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+RACCommandSupport.h"; path = "ReactiveObjC/UIButton+RACCommandSupport.h"; sourceTree = "<group>"; };
 		0CC983823616D1100A3FF372871C6D9F /* UIImage+Image.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Image.h"; path = "TFY_Category/TFY_Category/UIImage+Image.h"; sourceTree = "<group>"; };
-		0E4A42FC9BCEA52BA8FF13D044ACB5DD /* libReactiveObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReactiveObjC.a; path = libReactiveObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E4A42FC9BCEA52BA8FF13D044ACB5DD /* libReactiveObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactiveObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E86737FC02CB586869018402D4BFBCE /* RACPassthroughSubscriber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACPassthroughSubscriber.m; path = ReactiveObjC/RACPassthroughSubscriber.m; sourceTree = "<group>"; };
 		0EEA0FC5072F4D7FAF6D0635C9DCD185 /* MKAnnotationView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MKAnnotationView+RACSignalSupport.h"; path = "ReactiveObjC/MKAnnotationView+RACSignalSupport.h"; sourceTree = "<group>"; };
 		0F165C52CF87EB4D9CFF60CC6788A4B6 /* NSString+TFY_String.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+TFY_String.m"; path = "TFY_Category/TFY_Category/NSString+TFY_String.m"; sourceTree = "<group>"; };
@@ -402,8 +402,8 @@
 		65AD5F7B10364D2D6865C16925F98D01 /* RACSignal+Operations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RACSignal+Operations.m"; path = "ReactiveObjC/RACSignal+Operations.m"; sourceTree = "<group>"; };
 		65F9910A9A7E0CEBA4869FB578790636 /* RACKVOChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACKVOChannel.h; path = ReactiveObjC/RACKVOChannel.h; sourceTree = "<group>"; };
 		66B52A893E4258BB9190B7EBC54E06DD /* TFY_AutoLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_AutoLayout.h; path = TFY_AutoLayout/TFY_AutoLayout/TFY_AutoLayout.h; sourceTree = "<group>"; };
-		676F8B163FB69B775E4E7DFDE17160EB /* RACCompoundDisposableProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; name = RACCompoundDisposableProvider.d; path = ReactiveObjC/RACCompoundDisposableProvider.d; sourceTree = "<group>"; };
-		68A177273B65D61E6EE6089D9DC460BC /* libTFY_Model.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTFY_Model.a; path = libTFY_Model.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		676F8B163FB69B775E4E7DFDE17160EB /* RACCompoundDisposableProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.dtrace; name = RACCompoundDisposableProvider.d; path = ReactiveObjC/RACCompoundDisposableProvider.d; sourceTree = "<group>"; };
+		68A177273B65D61E6EE6089D9DC460BC /* libTFY_Model.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTFY_Model.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6931CCF1719D1C96B2B5096DA88A51EE /* ReactiveObjC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReactiveObjC.h; path = ReactiveObjC/ReactiveObjC.h; sourceTree = "<group>"; };
 		6A36588855842ADDC954411B7EEA7A2A /* RACTestScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACTestScheduler.h; path = ReactiveObjC/RACTestScheduler.h; sourceTree = "<group>"; };
 		6A39AE29935F727A76520B8ED8F89557 /* WKWebView+TFY_Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WKWebView+TFY_Extension.h"; path = "TFY_Category/TFY_Category/WKWebView+TFY_Extension.h"; sourceTree = "<group>"; };
@@ -465,7 +465,7 @@
 		9C326C14BE3663900F7E60384C9B20C3 /* NSNotificationCenter+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+RACSupport.m"; path = "ReactiveObjC/NSNotificationCenter+RACSupport.m"; sourceTree = "<group>"; };
 		9D1A2D5E082706942B24B5132BF48CC8 /* RACEmptySignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEmptySignal.h; path = ReactiveObjC/RACEmptySignal.h; sourceTree = "<group>"; };
 		9D8F9264CD4C9BBEC459477D1438E64B /* RACEmptySequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEmptySequence.m; path = ReactiveObjC/RACEmptySequence.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D99B61D1FFEFD32AFC118696EB3037A /* UIView+TFY_Frame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TFY_Frame.h"; path = "TFY_AutoLayout/TFY_AutoLayout/UIView+TFY_Frame.h"; sourceTree = "<group>"; };
 		9EA5A774236DE1D7D3B05E44566DC047 /* RACTargetQueueScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACTargetQueueScheduler.m; path = ReactiveObjC/RACTargetQueueScheduler.m; sourceTree = "<group>"; };
 		9F0C03A2F4471C7CFD89B0CD3A547610 /* RACMulticastConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACMulticastConnection.m; path = ReactiveObjC/RACMulticastConnection.m; sourceTree = "<group>"; };
@@ -492,7 +492,7 @@
 		B7BC968BA2CC7503EAD4F9F72A339835 /* UIView+Genie.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Genie.h"; path = "TFY_Category/TFY_Category/UIView+Genie.h"; sourceTree = "<group>"; };
 		B8079C3CBA2A6FC524709F86EA44C70D /* UIButton+RACCommandSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+RACCommandSupport.m"; path = "ReactiveObjC/UIButton+RACCommandSupport.m"; sourceTree = "<group>"; };
 		B86ADEC8D5D3801B07A7987CEF9D98E6 /* ReactiveObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveObjC-prefix.pch"; sourceTree = "<group>"; };
-		B87253118222A1F391348990ABB825C7 /* libTFY_AutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTFY_AutoLayout.a; path = libTFY_AutoLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B87253118222A1F391348990ABB825C7 /* libTFY_AutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTFY_AutoLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9CD70356EF2BD0B9A4866D8BA45D2C /* RACSerialDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSerialDisposable.m; path = ReactiveObjC/RACSerialDisposable.m; sourceTree = "<group>"; };
 		BBF5DAA335B9F367CCBDB9599669CB3D /* UIActionSheet+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+RACSignalSupport.h"; path = "ReactiveObjC/UIActionSheet+RACSignalSupport.h"; sourceTree = "<group>"; };
 		BD6D5C76B0B229E7099FA0202970DACC /* RACKVOTrampoline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACKVOTrampoline.h; path = ReactiveObjC/RACKVOTrampoline.h; sourceTree = "<group>"; };
@@ -533,7 +533,7 @@
 		D899D861BF82D4DDB87B782A4665693A /* NSString+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RACSupport.h"; path = "ReactiveObjC/NSString+RACSupport.h"; sourceTree = "<group>"; };
 		D9A0C8B92549C1F9DB21EA3D56992967 /* RACValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACValueTransformer.h; path = ReactiveObjC/RACValueTransformer.h; sourceTree = "<group>"; };
 		DAB237527C902736D0C22BB6E488FCE9 /* RACSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSignal.m; path = ReactiveObjC/RACSignal.m; sourceTree = "<group>"; };
-		DBA56F54966DF974CF3CF81340EA50EA /* libPods-TFY_SimplifytableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TFY_SimplifytableView.a"; path = "libPods-TFY_SimplifytableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA56F54966DF974CF3CF81340EA50EA /* libPods-TFY_SimplifytableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TFY_SimplifytableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC234229D660A6721A59FB15AEBEB541 /* NSNotificationCenter+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+RACSupport.h"; path = "ReactiveObjC/NSNotificationCenter+RACSupport.h"; sourceTree = "<group>"; };
 		DC5B158E75A89E66B1EA93028F6E1399 /* NSMutableArray+TFY_Array.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+TFY_Array.h"; path = "TFY_Category/TFY_Category/NSMutableArray+TFY_Array.h"; sourceTree = "<group>"; };
 		DD01FB6E3BEF66A46A663C5AD578EF84 /* UINavigationController+TFY_Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+TFY_Extension.h"; path = "TFY_Navigation/TFY_Navigation/UINavigationController+TFY_Extension.h"; sourceTree = "<group>"; };
@@ -559,18 +559,18 @@
 		F6719557F5431C4206510114DB450066 /* RACSubject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubject.h; path = ReactiveObjC/RACSubject.h; sourceTree = "<group>"; };
 		F6A683D4C855BF85CD76D8F6D0EDD70D /* RACDynamicSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDynamicSignal.m; path = ReactiveObjC/RACDynamicSignal.m; sourceTree = "<group>"; };
 		F77EA2D9D77F38CD8230ACB1A2EB5899 /* NSObject+RACLifting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACLifting.h"; path = "ReactiveObjC/NSObject+RACLifting.h"; sourceTree = "<group>"; };
-		F92255FB75D8F7F9862CC64B53F98B9B /* libTFY_Category.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTFY_Category.a; path = libTFY_Category.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F92255FB75D8F7F9862CC64B53F98B9B /* libTFY_Category.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTFY_Category.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9620320CBD60DF2DC7412CE3FB54DE4 /* UISlider+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISlider+RACSignalSupport.h"; path = "ReactiveObjC/UISlider+RACSignalSupport.h"; sourceTree = "<group>"; };
 		F9CD4B317984109B1CD7C0CBB5C37161 /* NSEnumerator+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSEnumerator+RACSequenceAdditions.h"; path = "ReactiveObjC/NSEnumerator+RACSequenceAdditions.h"; sourceTree = "<group>"; };
 		FAB68A233968ED5499CB130A4847B4CC /* UIControl+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+RACSignalSupport.h"; path = "ReactiveObjC/UIControl+RACSignalSupport.h"; sourceTree = "<group>"; };
-		FB4E5311510A168258C71E23A98AA77F /* RACSignalProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; name = RACSignalProvider.d; path = ReactiveObjC/RACSignalProvider.d; sourceTree = "<group>"; };
+		FB4E5311510A168258C71E23A98AA77F /* RACSignalProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.dtrace; name = RACSignalProvider.d; path = ReactiveObjC/RACSignalProvider.d; sourceTree = "<group>"; };
 		FB68445E9C8522AC9EF59C0393083DFB /* RACStringSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACStringSequence.m; path = ReactiveObjC/RACStringSequence.m; sourceTree = "<group>"; };
 		FB81A6943A09DF50838FDEDADC097ABD /* NSFileHandle+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileHandle+RACSupport.m"; path = "ReactiveObjC/NSFileHandle+RACSupport.m"; sourceTree = "<group>"; };
 		FBC5AB1AF33168129490018F81759531 /* RACReplaySubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACReplaySubject.m; path = ReactiveObjC/RACReplaySubject.m; sourceTree = "<group>"; };
 		FC6DF48D711631425140D40E04AE5E31 /* NSDate+TFY_Date.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+TFY_Date.m"; path = "TFY_Category/TFY_Category/NSDate+TFY_Date.m"; sourceTree = "<group>"; };
 		FD33B07A0DDC507E978085724391F342 /* UITableView+TFY_LayoutCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+TFY_LayoutCell.m"; path = "TFY_AutoLayout/TFY_AutoLayout/UITableView+TFY_LayoutCell.m"; sourceTree = "<group>"; };
 		FD52AAF1078EC781BAEBDBD8659C8471 /* NSObject+RACDeallocating.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACDeallocating.m"; path = "ReactiveObjC/NSObject+RACDeallocating.m"; sourceTree = "<group>"; };
-		FF813E8E306C94E13C9FEA4180A0019D /* libTFY_Navigation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTFY_Navigation.a; path = libTFY_Navigation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF813E8E306C94E13C9FEA4180A0019D /* libTFY_Navigation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTFY_Navigation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -824,7 +824,6 @@
 				A31D26560729D2413D2753C6D87A8522 /* UITextView+RACSignalSupport.m */,
 				10BD1C0A14AA9FBA6CE105188599BE2C /* Support Files */,
 			);
-			name = ReactiveObjC;
 			path = ReactiveObjC;
 			sourceTree = "<group>";
 		};
@@ -835,7 +834,6 @@
 				BFA1208E1B7552CA92A4007642194BB5 /* NSObject+TFY_Model.m */,
 				A362F0CA9564A482EDCCF53CEE2FC787 /* Support Files */,
 			);
-			name = TFY_Model;
 			path = TFY_Model;
 			sourceTree = "<group>";
 		};
@@ -862,7 +860,6 @@
 				6BBFF29B226772C9A9F524783E60E172 /* UINavigationController+TFY_Extension.m */,
 				9A0418B6563DA4BBA8C2D52630331061 /* Support Files */,
 			);
-			name = TFY_Navigation;
 			path = TFY_Navigation;
 			sourceTree = "<group>";
 		};
@@ -915,7 +912,6 @@
 				C9746BE60B3642D3D1564A0F0FB8AD58 /* WKWebView+TFY_Extension.m */,
 				61D8BAC43E05E2CD74DDEAA4B7B5B5F5 /* Support Files */,
 			);
-			name = TFY_Category;
 			path = TFY_Category;
 			sourceTree = "<group>";
 		};
@@ -975,7 +971,6 @@
 				D3A5D7CF0F597F22865B26A93DED953E /* UIView+TFY_Frame.m */,
 				C6B7312085F0A305468AA3C8160A1AC7 /* Support Files */,
 			);
-			name = TFY_AutoLayout;
 			path = TFY_AutoLayout;
 			sourceTree = "<group>";
 		};
@@ -1319,14 +1314,15 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 9CE1BC22A0201DF700344E858F548DEF /* Products */;
@@ -1668,6 +1664,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1734,7 +1731,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/TFY_Model/TFY_Model-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -1823,6 +1820,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1916,7 +1914,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/TFY_Model/TFY_Model-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
