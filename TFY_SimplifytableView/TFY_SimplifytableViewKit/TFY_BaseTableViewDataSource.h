@@ -163,6 +163,10 @@ typedef void (^CellMakeBlock)(TFY_CellMaker * _Nonnull cellMaker);
  */
 @property (nonatomic, strong) NSArray *modelDatas;
 /**
+ *  搜索所需数组
+ */
+@property (nonatomic, strong) NSArray<NSString *> *sectionIndexArr;
+/**
  *  header 头文件字符串
  */
 @property(nonatomic, copy) NSString * headerTitle;

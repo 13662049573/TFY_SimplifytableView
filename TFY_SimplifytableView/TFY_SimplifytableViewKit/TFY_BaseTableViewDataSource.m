@@ -224,6 +224,14 @@
     return _modelDatas;
 }
 
+-(NSArray<NSString *> *)sectionIndexArr{
+    if (self.sectionIndexBlock) {
+        _sectionIndexArr = self.sectionIndexBlock();
+    }
+    return _sectionIndexArr;
+}
+
+
 -(NSMutableArray<TFY_CellData *> *)cellDatas{
     if (!_cellDatas) {
         _cellDatas = [NSMutableArray array];
