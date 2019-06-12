@@ -129,9 +129,13 @@ typedef void (^CellEventBlock)(UITableView *tableView, NSIndexPath * _Nonnull in
 @end
 
 /**
- *   数据赋值block
+ *  数据赋值block
  */
 typedef  NSArray * _Nonnull (^GetDataBlock)(void);
+/**
+ *  搜索组数组
+ */
+typedef NSArray<NSString *> *_Nonnull(^sectionIndexBlock)(void);
 /**
  *   组数赋值 block
  */
@@ -161,11 +165,11 @@ typedef void (^CellMakeBlock)(TFY_CellMaker * _Nonnull cellMaker);
 /**
  *  header 头文件字符串
  */
-@property(nonatomic, strong) NSString * headerTitle;
+@property(nonatomic, copy) NSString * headerTitle;
 /**
  *  footer 头文件字符串
  */
-@property(nonatomic, strong) NSString * footerTitle;
+@property(nonatomic, copy) NSString * footerTitle;
 /**
  *  header 高度
  */
@@ -207,6 +211,10 @@ typedef void (^CellMakeBlock)(TFY_CellMaker * _Nonnull cellMaker);
  */
 @property(nonatomic, copy) GetDataBlock getDataBlock;
 /**
+ *  搜索BLock
+ */
+@property(nonatomic, copy) sectionIndexBlock sectionIndexBlock;
+/**
  *  制作一个cell
  */
 - (void)doCellMakerBlock;
@@ -226,6 +234,10 @@ typedef void (^CellMakeBlock)(TFY_CellMaker * _Nonnull cellMaker);
  *  数据
  */
 - (TFY_SectionMaker * (^)(GetDataBlock))tfy_dataArr;
+/**
+ *  搜索组所需数组
+ */
+-(TFY_SectionMaker * (^)(sectionIndexBlock))tfy_sectionIndexArr;
 /**
  *   返回第几组
  */
@@ -335,6 +347,10 @@ typedef NSUInteger (^SectionCountBlock)(UITableView *tableView);
  *  数据
  */
 @property (nonatomic, strong) NSArray *dataArr;
+/**
+ *  搜索所需数组
+ */
+@property (nonatomic, strong) NSArray<NSString *> *sectionIndexArr;
 /**
  *  行高
  */

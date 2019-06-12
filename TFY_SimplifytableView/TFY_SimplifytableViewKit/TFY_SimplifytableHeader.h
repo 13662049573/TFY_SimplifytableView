@@ -1,15 +1,13 @@
 //
-//  TFY_TableViewHeader.h
+//  TFY_SimplifytableHeader.h
 //  TFY_SimplifytableView
 //
-//  Created by 田风有 on 2019/5/29.
+//  Created by 田风有 on 2019/6/12.
 //  Copyright © 2019 恋机科技. All rights reserved.
 //
 
-#ifndef TFY_TableViewHeader_h
-#define TFY_TableViewHeader_h
-
-
+#ifndef TFY_SimplifytableHeader_h
+#define TFY_SimplifytableHeader_h
 
 #define TFY_DataArr(__dataArr__) ^(){return __dataArr__;}
 
@@ -43,4 +41,4 @@ _maker_ \
 #import "TFY_BaseTableViewDataSource.h"
 #import "UITableView+TFY_TableViewMaker.h"
 
-#endif /* TFY_TableViewHeader_h */
+#endif /* TFY_SimplifytableHeader_h */

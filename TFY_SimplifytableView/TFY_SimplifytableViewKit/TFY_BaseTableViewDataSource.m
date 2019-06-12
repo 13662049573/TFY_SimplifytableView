@@ -297,6 +297,13 @@
     };
 }
 
+-(TFY_SectionMaker * (^)(sectionIndexBlock))tfy_sectionIndexArr{
+    return ^TFY_SectionMaker *(sectionIndexBlock block){
+        self.sectionData.sectionIndexBlock = block;
+        return self;
+    };
+}
+
 - (TFY_SectionMaker * (^)(UIView * (^)(void)))tfy_footerView {
     return ^TFY_SectionMaker *(UIView * (^view)(void)) {
         self.sectionData.footerView = view();
@@ -582,6 +589,10 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     return self.tableData.sectionDatas[(NSUInteger) section].footerHeight;
+}
+
+- (NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView{
+    return self.tableData.sectionIndexArr;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
