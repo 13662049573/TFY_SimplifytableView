@@ -345,7 +345,7 @@ static void __TFY_TEMPLATE_LAYOUT_CELL_PRIMARY_CALL_IF_CRASH_NOT_OUR_BUG__(void 
 
 - (void)tfy_debugLog:(NSString *)message {
     if (self.tfy_debugLogEnabled) {
-        NSLog(@"** FDTemplateLayoutCell ** %@", message);
+        NSLog(@"** TFY_TemplateLayoutCell ** %@", message);
     }
 }
 

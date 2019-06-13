@@ -9,7 +9,6 @@
 #import "UITableViewCell+TFY_AutoHeightForCell.h"
 #if TARGET_OS_IPHONE || TARGET_OS_TV
 #import <objc/runtime.h>
-#import "UIView+TFY_Frame.h"
 #import "UIView+TFY_AutoLayout.h"
 
 @interface UITableView (TFY_CacheCellHeight)
@@ -250,7 +249,7 @@
     }
     UITableViewCell *cell = [tableView.dataSource tableView:tableView cellForRowAtIndexPath:indexPath];
     if (cell.tfy_CellTableView) {
-        [cell.tfy_CellTableView tfy_Height:cell.tfy_CellTableView.contentSize.height];
+        cell.tfy_CellTableView.tfy_Height(cell.tfy_CellTableView.contentSize.height);
     }
     CGFloat tableViewWidth = cell.tfy_TableViewWidth;
     if (tableViewWidth == 0) {
@@ -332,7 +331,7 @@
         cell = [tableView.dataSource tableView:tableView cellForRowAtIndexPath:indexPath];
     }
     if (cell.tfy_CellTableView) {
-        [cell.tfy_CellTableView tfy_Height:cell.tfy_CellTableView.contentSize.height];
+        cell.tfy_CellTableView.tfy_Height(cell.tfy_CellTableView.contentSize.height);
     }
     CGFloat tableViewWidth = cell.tfy_TableViewWidth;
     if (tableViewWidth == 0) {

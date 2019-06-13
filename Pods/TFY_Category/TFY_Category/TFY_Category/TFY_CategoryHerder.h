@@ -9,12 +9,11 @@
 #ifndef TFY_CategoryHerder_h
 #define TFY_CategoryHerder_h
 
-#import "UIButton+Swizzling.h"
+#import "UIButton+TFY_Chain.h"
 #import "UIColor+TFY_Color.h"
 #import "UIImage+Image.h"
 #import "UIImage+TFY_UserAvatar.h"
-#import "UIView+Genie.h"
-#import "UIView+UIViewController.h"
+#import "UIView+TFY_Chain.h"
 #import "WKWebView+TFY_Extension.h"
 #import "UILabel+TFY_Label.h"
 #import "NSDictionary+TFY_DictExtension.h"
@@ -25,5 +24,7 @@
 #import "NSDate+TFY_Date.h"
 #import "NSArray+TFY_Arr.h"
 #import "NSMutableArray+TFY_Array.h"
+#import "TFY_CommonUtils.h"
+#import "UIImageView+TFY_Chain.h"
 
 #endif /* TFY_CategoryHerder_h */

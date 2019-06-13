@@ -15,6 +15,7 @@
 #import "TFY_CategoryHerder.h"
 #import "NSObject+TFY_Model.h"
 #import "ReactiveObjC.h"
+#import <TFY_ContactHeader.h>
 
 //屏幕高
 #define  Height_H [UIScreen mainScreen].bounds.size.height

@@ -39,15 +39,16 @@
 
 -(UIImageView *)icon_imageView{
     if (!_icon_imageView) {
-        _icon_imageView = [UIImageView new];
-        [_icon_imageView tfy_cornerRadius:15 cornerColor:[UIColor tfy_colorWithHex:@"F6F7FD"]];
+        _icon_imageView = tfy_imageView();
+        _icon_imageView.tfy_cornerRadius(15);
     }
     return _icon_imageView;
 }
 
 -(UILabel *)title_label{
     if (!_title_label) {
-        _title_label = [UILabel tfy_textcolor:[UIColor tfy_colorWithHex:@"2960DB"] FontOfSize:12 Alignment:1];
+        _title_label = tfy_label();
+        _title_label.tfy_textcolor(@"2960DB", 1).tfy_fontSize(12).tfy_alignment(0);
     }
     return _title_label;
 }

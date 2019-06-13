@@ -33,8 +33,8 @@
 
 -(UILabel *)title_label{
     if (!_title_label) {
-        _title_label = [UILabel tfy_textcolor:[UIColor tfy_colorWithHex:@"212121"] FontOfSize:15 Alignment:1];
-        _title_label.numberOfLines = 0;
+        _title_label = tfy_label();
+        _title_label.tfy_textcolor(@"212121", 1).tfy_fontSize(15).tfy_alignment(0).tfy_numberOfLines(0);
     }
     return _title_label;
 }

@@ -6,4 +6,5 @@ pod 'TFY_AutoLayout'
 pod 'TFY_Category'
 pod 'TFY_Model'
 pod 'TFY_Navigation'
+pod 'TFY_ContactManager'
 end

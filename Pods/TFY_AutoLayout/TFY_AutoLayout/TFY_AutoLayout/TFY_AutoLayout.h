@@ -10,8 +10,6 @@
 
 #if TFY_AutoLayoutKitRelease
 
-#import <TFY_AutoLayout/TFY_Frame/CALayer+TFY_Frame.h>
-#import <TFY_AutoLayout/TFY_Frame/UIView+TFY_Frame.h>
 #import <TFY_AutoLayout/TFY_CellHeight/UITableViewCell+TFY_AutoHeightForCell.h>
 #import <TFY_AutoLayout/TFY_LayoutView/UIView+TFY_AutoLayout.h>
 #import <TFY_AutoLayout/UIScrollView+TFY_HeaderScroll.h>
@@ -19,8 +17,6 @@
 
 #else
 
-#import "CALayer+TFY_Frame.h"
-#import "UIView+TFY_Frame.h"
 #import "UITableViewCell+TFY_AutoHeightForCell.h"
 #import "UIView+TFY_AutoLayout.h"
 #import "UIScrollView+TFY_HeaderScroll.h"

@@ -224,14 +224,6 @@
     return _modelDatas;
 }
 
--(NSArray<NSString *> *)sectionIndexArr{
-    if (self.sectionIndexBlock) {
-        _sectionIndexArr = self.sectionIndexBlock();
-    }
-    return _sectionIndexArr;
-}
-
-
 -(NSMutableArray<TFY_CellData *> *)cellDatas{
     if (!_cellDatas) {
         _cellDatas = [NSMutableArray array];
@@ -305,13 +297,6 @@
     };
 }
 
--(TFY_SectionMaker * (^)(sectionIndexBlock))tfy_sectionIndexArr{
-    return ^TFY_SectionMaker *(sectionIndexBlock block){
-        self.sectionData.sectionIndexBlock = block;
-        return self;
-    };
-}
-
 - (TFY_SectionMaker * (^)(UIView * (^)(void)))tfy_footerView {
     return ^TFY_SectionMaker *(UIView * (^view)(void)) {
         self.sectionData.footerView = view();
@@ -359,6 +344,7 @@
 
 @implementation TFY_TableData
 @synthesize sectionCount = _sectionCount;
+@synthesize sectionIndexArr = _sectionIndexArr;
 
 -(instancetype)initWithTableView:(UITableView *)tableView{
     self = [super init];
@@ -390,6 +376,18 @@
         _sectionDatas = [NSMutableArray array];
     }
     return _sectionDatas;
+}
+
+-(NSArray<NSString *> *)sectionIndexArr{
+    if (self.sectionIndexBlock) {
+        [self setSectionIndexArr:self.sectionIndexBlock(self.tableView)];
+    }
+    return _sectionIndexArr;
+}
+
+
+-(void)setSectionIndexArr:(NSArray<NSString *> *)sectionIndexArr{
+    _sectionIndexArr = sectionIndexArr;
 }
 
 -(void)setSectionMakeBlock:(SectionMakeBlock)sectionMakeBlock{
@@ -493,6 +491,13 @@
 - (TFY_TableViewMaker * (^)(NSInteger))tfy_sectionCount {
     return ^TFY_TableViewMaker *(NSInteger sectionCount) {
         self.tableData.sectionCount = sectionCount;
+        return self;
+    };
+}
+
+- (TFY_TableViewMaker * (^)(NSArray<NSString *> *))tfy_sectionIndexArr{
+    return ^TFY_TableViewMaker *(NSArray<NSString *> *sectionIndexArr){
+        self.tableData.sectionIndexArr = sectionIndexArr;
         return self;
     };
 }

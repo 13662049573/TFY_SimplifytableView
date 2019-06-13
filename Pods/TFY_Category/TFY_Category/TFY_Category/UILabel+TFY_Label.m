@@ -11,7 +11,7 @@
 #import <CoreText/CoreText.h>
 #import <Foundation/Foundation.h>
 
-#define weakSelf(type)      __weak typeof(type) weak##type = type;
+#define WSelf(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
 @interface TFY_RichTextModel : NSObject
 
@@ -28,21 +28,164 @@
 
 @implementation UILabel (TFY_Label)
 
-+(UILabel *)tfy_textcolor:(UIColor *)color FontOfSize:(CGFloat)siz Alignment:(NSInteger)index{
-    UILabel *lable =[[UILabel alloc] init];
-    lable.textColor = color;
-    lable.font = [UIFont systemFontOfSize:siz];
-    lable.adjustsFontSizeToFitWidth = YES;
-    if (index==0) {
-        lable.textAlignment = NSTextAlignmentCenter;
+/**
+ *  初始化Label
+ */
+UILabel *tfy_label(void){
+    return [UILabel new];
+}
+
+- (UILabel *(^)(NSString *text))tfy_text{
+    WSelf(weakSelf);
+    return ^(NSString *text){
+        weakSelf.text = text;
+        return weakSelf;
+    };
+}
+
+- (UILabel *(^)(NSString *HexString,CGFloat alpha))tfy_textcolor{
+    WSelf(weakSelf);
+    return ^(NSString *HexString,CGFloat alpha){
+        weakSelf.textColor = [weakSelf colorWithHexString:HexString alpha:alpha];
+        return weakSelf;
+    };
+}
+
+- (UILabel *(^)(CGFloat fontSize))tfy_fontSize{
+    WSelf(weakSelf);
+    return ^(CGFloat fontSize){
+        weakSelf.font = [UIFont systemFontOfSize:fontSize];
+        return weakSelf;
+    };
+}
+
+- (UILabel *(^)(NSInteger alignment))tfy_alignment{
+    WSelf(weakSelf);
+    return ^(NSInteger alignment){
+        if (alignment==0) {
+            weakSelf.textAlignment = NSTextAlignmentLeft;
+        }
+        else if (alignment==1){
+            weakSelf.textAlignment = NSTextAlignmentCenter;
+        }
+        else if (alignment ==2){
+            weakSelf.textAlignment = NSTextAlignmentRight;
+        }
+        return weakSelf;
+    };
+}
+
+- (UILabel *(^)(NSAttributedString *attributrdString))tfy_attributrdString{
+    WSelf(weakSelf);
+    return ^(NSAttributedString *attributrdString){
+        weakSelf.attributedText = attributrdString;
+        return weakSelf;
+    };
+}
+
+- (UILabel *(^)(NSInteger numberOfLines))tfy_numberOfLines{
+    WSelf(weakSelf);
+    return ^(NSInteger numberOfLines){
+        weakSelf.numberOfLines = numberOfLines;
+        return weakSelf;
+    };
+}
+
+- (UILabel *(^)(BOOL adjustsWidth))tfy_adjustsWidth{
+    WSelf(weakSelf);
+    return ^(BOOL adjustsWidth){
+        weakSelf.adjustsFontSizeToFitWidth = adjustsWidth;
+        return weakSelf;
+    };
+}
+
+-(UILabel *(^)(NSString *HexString,CGFloat alpha))tfy_backgroundColor{
+    WSelf(weakSelf);
+    return ^(NSString *str,CGFloat alpha){
+        weakSelf.backgroundColor = [weakSelf colorWithHexString:str alpha:alpha];
+        return weakSelf;
+    };
+}
+
+-(UILabel *(^)(CGFloat borderWidth, NSString *color))tfy_borders{
+    WSelf(weakSelf);
+    return ^(CGFloat borderWidth, NSString *color){
+        weakSelf.layer.borderWidth = borderWidth;
+        weakSelf.layer.borderColor = [weakSelf colorWithHexString:color alpha:1].CGColor;
+        return weakSelf;
+    };
+}
+/**
+ *  按钮  cornerRadius 圆角
+ */
+-(UILabel *(^)(CGFloat cornerRadius))tfy_cornerRadius{
+    WSelf(myself);
+    return ^(CGFloat cornerRadius){
+        myself.layer.cornerRadius = cornerRadius;
+        myself.layer.masksToBounds = YES;
+        return myself;
+    };
+}
+-(UILabel *(^)(NSString *color_str, CGFloat shadowRadius))tfy_bordersShadow{
+    WSelf(weakSelf);
+    return ^(NSString *color_str, CGFloat shadowRadius){
+        // 阴影颜色
+        weakSelf.layer.shadowColor = [weakSelf colorWithHexString:color_str alpha:1].CGColor;
+        // 阴影偏移，默认(0, -3)
+        weakSelf.layer.shadowOffset = CGSizeMake(0,0);
+        // 阴影透明度，默认0
+        weakSelf.layer.shadowOpacity = 0.5;
+        // 阴影半径，默认3
+        weakSelf.layer.shadowRadius = shadowRadius;
+        
+        return weakSelf;
+    };
+}
+
+-(UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alpha
+{
+    //删除字符串中的空格
+    NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
+    // String should be 6 or 8 characters
+    if ([cString length] < 6)
+    {
+        return [UIColor clearColor];
     }
-    if (index ==1) {
-        lable.textAlignment = NSTextAlignmentLeft;
+    // strip 0X if it appears
+    //如果是0x开头的，那么截取字符串，字符串从索引为2的位置开始，一直到末尾
+    if ([cString hasPrefix:@"0X"])
+    {
+        cString = [cString substringFromIndex:2];
     }
-    if (index==2) {
-        lable.textAlignment = NSTextAlignmentRight;
+    //如果是#开头的，那么截取字符串，字符串从索引为1的位置开始，一直到末尾
+    if ([cString hasPrefix:@"#"])
+    {
+        cString = [cString substringFromIndex:1];
     }
-    return lable;
+    if ([cString length] != 6)
+    {
+        return [UIColor clearColor];
+    }
+    
+    // Separate into r, g, b substrings
+    NSRange range;
+    range.location = 0;
+    range.length = 2;
+    //r                       截取的range = (0,2)
+    NSString *rString = [cString substringWithRange:range];
+    //g
+    range.location = 2;//     截取的range = (2,2)
+    NSString *gString = [cString substringWithRange:range];
+    //b
+    range.location = 4;//     截取的range = (4,2)
+    NSString *bString = [cString substringWithRange:range];
+    
+    // Scan values
+    unsigned int r, g, b;//将字符串十六进制两位数字转为十进制整数
+    [[NSScanner scannerWithString:rString] scanHexInt:&r];
+    [[NSScanner scannerWithString:gString] scanHexInt:&g];
+    [[NSScanner scannerWithString:bString] scanHexInt:&b];
+    return [UIColor colorWithRed:((float)r / 255.0f) green:((float)g / 255.0f) blue:((float)b / 255.0f) alpha:alpha];
 }
 
 #pragma mark - AssociatedObjects
@@ -165,7 +308,7 @@
     
     CGPoint point = [touch locationInView:self];
     
-    weakSelf(self);
+    WSelf(weakself);
     [self tfy_richTextFrameWithTouchPoint:point result:^(NSString *string, NSRange range, NSInteger index) {
         
         if (weakself.tfy_clickBlock) {
@@ -395,7 +538,7 @@
     
     self.tfy_attributeStrings = [NSMutableArray array];
     
-    weakSelf(self);
+    WSelf(weakself);
     [strings enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
         NSRange range = [totalStr rangeOfString:obj];

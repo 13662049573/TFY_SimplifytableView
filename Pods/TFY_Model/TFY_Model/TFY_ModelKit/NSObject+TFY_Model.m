@@ -10,7 +10,7 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 
-typedef enum : NSUInteger {
+typedef NS_OPTIONS(NSUInteger, TFY_TYPE){
     _Array,
     _Dictionary,
     _String,
@@ -28,7 +28,7 @@ typedef enum : NSUInteger {
     _Date,
     _Value,
     _Unknown
-} TFY_TYPE;
+};
 
 @interface TFY_ModelPropertyInfo : NSObject{
     @public

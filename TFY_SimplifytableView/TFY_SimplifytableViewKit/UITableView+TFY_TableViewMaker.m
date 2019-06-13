@@ -132,7 +132,6 @@ void HDExchangeImplementations(Class class, SEL newSelector, SEL oldSelector) {
     [tableViewmaker.tableData doSectionMakeBlock];
     dataSource.tableData = tableViewmaker.tableData;
     self.tfy_TableViewDataSource = dataSource;
-    
     return self;
 }
 

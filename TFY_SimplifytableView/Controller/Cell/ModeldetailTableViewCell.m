@@ -51,7 +51,9 @@
 
 -(UILabel *)name_label{
     if (!_name_label) {
-        _name_label = [UILabel tfy_textcolor:[UIColor tfy_colorWithHex:@"212121"] FontOfSize:15 Alignment:1];
+        _name_label = tfy_label();
+        _name_label.tfy_textcolor(@"212121", 1).tfy_fontSize(15).tfy_alignment(0);
+        
     }
     return _name_label;
 }

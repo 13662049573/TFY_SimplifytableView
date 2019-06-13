@@ -133,10 +133,6 @@ typedef void (^CellEventBlock)(UITableView *tableView, NSIndexPath * _Nonnull in
  */
 typedef  NSArray * _Nonnull (^GetDataBlock)(void);
 /**
- *  搜索组数组
- */
-typedef NSArray<NSString *> *_Nonnull(^sectionIndexBlock)(void);
-/**
  *   组数赋值 block
  */
 typedef  NSInteger (^NumberOfRowsBlock)(NSInteger section);
@@ -162,10 +158,6 @@ typedef void (^CellMakeBlock)(TFY_CellMaker * _Nonnull cellMaker);
  *  模型数据数组
  */
 @property (nonatomic, strong) NSArray *modelDatas;
-/**
- *  搜索所需数组
- */
-@property (nonatomic, strong) NSArray<NSString *> *sectionIndexArr;
 /**
  *  header 头文件字符串
  */
@@ -215,10 +207,6 @@ typedef void (^CellMakeBlock)(TFY_CellMaker * _Nonnull cellMaker);
  */
 @property(nonatomic, copy) GetDataBlock getDataBlock;
 /**
- *  搜索BLock
- */
-@property(nonatomic, copy) sectionIndexBlock sectionIndexBlock;
-/**
  *  制作一个cell
  */
 - (void)doCellMakerBlock;
@@ -238,10 +226,6 @@ typedef void (^CellMakeBlock)(TFY_CellMaker * _Nonnull cellMaker);
  *  数据
  */
 - (TFY_SectionMaker * (^)(GetDataBlock))tfy_dataArr;
-/**
- *  搜索组所需数组
- */
--(TFY_SectionMaker * (^)(sectionIndexBlock))tfy_sectionIndexArr;
 /**
  *   返回第几组
  */
@@ -321,6 +305,10 @@ typedef void (^SectionMakeBlock)(TFY_SectionMaker * sectionMaker);
  *   行数回调block
  */
 typedef NSUInteger (^SectionCountBlock)(UITableView *tableView);
+/**
+ *  搜索引擎数组block
+ */
+typedef NSArray<NSString *> *_Nonnull(^sectionIndexBlock)(UITableView *tableView);
 
 @interface TFY_TableData : NSObject
 /**
@@ -368,6 +356,10 @@ typedef NSUInteger (^SectionCountBlock)(UITableView *tableView);
  */
 @property (nonatomic, copy)  SectionCountBlock sectionCountBlock;
 /**
+ *  搜索BLock
+ */
+@property(nonatomic, copy) sectionIndexBlock sectionIndexBlock;
+/**
  *  字典数据
  */
 @property(nonatomic, strong) NSMutableDictionary * otherDelegateBlocksDic;
@@ -403,6 +395,10 @@ typedef NSUInteger (^SectionCountBlock)(UITableView *tableView);
  *  组行数回调
  */
 - (TFY_TableViewMaker * (^)(NSInteger))tfy_sectionCount;
+/**
+ *  搜索所需数组
+ */
+- (TFY_TableViewMaker * (^)(NSArray<NSString *> *))tfy_sectionIndexArr;
 /**
  *  组行数回调
  */

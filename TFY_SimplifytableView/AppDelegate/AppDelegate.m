@@ -16,6 +16,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [TFY_ContactManager sharedInstance].contactChangeHandler = ^{
+        [[TFY_ContactManager sharedInstance] accessSectionContactsComplection:^(BOOL succeed, NSArray<TFY_SectionPerson *> * _Nonnull contacts, NSArray<NSString *> * _Nonnull keys) {
+            
+        }];
+        
+        [[TFY_ContactManager sharedInstance] accessContactsComplection:^(BOOL succeed, NSArray<TFY_PersonModel *> * _Nonnull contacts) {
+            
+        }];
+    };
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor  whiteColor];
     

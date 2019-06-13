@@ -9,6 +9,7 @@
 #import "ModeldetailController.h"
 #import "ViewFooderView.h"
 #import "ModeldetailTableViewCell.h"
+#import "ContentsController.h"
 @interface ModeldetailController ()
 @property(nonatomic , strong)UITableView *tableView;
 
@@ -59,6 +60,10 @@
                     .tfy_adapter(^(__kindof ModeldetailTableViewCell *cell,Model_detail *data,NSIndexPath *indexPath){
                         
                         cell.models = data;
+                    })
+                    .tfy_event(^(__kindof UITableView *tableView,NSIndexPath *indexPath,id data){
+                        
+                        [self.navigationController pushViewController:[ContentsController new] animated:YES];
                     })
                     .tfy_autoHeight();
                     
