@@ -1,7 +1,7 @@
 PODS:
   - ReactiveObjC (3.1.1)
   - TFY_AutoLayout (2.4.7)
-  - TFY_Category (2.5.8)
+  - TFY_Category (2.6.0)
   - TFY_ContactManager (2.0.1)
   - TFY_Model (2.6.4)
   - TFY_Navigation (2.1.0)
@@ -26,7 +26,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   TFY_AutoLayout: 3856cd8766f67cd8aeca980281d630e28cdbfd12
-  TFY_Category: 4b33efa7653d0209695f9b49762a1aaf4599f17d
+  TFY_Category: 8af04bd801b0753c547e1d8db15826a94d9cd570
   TFY_ContactManager: c0453f4313f333e7067606c73d732935d0261d43
   TFY_Model: 0edfcd6fc0a026be792fa51e42ca638d6f07655e
   TFY_Navigation: 7e6c6eeb8f318233bf88fab31181e5408e4c04fb
