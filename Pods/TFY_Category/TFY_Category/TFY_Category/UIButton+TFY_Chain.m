@@ -7,8 +7,25 @@
 //
 
 #import "UIButton+TFY_Chain.h"
+#import <objc/runtime.h>
 
 #define WSelf(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+@interface UIButton ()
+/**
+ *  🐶nn    👇
+ */
+@property(nonatomic,strong)dispatch_source_t timer;
+/**
+ *  🐶记录外边的时间    👇
+ */
+@property(nonatomic,assign)NSInteger userTime;
+
+@end
+
+static NSInteger const TimeInterval = 60; // 默认时间
+static NSString * const ButtonTitleFormat = @"剩余%ld秒";
+static NSString * const RetainTitle = @"重试";
 
 @implementation UIButton (TFY_Chain)
 
@@ -259,5 +276,126 @@ UIButton *tfy_button(void){
     [[NSScanner scannerWithString:gString] scanHexInt:&g];
     [[NSScanner scannerWithString:bString] scanHexInt:&b];
     return [UIColor colorWithRed:((float)r / 255.0f) green:((float)g / 255.0f) blue:((float)b / 255.0f) alpha:alpha];
+}
+
+- (void)setTime:(NSInteger)time{
+    objc_setAssociatedObject(self, @selector(time), @(time), OBJC_ASSOCIATION_ASSIGN);
+}
+
+- (NSInteger)time{
+    
+    return  [objc_getAssociatedObject(self, _cmd) integerValue];
+}
+
+- (void)setFormat:(NSString *)format{
+    
+    objc_setAssociatedObject(self, @selector(format), format, OBJC_ASSOCIATION_COPY);
+}
+
+- (NSString *)format{
+    
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+- (void)setUserTime:(NSInteger)userTime{
+    
+    objc_setAssociatedObject(self, @selector(userTime), @(userTime), OBJC_ASSOCIATION_ASSIGN);
+}
+
+- (NSInteger)userTime{
+    
+    return  [objc_getAssociatedObject(self, _cmd) integerValue];
+}
+
+- (void)setTimer:(dispatch_source_t)timer{
+    
+    objc_setAssociatedObject(self, @selector(timer), timer, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (dispatch_source_t)timer{
+    
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+- (void)setCompleteBlock:(void (^)(void))CompleteBlock{
+    objc_setAssociatedObject(self, @selector(CompleteBlock), CompleteBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+-(void (^)(void))CompleteBlock{
+    return objc_getAssociatedObject(self, _cmd);
+}
+- (void)startTimer
+{
+    if (!self.time) {
+        self.time = TimeInterval;
+    }
+    if (!self.format) {
+        self.format = ButtonTitleFormat;
+    }
+    dispatch_queue_t globalQueue = dispatch_get_global_queue(0, 0);
+    dispatch_queue_t mainQueue = dispatch_get_main_queue();
+    self.timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, globalQueue);
+    dispatch_source_set_timer(self.timer, DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC, 0 * NSEC_PER_SEC);
+    dispatch_source_set_event_handler(self.timer, ^{
+        if (self.time <= 1) {
+            dispatch_source_cancel(self.timer);
+        }else
+        {
+            self.time --;
+            dispatch_async(mainQueue, ^{
+                self.enabled = NO;
+                [self setTitle:[NSString stringWithFormat:self.format,self.time] forState:UIControlStateNormal];
+            });
+        }
+    });
+    dispatch_source_set_cancel_handler(self.timer, ^{
+        dispatch_async(mainQueue, ^{
+            self.enabled = YES;
+            [self setTitle:RetainTitle forState:UIControlStateNormal];
+            if (self.CompleteBlock) {
+                self.CompleteBlock();
+            }
+            if (self.userTime) {
+                self.time = self.userTime;
+            }else
+            {
+                self.time = TimeInterval;
+            }
+        });
+    });
+    dispatch_resume(self.timer);
+}
+
+- (void)endTimer{
+    
+    dispatch_source_cancel(self.timer);
+}
+
+/**
+ *  动画启动
+ */
+- (void)show{
+    if (!self.hidden) return;
+    
+    self.hidden = NO;
+    
+    CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    scaleAnimation.fromValue = [NSNumber numberWithFloat:2.0];
+    scaleAnimation.toValue   = [NSNumber numberWithFloat:1.0];
+    scaleAnimation.duration  = .3;
+    
+    CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    opacityAnimation.fromValue  = [NSNumber numberWithFloat:.5];
+    opacityAnimation.toValue    = [NSNumber numberWithFloat:1];
+    opacityAnimation.duration   = .3;
+    
+    [self.layer addAnimation:scaleAnimation forKey:@"scale"];
+    [self.layer addAnimation:opacityAnimation forKey:@"opacity"];
+}
+/**
+ *  动画结束
+ */
+- (void)hide {
+    self.hidden = YES;
 }
 @end

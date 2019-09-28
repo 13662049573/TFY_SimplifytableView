@@ -968,7 +968,7 @@ void TFY_ProviderReleaseData(void * info, const void * data, size_t size) {
 }
 
 //布局颜色设置
-+(UIImage *)tfy_imageWithColor:(UIColor *)color{
+-(UIImage *)tfy_imageWithColor:(UIColor *)color{
     
     CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
     UIGraphicsBeginImageContext(rect.size);
@@ -1061,4 +1061,81 @@ void TFY_ProviderReleaseData(void * info, const void * data, size_t size) {
     UIGraphicsEndImageContext();
     return newImage ;
 }
+
+/**
+ * slaveheaderImage  上边视图的图片，生成的图片的宽度为headerImageView的宽度
+ * mastermidImage  中间视图的图片，生成的图片的宽度为midView的宽度，拼接在headerImageView的下面
+ * masterfootImage  下边视图的图片，生成的图片的宽度为footerImageView的宽度，拼接在midView的下面
+ */
++ (UIImage *)tfy_addSlaveHeaderImage:(UIImage *)slaveheaderImage toMasterMidImage:(UIImage *)mastermidImage toMasterFootImage:(UIImage *)masterfootImage{
+    CGSize size;
+    size.width = slaveheaderImage.size.width;
+    size.height = slaveheaderImage.size.height + mastermidImage.size.height + masterfootImage.size.height;
+    
+    UIGraphicsBeginImageContextWithOptions(size, YES, 0.0);
+    
+    //Draw slaveheaderImage
+    [slaveheaderImage drawInRect:CGRectMake(0, 0, slaveheaderImage.size.width, slaveheaderImage.size.height)];
+    
+    //Draw mastermidImage
+    [mastermidImage drawInRect:CGRectMake(0, mastermidImage.size.height, mastermidImage.size.width, mastermidImage.size.height)];
+    
+    //Draw masterfootImage
+    [masterfootImage drawInRect:CGRectMake(0, slaveheaderImage.size.height+masterfootImage.size.height, masterfootImage.size.width, masterfootImage.size.height)];
+    
+    UIImage *resultImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return resultImage;
+}
+//leftImage:左侧图片 rightImage:右侧图片 margin:两者间隔
++ (UIImage *)tfy_combineWithLeftImg:(UIImage*)leftImage rightImg:(UIImage*)rightImage withMargin:(NSInteger)margin{
+    if (rightImage == nil) {
+        return leftImage;
+    }
+    CGFloat width = leftImage.size.width + rightImage.size.width + margin;
+    CGFloat height = leftImage.size.height;
+    CGSize offScreenSize = CGSizeMake(width, height);
+    
+    // UIGraphicsBeginImageContext(offScreenSize);用这个重绘图片会模糊
+    UIGraphicsBeginImageContextWithOptions(offScreenSize, NO, [UIScreen mainScreen].scale);
+    
+    CGRect rectL = CGRectMake(0, 0, leftImage.size.width, height);
+    [leftImage drawInRect:rectL];
+    
+    CGRect rectR = CGRectMake(rectL.origin.x + leftImage.size.width + margin, 0, rightImage.size.width, height);
+    [rightImage drawInRect:rectR];
+    
+    UIImage* imagez = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return imagez;
+}
+/**
+ * *masterImage  主图片，生成的图片的宽度为masterImage的宽度
+ * slaveImage   从图片，拼接在masterImage的下面
+ */
++ (UIImage *)tfy_addSlaveImage:(UIImage *)slaveImage toMasterImage:(UIImage *)masterImage{
+ CGSize size;
+   size.width = masterImage.size.width;
+   size.height = masterImage.size.height + slaveImage.size.height;
+ 
+   UIGraphicsBeginImageContextWithOptions(size, YES, 0.0);
+ 
+ //Draw masterImage
+   [masterImage drawInRect:CGRectMake(0, 0, masterImage.size.width, masterImage.size.height)];
+ 
+ //Draw slaveImage
+   [slaveImage drawInRect:CGRectMake(0, masterImage.size.height, masterImage.size.width, slaveImage.size.height)];
+ 
+   UIImage *resultImage = UIGraphicsGetImageFromCurrentImageContext();
+ 
+   UIGraphicsEndImageContext();
+ 
+    return resultImage;
+    
+ }
+
 @end

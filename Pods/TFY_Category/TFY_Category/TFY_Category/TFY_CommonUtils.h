@@ -244,6 +244,26 @@ typedef void (^callBack) (BOOL granted, id  data);
  */
 +(NSString *)getNetType;
 /**
+ * 获取设备IDFA
+ */
++(NSString *)getDeviceIDFA;
+/**
+ *  获取设备IDFV
+ */
++(NSString *)getDeviceIDFV;
+/**
+ *  获取设备IMEI
+ */
++(NSString*)getDeviceIMEI;
+/**
+ *  获取设备MAC
+ */
++(NSString*)getDeviceMAC;
+/**
+ *  获取设备UUID
+ */
++(NSString*)getDeviceUUID;
+/**
  *  截取字符串后几位
  */
 +(NSString *)substring:(NSString *)substring length:(NSInteger )lengths;
@@ -255,6 +275,10 @@ typedef void (^callBack) (BOOL granted, id  data);
  *  秒数转换成时间,时，分，秒 转换成时分秒
  */
 +(NSString *)timeFormatted:(int)totalSeconds;
+/**
+ *  视频显示时间
+ */
++(NSString *)convertSecond2Time:(int)second;
 /**
  *   将时间数据（毫秒）转换为天和小时
  */
@@ -295,6 +319,22 @@ typedef void (^callBack) (BOOL granted, id  data);
  *  银行卡号的格式只显示最后四个数字其他*代替
  */
 +(NSString *)getNewBankNumWitOldBankNum:(NSString *)bankNum;
+/**
+ *  去掉小数点后无效的0
+ */
++ (NSString *)deleteFailureZero:(NSString *)string;
+/**
+ *  根据字节大小返回文件大小字符KB、MB
+ */
++ (NSString *)stringFromByteCount:(long long)byteCount;
+/**
+ *  获得设备型号
+ */
++ (NSString *)getCurrentDeviceModel;
+/**
+ *  根据字节大小返回文件大小字符KB、MB GB
+ */
++(NSString *)convertFileSize:(long long)size;
 #pragma ****************************************判断方法****************************************
 /**
  *  判断字符串是否是纯数字
@@ -364,6 +404,22 @@ typedef void (^callBack) (BOOL granted, id  data);
  *  判断是否需要过滤的特殊字符：~￥#&*<>《》()[]{}【】^@/￡¤￥|§¨「」『』￠￢￣~@#￥&*（）——+|《》$_€。
  */
 +(BOOL)isIncludeSpecialCharact:(NSString *)str;
+/**
+ *  验证身份证号码
+ */
++ (BOOL)isIdentityCardNumber:(NSString *)number;
+/**
+ *  验证香港身份证号码
+ */
++ (BOOL)isIdentityHKCardNumber:(NSString *)number;
+/**
+ *  验证密码格式（包含大写、小写、数字）
+ */
++ (BOOL)isConformSXPassword:(NSString *)password;
+/**
+ *  验证护照
+ */
++ (BOOL)isPassportNumber:(NSString *)number;
 #pragma ****************************************没有返回方法****************************************
 
 #pragma  mark - NSUserDefaults存取操作
@@ -489,6 +545,22 @@ typedef void (^callBack) (BOOL granted, id  data);
  *  按钮旋转动画
  */
 +(void)RotatinganimationView:(UIButton *)btn animateWithDuration:(NSTimeInterval)duration;
+/**
+ *  得到中英文混合字符串长度
+ */
++ (int)lengthForText:(NSString *)text;
+/**
+ *  清楚缓存数据
+ */
++(void)clearFile;
+/**
+ *  打印成员变量列表
+ */
++ (void)runTimeConsoleMemberListWithClassName:(Class)className;
+/**
+ *  打印属性列表
+ */
++ (void)runTimeConsolePropertyListWithClassName:(Class)className;
 #pragma ****************************************其他方法****************************************
 /**
  *  过滤数组中相等的数据
@@ -506,6 +578,11 @@ typedef void (^callBack) (BOOL granted, id  data);
  *  获取某个view在屏幕上的frame
  */
 +(CGRect)rectFromSunView:(UIView *)view;
+/**
+ *  获取缓存数据单位 M
+ */
++(float)readCacheSize;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -79,7 +79,34 @@ UIButton *tfy_button(void);
  *  button的大小要大于 图片大小+文字大小+spacing   spacing 图片和文字的间隔
  */
 -(void)tfy_layouEdgeInsetsPosition:(ButtonPosition)postion spacing:(CGFloat)spacing;
-
+/**
+ *  🐶计时时间    👇
+ */
+@property(nonatomic,assign,readwrite)NSInteger time;
+/**
+ *  🐶format   👇
+ */
+@property(nonatomic,copy)NSString *  format;
+/**
+ * 开启计时器
+ */
+- (void)startTimer;
+/**
+ * 干掉计时器
+ */
+- (void)endTimer;
+/**
+ * 倒计时完成后的回调
+ */
+@property(nonatomic,copy)void(^CompleteBlock)(void);
+/**
+ *  动画启动
+ */
+- (void)show;
+/**
+ *  动画结束
+ */
+- (void)hide;
 @end
 
 NS_ASSUME_NONNULL_END

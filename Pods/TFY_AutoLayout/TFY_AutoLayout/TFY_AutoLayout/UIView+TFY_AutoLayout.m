@@ -135,6 +135,43 @@ static inline TFY_CLASS_VIEW * owningView(TFY_VIEW * view) {
     return CGRectGetMinY(self.frame) + CGRectGetHeight(self.frame) / 2;
 }
 
+-(void)setTfy_left:(CGFloat)tfy_left{
+    CGFloat y = self.frame.origin.y;
+    CGFloat width = self.frame.size.width;
+    CGFloat height = self.frame.size.height;
+    self.frame = CGRectMake(tfy_left, y, width, height);
+}
+-(CGFloat)tfy_left{
+    return self.frame.origin.x;
+}
+
+-(void)setTfy_top:(CGFloat)tfy_top{
+    CGFloat x = self.frame.origin.x;
+    CGFloat width = self.frame.size.width;
+    CGFloat height = self.frame.size.height;
+    self.frame = CGRectMake(x, tfy_top, width, height);
+}
+-(CGFloat)tfy_top{
+    return self.frame.origin.y;
+}
+
+-(void)setTfy_right:(CGFloat)tfy_right{
+    CGRect frame = self.frame;
+    frame.origin.x = tfy_right - frame.size.width;
+    self.frame = frame;
+}
+-(CGFloat)tfy_right{
+    return self.frame.origin.x + self.frame.size.width;
+}
+
+-(void)setTfy_bottom:(CGFloat)tfy_bottom{
+    CGRect frame = self.frame;
+    frame.origin.y = tfy_bottom - frame.size.height;
+    self.frame = frame;
+}
+-(CGFloat)tfy_bottom{
+    return self.frame.origin.y + self.frame.size.height;
+}
 #if TARGET_OS_IPHONE || TARGET_OS_TV
 
 -(void)setTfy_cx:(CGFloat)tfy_cx{

@@ -72,7 +72,22 @@ typedef NS_OPTIONS(NSUInteger, TFY_LayoutOrientationOptions) {
  *  获取视图层中间y
  */
 @property(nonatomic, assign)CGFloat tfy_midY;
-
+/**
+ *  离左边距离
+ */
+@property (nonatomic, assign) CGFloat tfy_left;
+/**
+ *  离最上面距离
+ */
+@property (nonatomic, assign) CGFloat tfy_top;
+/**
+ *  离右边距离
+ */
+@property (nonatomic, assign) CGFloat tfy_right;
+/**
+ *  离最底部距离
+ */
+@property (nonatomic, assign) CGFloat tfy_bottom;
 #if TARGET_OS_IPHONE || TARGET_OS_TV
 /**
  *  获取视图层中心锚点x
@@ -82,7 +97,6 @@ typedef NS_OPTIONS(NSUInteger, TFY_LayoutOrientationOptions) {
  *  获取视图层中心锚点y
  */
 @property(nonatomic, assign)CGFloat tfy_cy;
-
 #endif
 /**
  *  获取视图层xy

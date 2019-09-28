@@ -187,7 +187,18 @@ NS_ASSUME_NONNULL_BEGIN
  * 获取 UTF8 编码 name 文件里的内容。类似[UIImage imageNamed:]
  */
 + (nullable NSString *)stringNamed:(NSString *)name;
-
+/**
+ * 根据字体、行数、行间距和指定的宽度constrainedWidth计算文本占据的size lineSpacing 行间距 constrainedWidth 文本指定的宽度
+ */
+- (CGSize)textSizeWithFont:(UIFont *)font numberOfLines:(NSInteger)numberOfLines lineSpacing:(CGFloat)lineSpacing constrainedWidth:(CGFloat)constrainedWidth;
+/**
+ *  根据字体、行数、行间距和指定的宽度constrainedWidth计算文本占据的size
+ */
+- (CGSize)textSizeWithFont:(UIFont *)font numberOfLines:(NSInteger)numberOfLines constrainedWidth:(CGFloat)constrainedWidth;
+/**
+ *  计算字符串长度（一行时候）
+ */
+- (CGSize)textSizeWithFont:(UIFont*)font limitWidth:(CGFloat)maxWidth;
 @end
 
 NS_ASSUME_NONNULL_END

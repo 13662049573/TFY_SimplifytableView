@@ -24,7 +24,14 @@
 #import "NSDate+TFY_Date.h"
 #import "NSArray+TFY_Arr.h"
 #import "NSMutableArray+TFY_Array.h"
-#import "TFY_CommonUtils.h"
 #import "UIImageView+TFY_Chain.h"
+#import "UIViewController+TFY_PlayerRotation.h"
+#import "UIDevice+Orientation.h"
+#import "UITextField+TFY_Chain.h"
+#import "UITextView+TFY_Chain.h"
+
+
+#import "TFY_CommonUtils.h"
+#import "TFY_HandlerVideo.h"
 
 #endif /* TFY_CategoryHerder_h */

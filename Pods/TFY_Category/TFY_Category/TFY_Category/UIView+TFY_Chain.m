@@ -276,106 +276,11 @@ NSString const *UIView_badgeValueKey = @"UIView_badgeValueKey";
     return nil;
 }
 
-/**
- *  设置view指定位置的边框 color 边框颜色  borderWidth  边框宽度   borderType  边框类型
- */
--(UIView *_Nonnull)tfy_borderForColor:(UIColor *_Nonnull)color borderWidth:(CGFloat)borderWidth borderType:(UIBorderSideType)borderType{
-    if (borderType == UIBorderSideTypeAll) {
-        self.layer.borderWidth = borderWidth;
-        self.layer.borderColor = color.CGColor;
-        return self;
-    }
-    /// 左侧
-    if (borderType & UIBorderSideTypeLeft) {
-        /// 左侧线路径
-        [self.layer addSublayer:[self addLineOriginPoint:CGPointMake(0.f, 0.f) toPoint:CGPointMake(0.0f, self.frame.size.height) color:color borderWidth:borderWidth]];
-    }
-    
-    /// 右侧
-    if (borderType & UIBorderSideTypeRight) {
-        /// 右侧线路径
-        [self.layer addSublayer:[self addLineOriginPoint:CGPointMake(self.frame.size.width, 0.0f) toPoint:CGPointMake( self.frame.size.width, self.frame.size.height) color:color borderWidth:borderWidth]];
-    }
-    
-    /// top
-    if (borderType & UIBorderSideTypeTop) {
-        /// top线路径
-        [self.layer addSublayer:[self addLineOriginPoint:CGPointMake(0.0f, 0.0f) toPoint:CGPointMake(self.frame.size.width, 0.0f) color:color borderWidth:borderWidth]];
-    }
-    
-    /// bottom
-    if (borderType & UIBorderSideTypeBottom) {
-        /// bottom线路径
-        [self.layer addSublayer:[self addLineOriginPoint:CGPointMake(0.0f, self.frame.size.height) toPoint:CGPointMake( self.frame.size.width, self.frame.size.height) color:color borderWidth:borderWidth]];
-    }
-    
-    return self;
+-(void)tfy_setShadow:(CGSize)size shadowOpacity:(CGFloat)opacity shadowRadius:(CGFloat)radius shadowColor:(UIColor *)color{
+    self.layer.shadowOffset = size;
+    self.layer.shadowRadius = radius;
+    self.layer.shadowOpacity = opacity;
+    self.layer.shadowColor = color.CGColor;
 }
 
-- (CAShapeLayer *)addLineOriginPoint:(CGPoint)p0 toPoint:(CGPoint)p1 color:(UIColor *)color borderWidth:(CGFloat)borderWidth {
-    /// 线的路径
-    UIBezierPath * bezierPath = [UIBezierPath bezierPath];
-    [bezierPath moveToPoint:p0];
-    [bezierPath addLineToPoint:p1];
-    
-    CAShapeLayer * shapeLayer = [CAShapeLayer layer];
-    shapeLayer.strokeColor = color.CGColor;
-    shapeLayer.fillColor  = [UIColor clearColor].CGColor;
-    /// 添加路径
-    shapeLayer.path = bezierPath.CGPath;
-    /// 线宽度
-    shapeLayer.lineWidth = borderWidth;
-    return shapeLayer;
-}
-
-/**
- * 添加阴影 shadowColor 阴影颜色 shadowOpacity 阴影透明度，默认0  shadowRadius  阴影半径，默认3 shadowPathSide 设置哪一侧的阴影，shadowPathWidth 阴影的宽度，
- */
--(void)tfy_SetShadowPathWith:(UIColor *_Nonnull)shadowColor shadowOpacity:(CGFloat)shadowOpacity shadowRadius:(CGFloat)shadowRadius shadowSide:(TFY_ShadowPathSide)shadowPathSide shadowPathWidth:(CGFloat)shadowPathWidth{
-    
-    self.layer.masksToBounds = NO;
-    
-    self.layer.shadowColor = shadowColor.CGColor;
-    
-    self.layer.shadowOpacity = shadowOpacity;
-    
-    self.layer.shadowRadius =  shadowRadius;
-    
-    self.layer.shadowOffset = CGSizeZero;
-    CGRect shadowRect;
-    
-    CGFloat originX = 0;
-    
-    CGFloat originY = 0;
-    
-    CGFloat originW = self.bounds.size.width;
-    
-    CGFloat originH = self.bounds.size.height;
-    
-    
-    switch (shadowPathSide) {
-        case TFY_ShadowPathTop:
-            shadowRect  = CGRectMake(originX, originY - shadowPathWidth/2, originW,  shadowPathWidth);
-            break;
-        case TFY_ShadowPathBottom:
-            shadowRect  = CGRectMake(originX, originH -shadowPathWidth/2, originW, shadowPathWidth);
-            break;
-            
-        case TFY_ShadowPathLeft:
-            shadowRect  = CGRectMake(originX - shadowPathWidth/2, originY, shadowPathWidth, originH);
-            break;
-            
-        case TFY_ShadowPathRight:
-            shadowRect  = CGRectMake(originW - shadowPathWidth/2, originY, shadowPathWidth, originH);
-            break;
-        case TFY_ShadowPathNoTop:
-            shadowRect  = CGRectMake(originX -shadowPathWidth/2, originY +1, originW +shadowPathWidth,originH + shadowPathWidth/2 );
-            break;
-        case TFY_ShadowPathAllSide:
-            shadowRect  = CGRectMake(originX - shadowPathWidth/2, originY - shadowPathWidth/2, originW +  shadowPathWidth, originH + shadowPathWidth);
-            break;
-    }
-    UIBezierPath *path =[UIBezierPath bezierPathWithRect:shadowRect];
-    self.layer.shadowPath = path.CGPath;
-}
 @end

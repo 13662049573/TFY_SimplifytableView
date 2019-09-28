@@ -12,6 +12,8 @@
 #import <SystemConfiguration/CaptiveNetwork.h>
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
+//获取idfa
+#import <AdSupport/ASIdentifierManager.h>
 #import <sys/socket.h>
 #import <netinet/in.h>
 #pragma 手机授权需求系统库头文件
@@ -34,6 +36,13 @@
 #import <netdb.h>
 #import <sys/socket.h>
 #import <netinet/in.h>
+#include <sys/types.h>
+#include <sys/sysctl.h>
+#import <objc/runtime.h>
+#include <sys/sysctl.h>
+#include <sys/socket.h>
+#include <net/if.h>
+#include <net/if_dl.h>
 #define ARRAY_SIZE(a) sizeof(a)/sizeof(a[0])
 #pragma *******************************************判断获取网络数据****************************************
 
@@ -269,6 +278,71 @@ const char* jailbreak_tool_pathes[] = {
     else if ([currentStatus isEqualToString:@"CTRadioAccessTechnologyeHRPD"]){netconnType = @"HRPD";}
     else if ([currentStatus isEqualToString:@"CTRadioAccessTechnologyLTE"]){netconnType = @"4G";}
     return netconnType;
+}
++(NSString *)getDeviceIDFA{
+    ASIdentifierManager *asIM = [[ASIdentifierManager alloc] init];
+    NSString *idfaStr = [asIM.advertisingIdentifier UUIDString];
+    return idfaStr;
+}
+
++(NSString *)getDeviceIDFV{
+    NSString* idfvStr      = [[UIDevice currentDevice] identifierForVendor].UUIDString;
+    return idfvStr;
+}
+//Git上的erica的UIDevice扩展文件，以前可用但由于IOKit framework没有公开，所以也无法使用。就算手动导入，依旧无法使用，看来获取IMEI要失败了,同时失败的还有IMSI。不过还存在另外一种可能，Stack Overflow上有人提供采用com.apple.coretelephony.Identity.get entitlement方法，but device must be jailbroken；在此附上链接，供大家参考：http://stackoverflow.com/questions/16667988/how-to-get-imei-on-iphone-5/16677043#16677043
++(NSString *)getDeviceIMEI{
+    NSString* imeiStr = @"回头吧，翻遍国内外了，failed，快看代码注释";
+    return imeiStr;
+}
+
++(NSString*)getDeviceMAC{
+    int mib[6];
+    size_t len;
+    char *buf;
+    unsigned char *ptr;
+    struct if_msghdr *ifm;
+    struct sockaddr_dl *sdl;
+    
+    mib[0] = CTL_NET;
+    mib[1] = AF_ROUTE;
+    mib[2] = 0;
+    mib[3] = AF_LINK;
+    mib[4] = NET_RT_IFLIST;
+    
+    if ((mib[5] = if_nametoindex("en0")) == 0) {
+        printf("Error: if_nametoindex error\n");
+        return NULL;
+    }
+    
+    if (sysctl(mib, 6, NULL, &len, NULL, 0) < 0) {
+        printf("Error: sysctl, take 1\n");
+        return NULL;
+    }
+    
+    if ((buf = malloc(len)) == NULL) {
+        printf("Could not allocate memory. error!\n");
+        return NULL;
+    }
+    
+    if (sysctl(mib, 6, buf, &len, NULL, 0) < 0) {
+        printf("Error: sysctl, take 2");
+        free(buf);
+        return NULL;
+    }
+    
+    ifm = (struct if_msghdr *)buf;
+    sdl = (struct sockaddr_dl *)(ifm + 1);
+    ptr = (unsigned char *)LLADDR(sdl);
+    NSString *macStr = [NSString stringWithFormat:@"%02X:%02X:%02X:%02X:%02X:%02X",*ptr, *(ptr+1), *(ptr+2), *(ptr+3), *(ptr+4), *(ptr+5)];
+    free(buf);
+    return macStr;
+}
++(NSString*)getDeviceUUID{
+    
+    CFUUIDRef uuid = CFUUIDCreate(NULL);
+    assert(uuid != NULL);
+    CFStringRef uuidStr = CFUUIDCreateString(NULL, uuid);
+    return (__bridge NSString *)(uuidStr);
 }
 
 #pragma ---------------------------------------手机权限授权方法开始---------------------------------------
@@ -1390,6 +1464,22 @@ const char* jailbreak_tool_pathes[] = {
     return [NSString stringWithFormat:@"%d天 %d时 %d分 %d秒",day,hours,minutes,seconds];
 }
 /**
+ *  视频显示时间
+ */
++(NSString *)convertSecond2Time:(int)second
+{
+    NSString* timeStr = @"" ;
+    int oneHour = 3600;// 一小时 3600s
+    NSTimeInterval time= second - 8*oneHour;//因为时差问题要减8小时(28800s)
+    NSDate *detaildate=[NSDate dateWithTimeIntervalSince1970:time];
+    //实例化一个NSDateFormatter对象
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    //设定时间格式,这里可以设置成自己需要的格式
+    dateFormatter.dateFormat = second < oneHour ? @"mm:ss" : @"HH:mm:ss";
+    timeStr = [dateFormatter stringFromDate: detaildate];
+    return timeStr;
+}
+/**
  *   将时间数据（毫秒）转换为天和小时
  */
 +(NSString*)getOvertime:(NSString*)mStr{
@@ -1586,6 +1676,258 @@ const char* jailbreak_tool_pathes[] = {
         
     }
     return bankNum;
+}
+//去掉小数点后无效的0
++ (NSString *)deleteFailureZero:(NSString *)string
+{
+    if ([string rangeOfString:@"."].length == 0) {
+        return string;
+    }
+    
+    for (int i = 0; i < string.length; i++) {
+        if (![string hasSuffix:@"0"]) {
+            break;
+        }else {
+            string = [string substringToIndex:[string length] - 1];
+        }
+    }
+    
+    //避免像2.0000这样的被解析成2.
+    if ([string hasSuffix:@"."]) {
+        return [string substringToIndex:[string length] - 1];
+    }else {
+        return string;
+    }
+}
+/**
+ *  根据字节大小返回文件大小字符KB、MB
+ */
++ (NSString *)stringFromByteCount:(long long)byteCount{
+    return [NSByteCountFormatter stringFromByteCount:byteCount countStyle:NSByteCountFormatterCountStyleFile];
+}
+/**
+ *  根据字节大小返回文件大小字符KB、MB GB
+ */
++(NSString *)convertFileSize:(long long)size{
+    long kb = 1024;
+    long mb = kb * 1024;
+    long gb = mb * 1024;
+    
+    if (size >= gb) {
+        return [NSString stringWithFormat:@"%.1f GB", (float) size / gb];
+    } else if (size >= mb) {
+        float f = (float) size / mb;
+        if (f > 100) {
+            return [NSString stringWithFormat:@"%.0f MB", f];
+        }else{
+            return [NSString stringWithFormat:@"%.1f MB", f];
+        }
+    } else if (size >= kb) {
+        float f = (float) size / kb;
+        if (f > 100) {
+            return [NSString stringWithFormat:@"%.0f KB", f];
+        }else{
+            return [NSString stringWithFormat:@"%.1f KB", f];
+        }
+    } else
+        return [NSString stringWithFormat:@"%lld B", size];
+}
+//获得设备型号
++ (NSString *)getCurrentDeviceModel
+{
+    int mib[2];
+    size_t len;
+    char *machine;
+    
+    mib[0] = CTL_HW;
+    mib[1] = HW_MACHINE;
+    sysctl(mib, 2, NULL, &len, NULL, 0);
+    machine = malloc(len);
+    sysctl(mib, 2, machine, &len, NULL, 0);
+    
+    NSString *platform = [NSString stringWithCString:machine encoding:NSASCIIStringEncoding];
+    free(machine);
+    
+    // iPhone
+    if ([platform isEqualToString:@"iPhone1,1"]) return @"iPhone 2G";
+    if ([platform isEqualToString:@"iPhone1,2"]) return @"iPhone 3G";
+    if ([platform isEqualToString:@"iPhone2,1"]) return @"iPhone 3GS";
+    if ([platform isEqualToString:@"iPhone3,1"]) return @"iPhone 4";
+    if ([platform isEqualToString:@"iPhone3,2"]) return @"iPhone 4";
+    if ([platform isEqualToString:@"iPhone3,3"]) return @"iPhone 4";
+    if ([platform isEqualToString:@"iPhone4,1"]) return @"iPhone 4S";
+    if ([platform isEqualToString:@"iPhone5,1"]) return @"iPhone 5";
+    if ([platform isEqualToString:@"iPhone5,2"]) return @"iPhone 5";
+    if ([platform isEqualToString:@"iPhone5,3"]) return @"iPhone 5c";
+    if ([platform isEqualToString:@"iPhone5,4"]) return @"iPhone 5c";
+    if ([platform isEqualToString:@"iPhone6,1"]) return @"iPhone 5s";
+    if ([platform isEqualToString:@"iPhone6,2"]) return @"iPhone 5s";
+    if ([platform isEqualToString:@"iPhone7,2"]) return @"iPhone 6";
+    if ([platform isEqualToString:@"iPhone7,1"]) return @"iPhone 6 Plus";
+    if ([platform isEqualToString:@"iPhone8,1"]) return @"iPhone 6s";
+    if ([platform isEqualToString:@"iPhone8,2"]) return @"iPhone 6s Plus";
+    if ([platform isEqualToString:@"iPhone8,3"]) return @"iPhone SE";
+    if ([platform isEqualToString:@"iPhone8,4"]) return @"iPhone SE";
+    if ([platform isEqualToString:@"iPhone9,1"]) return @"iPhone 7";
+    if ([platform isEqualToString:@"iPhone9,2"]) return @"iPhone 7 Plus";
+    if ([platform isEqualToString:@"iPhone10,1"]) return @"iPhone 8";
+    if ([platform isEqualToString:@"iPhone10,4"]) return @"iPhone 8";
+    if ([platform isEqualToString:@"iPhone10,2"]) return @"iPhone 8 Plus";
+    if ([platform isEqualToString:@"iPhone10,5"]) return @"iPhone 8 Plus";
+    if ([platform isEqualToString:@"iPhone10,3"]) return @"iPhone X";
+    if ([platform isEqualToString:@"iPhone10,6"]) return @"iPhone X";
+    if ([platform isEqualToString:@"iPhone11,2"]) return@"iPhone XS";
+    if ([platform isEqualToString:@"iPhone11,4"] || [platform isEqualToString:@"iPhone11,6"]) return@"iPhone XS Max";
+    if ([platform isEqualToString:@"iPhone11,8"]) return@"iPhone XR";
+    
+    //iPod Touch
+    if ([platform isEqualToString:@"iPod1,1"])   return @"iPod Touch";
+    if ([platform isEqualToString:@"iPod2,1"])   return @"iPod Touch 2G";
+    if ([platform isEqualToString:@"iPod3,1"])   return @"iPod Touch 3G";
+    if ([platform isEqualToString:@"iPod4,1"])   return @"iPod Touch 4G";
+    if ([platform isEqualToString:@"iPod5,1"])   return @"iPod Touch 5G";
+    if ([platform isEqualToString:@"iPod7,1"])   return @"iPod Touch 6G";
+    
+    //iPad
+    if ([platform isEqualToString:@"iPad1,1"])   return @"iPad";
+    if ([platform isEqualToString:@"iPad2,1"])   return @"iPad 2";
+    if ([platform isEqualToString:@"iPad2,2"])   return @"iPad 2";
+    if ([platform isEqualToString:@"iPad2,3"])   return @"iPad 2";
+    if ([platform isEqualToString:@"iPad2,4"])   return @"iPad 2";
+    if ([platform isEqualToString:@"iPad3,1"])   return @"iPad 3";
+    if ([platform isEqualToString:@"iPad3,2"])   return @"iPad 3";
+    if ([platform isEqualToString:@"iPad3,3"])   return @"iPad 3";
+    if ([platform isEqualToString:@"iPad3,4"])   return @"iPad 4";
+    if ([platform isEqualToString:@"iPad3,5"])   return @"iPad 4";
+    if ([platform isEqualToString:@"iPad3,6"])   return @"iPad 4";
+    if ([platform isEqualToString:@"iPad6,11"] || [platform isEqualToString:@"iPad6,12"]) return @"iPad 5";
+    if ([platform isEqualToString:@"iPad7,5"] || [platform isEqualToString:@"iPad7,6"]) return @"iPad 6";
+    
+    //iPad Pro
+    if ([platform isEqualToString:@"iPad6,3"] || [platform isEqualToString:@"iPad6,4"]) return @"iPad Pro 9.7 inch";
+    if ([platform isEqualToString:@"iPad6,7"] || [platform isEqualToString:@"iPad6,8"]) return @"iPad Pro 12.9 inch";
+    if ([platform isEqualToString:@"iPad7,1"] || [platform isEqualToString:@"iPad7,2"]) return @"iPad Pro 12.9 inch 2";
+    if ([platform isEqualToString:@"iPad7,3"] || [platform isEqualToString:@"iPad7,4"]) return @"iPad Pro 10.5 inch";
+    
+    //iPad Air
+    if ([platform isEqualToString:@"iPad4,1"])   return @"iPad Air";
+    if ([platform isEqualToString:@"iPad4,2"])   return @"iPad Air";
+    if ([platform isEqualToString:@"iPad4,3"])   return @"iPad Air";
+    if ([platform isEqualToString:@"iPad5,3"])   return @"iPad Air2";
+    if ([platform isEqualToString:@"iPad5,4"])   return @"iPad Air2";
+    
+    //iPad mini
+    if ([platform isEqualToString:@"iPad2,5"])   return @"iPad mini 1G";
+    if ([platform isEqualToString:@"iPad2,6"])   return @"iPad mini 1G";
+    if ([platform isEqualToString:@"iPad2,7"])   return @"iPad mini 1G";
+    if ([platform isEqualToString:@"iPad4,4"])   return @"iPad mini 2";
+    if ([platform isEqualToString:@"iPad4,5"])   return @"iPad mini 2";
+    if ([platform isEqualToString:@"iPad4,6"])   return @"iPad mini 2";
+    if ([platform isEqualToString:@"iPad4,7"])   return @"iPad mini 3";
+    if ([platform isEqualToString:@"iPad4,8"])   return @"iPad mini 3";
+    if ([platform isEqualToString:@"iPad4,9"])   return @"iPad mini 3";
+    if ([platform isEqualToString:@"iPad5,1"])   return @"iPad mini 4";
+    if ([platform isEqualToString:@"iPad5,2"])   return @"iPad mini 4";
+    
+    if ([platform isEqualToString:@"i386"])      return @"iPhone Simulator";
+    if ([platform isEqualToString:@"x86_64"])    return @"iPhone Simulator";
+    
+    return platform;
+}
+/**
+ *  获取缓存数据单位 M
+ */
++(float)readCacheSize{
+    NSString *cachePath = [NSSearchPathForDirectoriesInDomains (NSCachesDirectory , NSUserDomainMask , YES) firstObject];
+    return [ self folderSizeAtPath :cachePath];
+}
+
+/**
+ *  遍历文件夹获得文件夹大小，返回多少 M
+ */
++(float)folderSizeAtPath:(NSString *)folderPath{
+    
+    NSFileManager * manager = [NSFileManager defaultManager];
+    if (![manager fileExistsAtPath :folderPath]) return 0 ;
+    NSEnumerator *childFilesEnumerator = [[manager subpathsAtPath :folderPath] objectEnumerator];
+    NSString * fileName;
+    long long folderSize = 0 ;
+    while ((fileName = [childFilesEnumerator nextObject]) != nil ){
+        //获取文件全路径
+        NSString * fileAbsolutePath = [folderPath stringByAppendingPathComponent :fileName];
+        folderSize += [self fileSizeAtPath:fileAbsolutePath];
+    }
+    
+    return folderSize/( 1024.0 * 1024.0);
+    
+}
+/**
+ *  计算 单个文件的大小
+ */
++(long long)fileSizeAtPath:( NSString *) filePath{
+    NSFileManager * manager = [NSFileManager defaultManager];
+    if ([manager fileExistsAtPath :filePath]){
+        return [[manager attributesOfItemAtPath :filePath error : nil] fileSize];
+    }
+    return 0;
+}
+/**
+ *  清楚缓存数据
+ */
++(void)clearFile
+{
+    NSString * cachePath = [NSSearchPathForDirectoriesInDomains (NSCachesDirectory , NSUserDomainMask , YES ) firstObject];
+    NSArray * files = [[NSFileManager defaultManager ] subpathsAtPath :cachePath];
+    for ( NSString * p in files) {
+        
+        NSError * error = nil ;
+        //获取文件全路径
+        NSString * fileAbsolutePath = [cachePath stringByAppendingPathComponent :p];
+        
+        if ([[NSFileManager defaultManager ] fileExistsAtPath :fileAbsolutePath]) {
+            [[NSFileManager defaultManager ] removeItemAtPath :fileAbsolutePath error :&error];
+        }
+    }
+}
+/**
+ *  打印成员变量列表
+ */
++ (void)runTimeConsoleMemberListWithClassName:(Class)className{
+    unsigned int outCount = 0;
+    Ivar *ivars = class_copyIvarList(className, &outCount);
+    for (unsigned int i = 0; i < outCount; i++) {
+        Ivar ivar = ivars[i];
+        const char *name = ivar_getName(ivar);
+        const char *type = ivar_getTypeEncoding(ivar);
+        NSLog(@"类型为 %s 的 %s ",type, name);
+    }
+    free(ivars);
+}
+/**
+ *  打印属性列表
+ */
++ (void)runTimeConsolePropertyListWithClassName:(Class)className{
+    unsigned int outCount = 0;
+    objc_property_t * properties = class_copyPropertyList(className, &outCount);
+    for (unsigned int i = 0; i < outCount; i ++) {
+        objc_property_t property = properties[i];
+        //属性名
+        const char * name = property_getName(property);
+        //属性描述
+        const char * propertyAttr = property_getAttributes(property);
+        //属性的特性
+        unsigned int attrCount = 0;
+        objc_property_attribute_t * attrs = property_copyAttributeList(property, &attrCount);
+        for (unsigned int j = 0; j < attrCount; j ++) {
+            objc_property_attribute_t attr = attrs[j];
+            const char * name = attr.name;
+            const char * value = attr.value;
+            NSLog(@"属性的描述：%s 值：%s", name, value);
+        }
+        free(attrs);
+        NSLog(@"\n");
+    }
+    free(properties);
 }
 
 /**
@@ -1945,6 +2287,65 @@ const char* jailbreak_tool_pathes[] = {
     }
     return YES;
 }
+/**
+ *  验证身份证号码
+ */
++ (BOOL)isIdentityCardNumber:(NSString *)number{
+    NSString *cardNum = @"^[1-9]\\d{5}[1-9]\\d{3}((0\\d)|(1[0-2]))(([0|1|2]\\d)|3[0-1])\\d{3}([0-9]|[X|x])";
+    
+    NSPredicate *identityCardPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", cardNum];
+    
+    if ([identityCardPredicate evaluateWithObject:number] == YES) {
+        return YES;
+    }else {
+        return NO;
+    }
+}
+/**
+ *  验证香港身份证号码
+ */
++ (BOOL)isIdentityHKCardNumber:(NSString *)number{
+    NSString *cardNum = @"^[A-Z]{1,2}[0-9]{6}\\(?[0-9A]\\)?$";
+    
+    NSPredicate *identityCardPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", cardNum];
+    
+    if ([identityCardPredicate evaluateWithObject:number] == YES) {
+        return YES;
+    }else {
+        return NO;
+    }
+}
+/**
+ *  验证密码格式（包含大写、小写、数字）
+ */
++ (BOOL)isConformSXPassword:(NSString *)password{
+    NSString *conText = @"(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[a-zA-Z0-9]{6,20}";
+    
+    NSPredicate *regextestMobile = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", conText];
+    
+    if ([regextestMobile evaluateWithObject:password] == YES) {
+        return YES;
+    }else {
+        return NO;
+    }
+}
+/**
+ *  验证护照
+ */
++ (BOOL)isPassportNumber:(NSString *)number{
+    NSString *portNum = @"^1[45][0-9]{7}|([P|p|S|s]\\d{7})|([S|s|G|g]\\d{8})|([Gg|Tt|Ss|Ll|Qq|Dd|Aa|Ff]\\d{8})|([H|h|M|m]\\d{8，10})$";
+    NSPredicate *identityCardPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", portNum];
+    if ([identityCardPredicate evaluateWithObject:number] == YES) {
+        return YES;
+    }else {
+        return NO;
+    }
+}
+
+
+
+
+
 /**
  *  存储当前BOOL
  */
@@ -2411,6 +2812,25 @@ static CGRect oldframe;
         statusBar.backgroundColor = statusBarColor;
     }
 }
+
+/**
+ *  得到中英文混合字符串长度
+ */
++ (int)lengthForText:(NSString *)text{
+    int strlength = 0;
+    char *p = (char*)[text cStringUsingEncoding:NSUnicodeStringEncoding];
+    for (int i=0 ; i < [text lengthOfBytesUsingEncoding:NSUnicodeStringEncoding]; i++) {
+        if (*p) {
+            p++;
+            strlength++;
+        }else {
+            p++;
+        }
+    }
+    
+    return strlength;
+}
+
 /**
  *  过滤数组中相等的数据
  */

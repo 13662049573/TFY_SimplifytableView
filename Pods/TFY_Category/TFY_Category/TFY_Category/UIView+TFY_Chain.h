@@ -10,32 +10,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-//添加阴影需要的枚举
-typedef NS_OPTIONS(NSUInteger, TFY_ShadowPathSide){
-    
-    TFY_ShadowPathLeft,
-    
-    TFY_ShadowPathRight,
-    
-    TFY_ShadowPathTop,
-    
-    TFY_ShadowPathBottom,
-    
-    TFY_ShadowPathNoTop,
-    
-    TFY_ShadowPathAllSide
-    
-};
-//添加边框的枚举
-typedef NS_OPTIONS(NSUInteger, UIBorderSideType) {
-    UIBorderSideTypeAll  = 0,
-    UIBorderSideTypeTop = 1 << 0,
-    UIBorderSideTypeBottom = 1 << 1,
-    UIBorderSideTypeLeft = 1 << 2,
-    UIBorderSideTypeRight = 1 << 3,
-};
-
-
 @interface UIView (TFY_Chain)
 /**
  *  初始一个Lable 可以随自己更改
@@ -94,13 +68,9 @@ typedef NS_OPTIONS(NSUInteger, UIBorderSideType) {
  */
 - (UITabBarController *_Nonnull)tabBarController;
 /**
- *  设置view指定位置的边框 color 边框颜色  borderWidth  边框宽度   borderType  边框类型
+ *  添加四边阴影 shadowColor 颜色  shadowRadius 半径 shadowOpacity 透明度  setShadow 大小
  */
--(UIView *_Nonnull)tfy_borderForColor:(UIColor *_Nonnull)color borderWidth:(CGFloat)borderWidth borderType:(UIBorderSideType)borderType;
-/**
- * 添加阴影 shadowColor 阴影颜色 shadowOpacity 阴影透明度，默认0  shadowRadius  阴影半径，默认3 shadowPathSide 设置哪一侧的阴影，shadowPathWidth 阴影的宽度，
- */
--(void)tfy_SetShadowPathWith:(UIColor *_Nonnull)shadowColor shadowOpacity:(CGFloat)shadowOpacity shadowRadius:(CGFloat)shadowRadius shadowSide:(TFY_ShadowPathSide)shadowPathSide shadowPathWidth:(CGFloat)shadowPathWidth;
+-(void)tfy_setShadow:(CGSize)size shadowOpacity:(CGFloat)opacity shadowRadius:(CGFloat)radius shadowColor:(UIColor *)color;
 
 @end
 

@@ -1,15 +1,9 @@
 PODS:
   - ReactiveObjC (3.1.1)
-  - SQLCipher (4.2.0):
-    - SQLCipher/standard (= 4.2.0)
-  - SQLCipher/common (4.2.0)
-  - SQLCipher/standard (4.2.0):
-    - SQLCipher/common
-  - TFY_AutoLayout (2.4.5)
-  - TFY_Category (2.2.4)
+  - TFY_AutoLayout (2.4.7)
+  - TFY_Category (2.5.8)
   - TFY_ContactManager (2.0.1)
-  - TFY_Model (2.6.0):
-    - SQLCipher
+  - TFY_Model (2.6.4)
   - TFY_Navigation (2.1.0)
 
 DEPENDENCIES:
@@ -21,9 +15,8 @@ DEPENDENCIES:
   - TFY_Navigation
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - ReactiveObjC
-    - SQLCipher
     - TFY_AutoLayout
     - TFY_Category
     - TFY_ContactManager
@@ -32,13 +25,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  SQLCipher: 0187a2180ac288ea686b670b7141da62cd013b16
-  TFY_AutoLayout: 4fc4ce19410e40d77fcd66076ceb3600f34b3fc9
-  TFY_Category: 151af6337aee2d2f2712b229502d20902ecad165
+  TFY_AutoLayout: 3856cd8766f67cd8aeca980281d630e28cdbfd12
+  TFY_Category: 4b33efa7653d0209695f9b49762a1aaf4599f17d
   TFY_ContactManager: c0453f4313f333e7067606c73d732935d0261d43
-  TFY_Model: b383de0a1762d2bd3abe56c26a8951f7c8098400
+  TFY_Model: 0edfcd6fc0a026be792fa51e42ca638d6f07655e
   TFY_Navigation: 7e6c6eeb8f318233bf88fab31181e5408e4c04fb
 
 PODFILE CHECKSUM: 909561a1de4d8410fa4816ee786a4adc3baaa65e
 
-COCOAPODS: 1.7.1
+COCOAPODS: 1.8.1

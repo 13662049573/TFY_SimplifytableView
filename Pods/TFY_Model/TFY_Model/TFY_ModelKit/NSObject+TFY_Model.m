@@ -10,6 +10,19 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 
+
+#define TFY_ExtensionAssertError(condition, returnValue, clazz, msg) \
+[clazz setTfy_error:nil]; \
+if ((condition) == NO) { \
+ TFY_ExtensionBuildError(clazz, msg); \
+return returnValue;\
+}
+
+// 构建错误
+#define TFY_ExtensionBuildError(clazz, msg) \
+NSError *error = [NSError errorWithDomain:msg code:250 userInfo:nil]; \
+[clazz setTfy_error:error];
+
 typedef NS_OPTIONS(NSUInteger, TFY_TYPE){
     _Array,
     _Dictionary,
@@ -279,6 +292,18 @@ typedef NS_OPTIONS(NSUInteger, TFY_TYPE){
     }];
 }
 
+#pragma mark - 错误
+static const char ErrorKey = '\0';
++ (NSError *)tfy_error
+{
+    return objc_getAssociatedObject(self, &ErrorKey);
+}
+
++ (void)setTfy_error:(NSError *)error
+{
+    objc_setAssociatedObject(self, &ErrorKey, error, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
 #pragma mark - json转模型对象 Api -
 
 +(id)tfy_ModelWithJson:(id)json{
@@ -299,6 +324,58 @@ typedef NS_OPTIONS(NSUInteger, TFY_TYPE){
         }
     }
     return nil;
+}
+/**
+ *  通过plist来创建一个模型数组 filename 文件名(仅限于mainBundle中的文件) filename 文件名(仅限于mainBundle中的文件)
+ */
++ (id)tfy_objectArrayWithFilename:(NSString *)filename{
+    
+    TFY_ExtensionAssertError(filename != nil, nil, [self class], @"filename参数为nil");
+    id value = nil;;
+    if ([filename hasSuffix:@"json"]) {
+        value = [self tfy_DictionpathForResource:filename ofType:nil];
+    }
+    else{
+       value = [self tfy_objectArrayWithFile:[[NSBundle mainBundle] pathForResource:filename ofType:nil]];
+    }
+    return value;
+}
+/**
+ *  通过plist来创建一个模型数组 file 文件全路径 模型数组
+ */
++ (NSMutableArray *)tfy_objectArrayWithFile:(NSString *)file{
+    
+    TFY_ExtensionAssertError(file != nil, nil, [self class], @"file参数为nil");
+    
+    return [self tfy_ModelWithJson:[NSArray arrayWithContentsOfFile:file]];
+}
+
++(nullable NSDictionary *)tfy_DictionpathForResource:(nullable NSString *)name ofType:(nullable NSString *)ext{
+    
+    TFY_ExtensionAssertError(name != nil, nil, [self class], @"name参数为nil");
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:ext];
+    
+    NSString *shoppingStr = [NSString stringWithContentsOfFile:path usedEncoding:nil error:nil];
+    
+    NSDictionary *shoppingDic = [self tfy_dictionaryWithJsonString:shoppingStr];
+    
+    return shoppingDic;
+}
+
++(NSDictionary *)tfy_dictionaryWithJsonString:(NSString *)jsonString
+{
+    if (jsonString == nil) {
+        return nil;
+    }
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *err;
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&err];
+    if(err)
+    {
+        return nil;
+    }
+    return dic;
 }
 
 +(id)tfy_ModelWithJson:(id)json keyPath:(NSString *)keyPath{
@@ -376,7 +453,7 @@ typedef NS_OPTIONS(NSUInteger, TFY_TYPE){
 
 
 #pragma mark - 模型对象转json Api -
--(NSString *)tfy_Json{
+-(NSString *)tfy_JSONString{
     id jsonSet = nil;
     if ([self isKindOfClass:[NSDictionary class]]) {
         jsonSet = [self parserDictionaryEngine:(NSDictionary *)self];

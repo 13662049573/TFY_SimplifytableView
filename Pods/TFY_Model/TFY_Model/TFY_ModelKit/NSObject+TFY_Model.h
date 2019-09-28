@@ -56,7 +56,14 @@ NS_ASSUME_NONNULL_BEGIN
  *  字典解析模型，keypath选择对象层次来解析数据
  */
 +(id)tfy_ModelWithJson:(id)json keyPath:(NSString *)keyPath;
-
+/**
+ *  filename 文件名(仅限于mainBundle中的文件) 如果末尾json格式返回字典，plist格式返回数组
+ */
++ (id)tfy_objectArrayWithFilename:(NSString *)filename;
+/**
+ * 字典转模型过程中遇到的错误
+ */
++ (NSError *)tfy_error;
 #pragma mark - 模型对象序列化 Api
 /**
  *  将模型转为字典
@@ -65,7 +72,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  把模型字典转化为字符串
  */
--(NSString *)tfy_Json;
+-(NSString *)tfy_JSONString;
 
 #pragma mark - 模型对象序列化
 /**
