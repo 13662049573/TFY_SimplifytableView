@@ -43,16 +43,7 @@
     }
 }
 
--(CGFloat)rowHeight{
-    if (self.isAutoHeight) {
-        _rowHeight =  [UITableViewCell CellHeightForIndexPath:_indexPath tableView:self.tableView identifier:self.cellidentifier layoutBlock:^(UITableViewCell * _Nonnull cell) {
-            if (self.adapter) {
-                self.adapter(cell,self.data,self.indexPath);
-            }
-        }];
-    }
-    return _rowHeight;
-}
+
 
 @end
 
