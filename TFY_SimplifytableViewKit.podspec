@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "TFY_SimplifytableViewKit"
 
-  spec.version      = "2.1.6"
+  spec.version      = "2.1.8"
 
   spec.summary      = "简化的TableView 一行代码完成所有布局。"
 
