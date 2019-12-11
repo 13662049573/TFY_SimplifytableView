@@ -24,15 +24,12 @@
     }
     return cell;
 }
-
-
 -(NSString *)cellidentifier{
     if (!_cellidentifier) {
         _cellidentifier = NSStringFromClass(_cell);
     }
     return _cellidentifier;
 }
-
 -(void)setCell:(Class)cell{
     _cell = cell;
     if (!self.tableView.tableViewRegisterCell[self.cellidentifier]) {//如果没有注册过
@@ -42,14 +39,12 @@
         }else{
             [self.tableView registerNib:nib forCellReuseIdentifier:self.cellidentifier];
         }
-        
         [self.tableView.tableViewRegisterCell setValue:@(YES) forKey:self.cellidentifier];
     }
 }
 
 -(CGFloat)rowHeight{
     if (self.isAutoHeight) {
-        
         _rowHeight =  [UITableViewCell CellHeightForIndexPath:_indexPath tableView:self.tableView identifier:self.cellidentifier layoutBlock:^(UITableViewCell * _Nonnull cell) {
             if (self.adapter) {
                 self.adapter(cell,self.data,self.indexPath);
@@ -69,9 +64,7 @@
         self.cellData.tableView = tableView;
     }
     return self;
-    
 }
-
 - (NSIndexPath *)indexPath{
     return self.cellData.indexPath;
 }
