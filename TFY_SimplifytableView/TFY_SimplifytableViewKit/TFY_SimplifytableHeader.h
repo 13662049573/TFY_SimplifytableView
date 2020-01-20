@@ -41,4 +41,25 @@ _maker_ \
 #import "TFY_BaseTableViewDataSource.h"
 #import "UITableView+TFY_TableViewMaker.h"
 
+/**
+ UITableView的Style为Plain时，当tableView上移顶端的tableHeaderView会跟着滑出窗口，而headerInsectionView则会悬浮固定在窗口顶端不随着滑动继续上移。
+UITableView的Style为Grouped时，当tableView上移顶端的tableHeaderView会跟着滑出窗口，而headerInsectionView则会随着滑动继续上移。
+UITableView的Style为Plain时禁止headerInsectionView固定在顶端：
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+
+    CGFloat sectionHeaderHeight = 50;
+
+    if(scrollView.contentOffset.y<=sectionHeaderHeight&&scrollView.contentOffset.y>=0) {
+
+        scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0,0);
+
+    } else if (scrollView.contentOffset.y>=sectionHeaderHeight) {
+
+        scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
+
+    }
+
+}*/
+
+
 #endif /* TFY_SimplifytableHeader_h */
