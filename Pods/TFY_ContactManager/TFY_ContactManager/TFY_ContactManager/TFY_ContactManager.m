@@ -70,7 +70,6 @@
                   CNContactOrganizationNameKey,
                   CNContactDepartmentNameKey,
                   CNContactJobTitleKey,
-                  CNContactNoteKey,
                   CNContactPhoneticGivenNameKey,
                   CNContactPhoneticFamilyNameKey,
                   CNContactPhoneticMiddleNameKey,
@@ -299,8 +298,6 @@ void blockExecute(void (^completion)(BOOL authorizationA), BOOL authorizationB)
                 [[UIApplication sharedApplication] openURL:url options:@{}
                                          completionHandler:^(BOOL success) {
                                          }];
-            } else {
-                [[UIApplication sharedApplication] openURL:url];
             }
         }
     }])];
@@ -313,6 +310,7 @@ void blockExecute(void (^completion)(BOOL authorizationA), BOOL authorizationB)
     dispatch_async(_queue, ^{
         
         NSMutableArray *datas = [NSMutableArray array];
+        
         CNContactFetchRequest *request = [[CNContactFetchRequest alloc] initWithKeysToFetch:self.keys];
         [weakSelf.contactStore enumerateContactsWithFetchRequest:request error:nil usingBlock:^(CNContact * _Nonnull contact, BOOL * _Nonnull stop) {
             

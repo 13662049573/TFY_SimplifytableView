@@ -1,10 +1,29 @@
 PODS:
   - ReactiveObjC (3.1.1)
-  - TFY_AutoLayout (2.4.7)
-  - TFY_Category (2.6.0)
-  - TFY_ContactManager (2.0.1)
-  - TFY_Model (2.6.4)
-  - TFY_Navigation (2.1.0)
+  - TFY_AutoLayout (2.5.2):
+    - TFY_AutoLayout/IOS_Layout (= 2.5.2)
+    - TFY_AutoLayout/MAC_Layout (= 2.5.2)
+    - TFY_AutoLayout/Util (= 2.5.2)
+  - TFY_AutoLayout/IOS_Layout (2.5.2):
+    - TFY_AutoLayout/Util
+  - TFY_AutoLayout/MAC_Layout (2.5.2):
+    - TFY_AutoLayout/Util
+  - TFY_AutoLayout/Util (2.5.2)
+  - TFY_Category (3.2.8):
+    - TFY_Category/TFY_Foundation (= 3.2.8)
+    - TFY_Category/TFY_ITools (= 3.2.8)
+    - TFY_Category/TFY_UI (= 3.2.8)
+  - TFY_Category/TFY_Foundation (3.2.8)
+  - TFY_Category/TFY_ITools (3.2.8)
+  - TFY_Category/TFY_UI (3.2.8)
+  - TFY_ContactManager (2.0.2)
+  - TFY_Model (2.6.6)
+  - TFY_Navigation (2.2.2):
+    - TFY_Navigation/TFY_NavControoler (= 2.2.2)
+    - TFY_Navigation/TFY_PopController (= 2.2.2)
+  - TFY_Navigation/TFY_NavControoler (2.2.2):
+    - TFY_Navigation/TFY_PopController
+  - TFY_Navigation/TFY_PopController (2.2.2)
 
 DEPENDENCIES:
   - ReactiveObjC
@@ -15,7 +34,7 @@ DEPENDENCIES:
   - TFY_Navigation
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - ReactiveObjC
     - TFY_AutoLayout
     - TFY_Category
@@ -25,12 +44,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  TFY_AutoLayout: 3856cd8766f67cd8aeca980281d630e28cdbfd12
-  TFY_Category: 8af04bd801b0753c547e1d8db15826a94d9cd570
-  TFY_ContactManager: c0453f4313f333e7067606c73d732935d0261d43
-  TFY_Model: 0edfcd6fc0a026be792fa51e42ca638d6f07655e
-  TFY_Navigation: 7e6c6eeb8f318233bf88fab31181e5408e4c04fb
+  TFY_AutoLayout: 792116abdb3fb2758c59d29ac16322bbfe8441ab
+  TFY_Category: 75797a0b1aa72794bd7b4258608af00007467453
+  TFY_ContactManager: 8c261ca48a5fff038e9bb8805ac3eff03c04fe13
+  TFY_Model: 4b291352c264b7e9d209496f5234be79ed54a686
+  TFY_Navigation: 3523efe2942ef7bede46223f5bb0553e8842096e
 
-PODFILE CHECKSUM: 909561a1de4d8410fa4816ee786a4adc3baaa65e
+PODFILE CHECKSUM: b260568dfac592e8ffafd70463cdfd8539ee9f85
 
-COCOAPODS: 1.8.1
+COCOAPODS: 1.9.1

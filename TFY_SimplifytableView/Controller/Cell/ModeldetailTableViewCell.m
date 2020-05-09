@@ -52,7 +52,7 @@
 -(UILabel *)name_label{
     if (!_name_label) {
         _name_label = tfy_label();
-        _name_label.tfy_textcolor(@"212121", 1).tfy_fontSize(15).tfy_alignment(0);
+        _name_label.tfy_textcolor(@"212121", 1).tfy_fontSize([UIFont systemFontOfSize:15]).tfy_alignment(0);
         
     }
     return _name_label;
