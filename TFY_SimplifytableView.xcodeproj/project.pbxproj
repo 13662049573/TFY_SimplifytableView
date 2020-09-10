@@ -56,7 +56,6 @@
 		3602DD4022B1D4700036EA71 /* ContentsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentsTableViewCell.m; sourceTree = "<group>"; };
 		3620AD90229F663F00AB5C48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3620AD92229F664D00AB5C48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		3623607022B0EF9D000FF75B /* TFY_SimplifytableHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_SimplifytableHeader.h; sourceTree = "<group>"; };
 		362683BB229E0E55006938A0 /* TFY_SimplifytableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFY_SimplifytableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		362683C7229E0E57006938A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		362683CA229E0E57006938A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -92,6 +91,7 @@
 		36268441229E7665006938A0 /* UITableView+TFY_TableViewMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+TFY_TableViewMaker.m"; sourceTree = "<group>"; };
 		36268442229E7665006938A0 /* UITableViewCell+TFY_TableViewMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+TFY_TableViewMaker.m"; sourceTree = "<group>"; };
 		36268445229E7665006938A0 /* UITableViewCell+TFY_TableViewMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+TFY_TableViewMaker.h"; sourceTree = "<group>"; };
+		36EE10F6250A048E00D24B3C /* TFY_SimplifytableViewKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_SimplifytableViewKit.h; sourceTree = "<group>"; };
 		673D758AA2272999644EF694 /* Pods-TFY_SimplifytableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFY_SimplifytableView.debug.xcconfig"; path = "Target Support Files/Pods-TFY_SimplifytableView/Pods-TFY_SimplifytableView.debug.xcconfig"; sourceTree = "<group>"; };
 		8BBCAAC1A1EB9904AFA636CD /* Pods-TFY_SimplifytableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFY_SimplifytableView.release.xcconfig"; path = "Target Support Files/Pods-TFY_SimplifytableView/Pods-TFY_SimplifytableView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,7 +182,7 @@
 		362683F0229E0F36006938A0 /* TFY_SimplifytableViewKit */ = {
 			isa = PBXGroup;
 			children = (
-				3623607022B0EF9D000FF75B /* TFY_SimplifytableHeader.h */,
+				36EE10F6250A048E00D24B3C /* TFY_SimplifytableViewKit.h */,
 				3626843E229E7665006938A0 /* TFY_BaseTableViewDataSource.h */,
 				36268440229E7665006938A0 /* TFY_BaseTableViewDataSource.m */,
 				3626843C229E7665006938A0 /* UITableView+TFY_TableViewMaker.h */,

@@ -131,7 +131,7 @@ void HDExchangeImplementations(Class class, SEL newSelector, SEL oldSelector) {
     id<TFY_BaseTableViewDataSourceProtocol> dataSource = (id<TFY_BaseTableViewDataSourceProtocol>) [DataSourceClass  new];
     [tableViewmaker.tableData doSectionMakeBlock];
     dataSource.tableData = tableViewmaker.tableData;
-    self.tfy_TableViewDataSource = dataSource;
+    self.tfy_TableViewDataSource =  dataSource;
     return self;
 }
 

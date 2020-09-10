@@ -9,7 +9,7 @@
 #ifndef TFY_TableViewPrefixHeader_pch
 #define TFY_TableViewPrefixHeader_pch
 
-#import "TFY_SimplifytableHeader.h"
+#import "TFY_SimplifytableViewKit.h"
 #import "TFY_AutoLayout.h"
 #import "TFY_Navigation.h"
 #import "TFY_CategoryHerder.h"
