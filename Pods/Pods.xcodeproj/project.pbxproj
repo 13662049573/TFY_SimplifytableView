@@ -410,7 +410,7 @@
 		18745BDBE33CBC838CB62D03406BDA2D /* UIBarButtonItem+TFY_Chain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+TFY_Chain.h"; path = "TFY_Navigation/TFY_Navigation/TFY_NavControoler/UIBarButtonItem+TFY_Chain.h"; sourceTree = "<group>"; };
 		18C031C4D71307E06138EE9EF79BF79E /* RACSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSequence.m; path = ReactiveObjC/RACSequence.m; sourceTree = "<group>"; };
 		18E382676E7CEEA9BF8CAD2E8B2E5E0C /* RACSignal+Operations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACSignal+Operations.h"; path = "ReactiveObjC/RACSignal+Operations.h"; sourceTree = "<group>"; };
-		1901CDF70D23A68CA0B9E02D2F70C422 /* libTFY_AutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTFY_AutoLayout.a; path = libTFY_AutoLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1901CDF70D23A68CA0B9E02D2F70C422 /* libTFY_AutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTFY_AutoLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AECC2A472EB280C3C57F42DE8D88280 /* UIWindow+TFY_Chain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+TFY_Chain.m"; path = "TFY_Category/TFY_Category/TFY_ITools/UIWindow+TFY_Chain.m"; sourceTree = "<group>"; };
 		1B42DBDB81E444BB4D5F95C88761EF02 /* RACDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACDisposable.h; path = ReactiveObjC/RACDisposable.h; sourceTree = "<group>"; };
 		1D14870BA67A604779E1B7DF66B32E7B /* TFY_ContactManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TFY_ContactManager.debug.xcconfig; sourceTree = "<group>"; };
@@ -468,7 +468,7 @@
 		3C778BC85152477E70C261E30263CBED /* RACEagerSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEagerSequence.h; path = ReactiveObjC/RACEagerSequence.h; sourceTree = "<group>"; };
 		3CED652714BC17DC5A58EF84FA3E499A /* RACSerialDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSerialDisposable.m; path = ReactiveObjC/RACSerialDisposable.m; sourceTree = "<group>"; };
 		3D3550A89233FB891434667174FFC320 /* NSObject+TFY_Associated.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+TFY_Associated.m"; path = "TFY_Category/TFY_Category/TFY_Foundation/NSObject+TFY_Associated.m"; sourceTree = "<group>"; };
-		3ED4E982C1ADCD1D97B03090E2568247 /* libTFY_Model.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTFY_Model.a; path = libTFY_Model.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ED4E982C1ADCD1D97B03090E2568247 /* libTFY_Model.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTFY_Model.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F615BBDBE9BBC6E3012792E4488D800 /* TFY_Model-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TFY_Model-dummy.m"; sourceTree = "<group>"; };
 		3F764BE4998521D24EDA08CE03300368 /* NSNotificationCenter+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+RACSupport.m"; path = "ReactiveObjC/NSNotificationCenter+RACSupport.m"; sourceTree = "<group>"; };
 		4038D8AA6E1A18CCE8B7D78F4ED5FB52 /* TFY_Category.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TFY_Category.debug.xcconfig; sourceTree = "<group>"; };
@@ -501,7 +501,7 @@
 		560E193C3D3424BEA581A4B1F50B3D1E /* RACReplaySubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACReplaySubject.m; path = ReactiveObjC/RACReplaySubject.m; sourceTree = "<group>"; };
 		56C7542214FE9906EEA8E8572128DADB /* UIImage+Image.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Image.m"; path = "TFY_Category/TFY_Category/TFY_UI/UIImage+Image.m"; sourceTree = "<group>"; };
 		5771100F69F0BE7A5CA8B384F4564F79 /* NSArray+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+RACSequenceAdditions.m"; path = "ReactiveObjC/NSArray+RACSequenceAdditions.m"; sourceTree = "<group>"; };
-		580098F786B3D305C5D4F0E18A5E7B3D /* RACSignalProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; name = RACSignalProvider.d; path = ReactiveObjC/RACSignalProvider.d; sourceTree = "<group>"; };
+		580098F786B3D305C5D4F0E18A5E7B3D /* RACSignalProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.dtrace; name = RACSignalProvider.d; path = ReactiveObjC/RACSignalProvider.d; sourceTree = "<group>"; };
 		589E3DB0589A6208F7F925ED9C06545F /* TFY_AutoLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TFY_AutoLayout-dummy.m"; sourceTree = "<group>"; };
 		59826D5797B2B19C3BC2AD58257179A5 /* UITableViewCell+TFY_AutoHeightForCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+TFY_AutoHeightForCell.m"; path = "TFY_AutoLayout/TFY_AutoLayout/IOS_Layout/UITableViewCell+TFY_AutoHeightForCell.m"; sourceTree = "<group>"; };
 		5A16D322E092EAC190294E4868B2C077 /* UIDevice+Orientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+Orientation.h"; path = "TFY_Category/TFY_Category/TFY_Foundation/UIDevice+Orientation.h"; sourceTree = "<group>"; };
@@ -525,7 +525,7 @@
 		66D0224CCBF03D2AFDB816327CA4EBE5 /* TFY_DefaultPopAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_DefaultPopAnimator.h; path = TFY_Navigation/TFY_Navigation/TFY_PopController/TFY_DefaultPopAnimator.h; sourceTree = "<group>"; };
 		68062A6C1A8AB453C0E05E57FC219131 /* RACTargetQueueScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACTargetQueueScheduler.h; path = ReactiveObjC/RACTargetQueueScheduler.h; sourceTree = "<group>"; };
 		6894BE70736C1104D438A5499DEA3A8F /* UIImage+TFY_UserAvatar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+TFY_UserAvatar.m"; path = "TFY_Category/TFY_Category/TFY_UI/UIImage+TFY_UserAvatar.m"; sourceTree = "<group>"; };
-		69EC0F362EECAC9960AFCC7DED7967E6 /* libTFY_ContactManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTFY_ContactManager.a; path = libTFY_ContactManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		69EC0F362EECAC9960AFCC7DED7967E6 /* libTFY_ContactManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTFY_ContactManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B006D3A230C4D2260F4FD5B11DB23A8 /* RACDynamicSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDynamicSequence.m; path = ReactiveObjC/RACDynamicSequence.m; sourceTree = "<group>"; };
 		6D8D9DAF9EF871901F981D7BDCE2DB22 /* RACTupleSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACTupleSequence.h; path = ReactiveObjC/RACTupleSequence.h; sourceTree = "<group>"; };
 		6DA9FFCA48DBF62AB1B5097A83FA461A /* NSString+TFY_Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+TFY_Extension.h"; path = "TFY_ContactManager/TFY_ContactManager/NSString+TFY_Extension.h"; sourceTree = "<group>"; };
@@ -575,14 +575,14 @@
 		8E2CFED953BD411F70FBA46234F67816 /* RACEmptySequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEmptySequence.m; path = ReactiveObjC/RACEmptySequence.m; sourceTree = "<group>"; };
 		8E9807722D4F82CD8009EBD7386AECD8 /* TFY_Navigation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TFY_Navigation.debug.xcconfig; sourceTree = "<group>"; };
 		8EC15FEF39E53B9F64167FB08BBCD5EE /* TFY_ModelSqlite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_ModelSqlite.h; path = TFY_Model/TFY_ModelKit/TFY_ModelSqlite.h; sourceTree = "<group>"; };
-		8F16368C31C4FDC0264D60A67C17FA5F /* libPods-TFY_SimplifytableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TFY_SimplifytableView.a"; path = "libPods-TFY_SimplifytableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F16368C31C4FDC0264D60A67C17FA5F /* libPods-TFY_SimplifytableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TFY_SimplifytableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B1F0957ED2FED23AF5C09C8B81F4D4 /* ReactiveObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReactiveObjC-dummy.m"; sourceTree = "<group>"; };
 		92E261F42D6FA9DF8B95D28BA5475F83 /* NSObject+RACDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACDescription.m"; path = "ReactiveObjC/NSObject+RACDescription.m"; sourceTree = "<group>"; };
 		934C3724A7D02A37BFBB6B61094CBFBF /* RACStringSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACStringSequence.m; path = ReactiveObjC/RACStringSequence.m; sourceTree = "<group>"; };
 		935119830005975EDEC8C88219EC62FB /* UIView+TFY_Frame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TFY_Frame.m"; path = "TFY_AutoLayout/TFY_AutoLayout/IOS_Layout/UIView+TFY_Frame.m"; sourceTree = "<group>"; };
 		93AD3C5A086B82835B4AD2BF125DE5FB /* RACmetamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACmetamacros.h; path = ReactiveObjC/extobjc/RACmetamacros.h; sourceTree = "<group>"; };
 		9566E3ACFC6F02B6216102209CAD8085 /* NSDate+TFY_Date.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+TFY_Date.m"; path = "TFY_Category/TFY_Category/TFY_Foundation/NSDate+TFY_Date.m"; sourceTree = "<group>"; };
-		9621C6383F5733C35183B2DE886C7EC6 /* libReactiveObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReactiveObjC.a; path = libReactiveObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9621C6383F5733C35183B2DE886C7EC6 /* libReactiveObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactiveObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		979FCB683E9257B45F1C53A8211F3F4F /* TFY_ContactManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TFY_ContactManager-dummy.m"; sourceTree = "<group>"; };
 		97D274366F4150223C26CCDE8788EBF6 /* NSMutableParagraphStyle+TFY_Chain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableParagraphStyle+TFY_Chain.m"; path = "TFY_Category/TFY_Category/TFY_Foundation/NSMutableParagraphStyle+TFY_Chain.m"; sourceTree = "<group>"; };
 		97FB557C75FFA71A7FBBEF752DB3C7F9 /* NSObject+RACLifting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACLifting.m"; path = "ReactiveObjC/NSObject+RACLifting.m"; sourceTree = "<group>"; };
@@ -592,7 +592,7 @@
 		9C8131BE9115885F7BAB91D7F05C7D69 /* UIImage+TFY_UserAvatar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+TFY_UserAvatar.h"; path = "TFY_Category/TFY_Category/TFY_UI/UIImage+TFY_UserAvatar.h"; sourceTree = "<group>"; };
 		9CCC9C4A503AA1EBC05F00652A94E146 /* NSData+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+RACSupport.h"; path = "ReactiveObjC/NSData+RACSupport.h"; sourceTree = "<group>"; };
 		9D03AB8DDFC2A194D280D4ED2A255F74 /* TFY_NavAnimatedTransitioning.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_NavAnimatedTransitioning.m; path = TFY_Navigation/TFY_Navigation/TFY_PopController/TFY_NavAnimatedTransitioning.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EE10476DB3813EB4125D00D51B0118C /* RACKVOChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACKVOChannel.m; path = ReactiveObjC/RACKVOChannel.m; sourceTree = "<group>"; };
 		9EE927C07D846F2BB16536BD2844F263 /* NSString+RACKeyPathUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RACKeyPathUtilities.m"; path = "ReactiveObjC/NSString+RACKeyPathUtilities.m"; sourceTree = "<group>"; };
 		9F3C89ECE9A356D139BAD1C8E4F2AE87 /* UINavigationController+TFY_Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+TFY_Extension.h"; path = "TFY_Navigation/TFY_Navigation/TFY_NavControoler/UINavigationController+TFY_Extension.h"; sourceTree = "<group>"; };
@@ -622,7 +622,7 @@
 		B46CCD6FD2C6FF7FB1E145F16C7A85D3 /* NSString+TFY_String.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+TFY_String.h"; path = "TFY_Category/TFY_Category/TFY_Foundation/NSString+TFY_String.h"; sourceTree = "<group>"; };
 		B58F3ECA6C29407687CF0A7AB03A99FC /* UIAlertView+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+RACSignalSupport.m"; path = "ReactiveObjC/UIAlertView+RACSignalSupport.m"; sourceTree = "<group>"; };
 		B5C3D4C1FA164080FD03918E6DF58205 /* TFY_ModelSqlite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_ModelSqlite.m; path = TFY_Model/TFY_ModelKit/TFY_ModelSqlite.m; sourceTree = "<group>"; };
-		B6A6A5366FA68A592078186176C339F1 /* libTFY_Navigation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTFY_Navigation.a; path = libTFY_Navigation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A6A5366FA68A592078186176C339F1 /* libTFY_Navigation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTFY_Navigation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D22CD6740D0824D302203EABA04BE2 /* UIGestureRecognizer+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIGestureRecognizer+RACSignalSupport.m"; path = "ReactiveObjC/UIGestureRecognizer+RACSignalSupport.m"; sourceTree = "<group>"; };
 		B7514D565FB57587D003BB6F525A00D0 /* UIButton+RACCommandSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+RACCommandSupport.m"; path = "ReactiveObjC/UIButton+RACCommandSupport.m"; sourceTree = "<group>"; };
 		B7F9F2D795A5A9C69C3908884FD6EFAF /* RACSubscriptingAssignmentTrampoline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubscriptingAssignmentTrampoline.h; path = ReactiveObjC/RACSubscriptingAssignmentTrampoline.h; sourceTree = "<group>"; };
@@ -632,7 +632,7 @@
 		BB22FA6FDB5DD038BA03719ACFCF9C17 /* RACPassthroughSubscriber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACPassthroughSubscriber.h; path = ReactiveObjC/RACPassthroughSubscriber.h; sourceTree = "<group>"; };
 		BC506B3CE28395274BFA0073AF029032 /* TFY_PopTransitioningDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_PopTransitioningDelegate.h; path = TFY_Navigation/TFY_Navigation/TFY_PopController/TFY_PopTransitioningDelegate.h; sourceTree = "<group>"; };
 		BC895EEA912FBE5912989DE3BA42071E /* TFY_Navigation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TFY_Navigation.release.xcconfig; sourceTree = "<group>"; };
-		BCF8104D16A36E2D3AEEAE97455AF002 /* RACCompoundDisposableProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; name = RACCompoundDisposableProvider.d; path = ReactiveObjC/RACCompoundDisposableProvider.d; sourceTree = "<group>"; };
+		BCF8104D16A36E2D3AEEAE97455AF002 /* RACCompoundDisposableProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.dtrace; name = RACCompoundDisposableProvider.d; path = ReactiveObjC/RACCompoundDisposableProvider.d; sourceTree = "<group>"; };
 		BE433B87F572625910AFE7679943EC59 /* UIViewController+TFY_PopController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TFY_PopController.h"; path = "TFY_Navigation/TFY_Navigation/TFY_PopController/UIViewController+TFY_PopController.h"; sourceTree = "<group>"; };
 		BEC2C122BAECAB04ED4A02FABC9A1597 /* NSObject+RACLifting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACLifting.h"; path = "ReactiveObjC/NSObject+RACLifting.h"; sourceTree = "<group>"; };
 		BF03E03B75B0FA1DC3A0F6F8A4B076C3 /* RACKVOChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACKVOChannel.h; path = ReactiveObjC/RACKVOChannel.h; sourceTree = "<group>"; };
@@ -650,7 +650,7 @@
 		CCBFDB51CF25CF24F1B553B6AC8B60E6 /* NSMutableArray+TFY_Array.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+TFY_Array.h"; path = "TFY_Category/TFY_Category/TFY_Foundation/NSMutableArray+TFY_Array.h"; sourceTree = "<group>"; };
 		CCFCABE1A4DE4CFBDEB91850F87BC613 /* RACDynamicSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACDynamicSequence.h; path = ReactiveObjC/RACDynamicSequence.h; sourceTree = "<group>"; };
 		CEEEDC10C18992FF491085F0EA85AAD0 /* RACArraySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACArraySequence.h; path = ReactiveObjC/RACArraySequence.h; sourceTree = "<group>"; };
-		D04EC1AFB91BF035407EDAB8BAA1906F /* libTFY_Category.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTFY_Category.a; path = libTFY_Category.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04EC1AFB91BF035407EDAB8BAA1906F /* libTFY_Category.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTFY_Category.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08E25871E9133DE9150BCC0C98E6AFA /* NSTimer+TFY_Chain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+TFY_Chain.h"; path = "TFY_Category/TFY_Category/TFY_Foundation/NSTimer+TFY_Chain.h"; sourceTree = "<group>"; };
 		D099F0EAD864991A868ABD9F4F858B9F /* TFY_AutoLayoutHerder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_AutoLayoutHerder.h; path = TFY_AutoLayout/TFY_AutoLayout/Util/TFY_AutoLayoutHerder.h; sourceTree = "<group>"; };
 		D238C8A85CEC8AAEA36518284BF10D5D /* RACStringSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACStringSequence.h; path = ReactiveObjC/RACStringSequence.h; sourceTree = "<group>"; };
@@ -922,7 +922,6 @@
 				227B802FD3AB7B2242B2A0CC7C81EFC8 /* TFY_NavControoler */,
 				E072808B9231927AD87ADAE87B4E8524 /* TFY_PopController */,
 			);
-			name = TFY_Navigation;
 			path = TFY_Navigation;
 			sourceTree = "<group>";
 		};
@@ -1186,7 +1185,6 @@
 				3270F8BD0D3E336FEF4E2C16F0A41989 /* UITextView+RACSignalSupport.m */,
 				DADFE398CA57FC7294AFF29FE9774868 /* Support Files */,
 			);
-			name = ReactiveObjC;
 			path = ReactiveObjC;
 			sourceTree = "<group>";
 		};
@@ -1233,7 +1231,6 @@
 				1D42B461A236E66FF41B670D7E83CB76 /* TFY_PickerDetailDelegate.m */,
 				8C76F24359783ECAA2B91999F2FA3A5D /* Support Files */,
 			);
-			name = TFY_ContactManager;
 			path = TFY_ContactManager;
 			sourceTree = "<group>";
 		};
@@ -1246,7 +1243,6 @@
 				577D8D138C4927B0BE7473963FCB3B3C /* Support Files */,
 				17D3D9395E426B763C0F2FAB4F1ACE87 /* Util */,
 			);
-			name = TFY_AutoLayout;
 			path = TFY_AutoLayout;
 			sourceTree = "<group>";
 		};
@@ -1259,7 +1255,6 @@
 				80788058A5816A0997A9F6B0B67C60B6 /* TFY_ITools */,
 				162196074E208AB878AF0AB3F6EBF61F /* TFY_UI */,
 			);
-			name = TFY_Category;
 			path = TFY_Category;
 			sourceTree = "<group>";
 		};
@@ -1345,7 +1340,6 @@
 				53A1EA6ECFC42B28149349EE1CF8C8EA /* TFY_ModelSqliteHeader.h */,
 				7868BE429A89AA4381CE6E08702D477C /* Support Files */,
 			);
-			name = TFY_Model;
 			path = TFY_Model;
 			sourceTree = "<group>";
 		};
@@ -1702,7 +1696,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1210;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -1984,7 +1978,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/TFY_Model/TFY_Model-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -2009,7 +2003,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/TFY_Navigation/TFY_Navigation-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -2050,6 +2044,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -2075,7 +2070,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2098,7 +2093,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/TFY_ContactManager/TFY_ContactManager-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -2123,7 +2118,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/TFY_Category/TFY_Category-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -2147,7 +2142,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/TFY_AutoLayout/TFY_AutoLayout-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -2172,7 +2167,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/TFY_Category/TFY_Category-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -2197,7 +2192,7 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -2219,7 +2214,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/TFY_AutoLayout/TFY_AutoLayout-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -2242,7 +2237,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/ReactiveObjC/ReactiveObjC-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -2267,7 +2262,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/TFY_ContactManager/TFY_ContactManager-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -2307,6 +2302,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -2329,7 +2325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2351,7 +2347,7 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -2373,7 +2369,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/ReactiveObjC/ReactiveObjC-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -2397,7 +2393,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/TFY_Navigation/TFY_Navigation-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -2421,7 +2417,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/TFY_Model/TFY_Model-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";

@@ -48,7 +48,7 @@
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.showsHorizontalScrollIndicator = NO;
         _tableView.separatorColor = [UIColor tfy_colorWithHex:@"F6F7FD"];
-        _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLineEtched;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
         _tableView.separatorInset = UIEdgeInsetsMake(0, 20, 0, 20);
         [self.view addSubview:_tableView];
         
