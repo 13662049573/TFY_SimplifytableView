@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "TFY_SimplifytableViewKit"
 
-  spec.version      = "2.2.2"
+  spec.version      = "2.2.4"
 
   spec.summary      = "简化的TableView 一行代码完成所有布局。"
 
@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   
   spec.author       = { "tianfengyou" => "420144542@qq.com" }
   
-  spec.platform     = :ios, "10.0"
+  spec.platform     = :ios, "12.0"
 
   spec.source       = { :git => "https://github.com/13662049573/TFY_SimplifytableView.git", :tag => spec.version }
 
