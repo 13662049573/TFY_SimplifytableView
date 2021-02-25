@@ -48,7 +48,7 @@
 -(UILabel *)title_label{
     if (!_title_label) {
         _title_label = tfy_label();
-        _title_label.tfy_textcolor(@"2960DB", 1).tfy_fontSize(12).tfy_alignment(0);
+        _title_label.tfy_textcolor(@"2960DB", 1).tfy_fontSize([UIFont systemFontOfSize:12]).tfy_alignment(0);
     }
     return _title_label;
 }
